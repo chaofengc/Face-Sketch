@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  11 MAR 2017 13:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  11 MAR 2017 18:39
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -164,6 +164,26 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@float@everytoks=\toks21
 \@floatcapt=\box31
 )
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip48
+\subfigcapskip=\skip49
+\subfigcaptopadj=\dimen119
+\subfigbottomskip=\skip50
+\subfigcapmargin=\dimen120
+\subfiglabelskip=\skip51
+\c@subfigure=\count106
+\c@lofdepth=\count107
+\c@subtable=\count108
+\c@lotdepth=\count109
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/local/texlive/2015/texmf-dist/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip52
+\subfig@bottom=\skip53
+)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -221,14 +241,14 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen119
-\Hy@linkcounter=\count106
-\Hy@pagecounter=\count107
+\@linkdim=\dimen121
+\Hy@linkcounter=\count110
+\Hy@pagecounter=\count111
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count108
+\Hy@SavedSpaceFactor=\count112
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
@@ -255,17 +275,17 @@ Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 82.
 ))
-\c@Hy@tempcnt=\count109
+\c@Hy@tempcnt=\count113
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen120
-\Fld@menulength=\count110
-\Field@Width=\dimen121
-\Fld@charsize=\dimen122
+\XeTeXLinkMargin=\dimen122
+\Fld@menulength=\count114
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -275,37 +295,37 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count111
-\c@Item=\count112
-\c@Hfootnote=\count113
+\Hy@abspage=\count115
+\c@Item=\count116
+\c@Hfootnote=\count117
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count114
-\c@bookmark@seq@number=\count115
-\Hy@SectionHShift=\skip48
+\Fld@listcount=\count118
+\c@bookmark@seq@number=\count119
+\Hy@SectionHShift=\skip54
 )
 (./egpaper_for_review.aux)
 \openout1 = `egpaper_for_review.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 25.
-LaTeX Font Info:    ... okay on input line 25.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 25.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
+LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -321,16 +341,16 @@ Package color Info: Driver file: pdftex.def on input line 142.
 )
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count116
-\scratchdimen=\dimen123
+\scratchcounter=\count120
+\scratchdimen=\dimen125
 \scratchbox=\box32
-\nofMPsegments=\count117
-\nofMParguments=\count118
+\nofMPsegments=\count121
+\nofMParguments=\count122
 \everyMPshowfont=\toks22
-\MPscratchCnt=\count119
-\MPscratchDim=\dimen124
-\MPnumerator=\count120
-\makeMPintoPDFobject=\count121
+\MPscratchCnt=\count123
+\MPscratchDim=\dimen126
+\MPnumerator=\count124
+\makeMPintoPDFobject=\count125
 \everyMPtoPDFconversion=\toks23
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
@@ -349,7 +369,7 @@ e
 ))
 \AtBeginShipoutBox=\box33
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring ON on input line 25.
+Package hyperref Info: Link coloring ON on input line 26.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -357,196 +377,196 @@ Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count122
+\c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 25.
-LaTeX Info: Redefining \pageref on input line 25.
-LaTeX Info: Redefining \nameref on input line 25.
+LaTeX Info: Redefining \ref on input line 26.
+LaTeX Info: Redefining \pageref on input line 26.
+LaTeX Info: Redefining \nameref on input line 26.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 48.
-LaTeX Font Info:    Try loading font information for U+msa on input line 48.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 49.
+LaTeX Font Info:    Try loading font information for U+msa on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 48.
+LaTeX Font Info:    Try loading font information for U+msb on input line 49.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 52.
 
 <img/example_photo.png, id=4, 200.75pt x 250.9375pt>
 File: img/example_photo.png Graphic file (type png)
 
 <use img/example_photo.png>
-Package pdftex.def Info: img/example_photo.png used on input line 66.
+Package pdftex.def Info: img/example_photo.png used on input line 68.
 (pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
 
 <img/example_mrf.png, id=6, 150.5625pt x 188.20313pt>
 File: img/example_mrf.png Graphic file (type png)
 
 <use img/example_mrf.png>
-Package pdftex.def Info: img/example_mrf.png used on input line 71.
+Package pdftex.def Info: img/example_mrf.png used on input line 73.
 (pdftex.def)             Requested size: 56.91393pt x 71.14172pt.
  <img/example_wmrf.png, id=8, 200.75pt x 250.9375pt>
 File: img/example_wmrf.png Graphic file (type png)
 
 <use img/example_wmrf.png>
-Package pdftex.def Info: img/example_wmrf.png used on input line 76.
+Package pdftex.def Info: img/example_wmrf.png used on input line 78.
 (pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
  <img/example_ssd.png, id=10, 200.75pt x 250.9375pt>
 File: img/example_ssd.png Graphic file (type png)
 
 <use img/example_ssd.png>
-Package pdftex.def Info: img/example_ssd.png used on input line 81.
+Package pdftex.def Info: img/example_ssd.png used on input line 83.
 (pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
  <img/example_fcnn.png, id=12, 200.75pt x 256.96pt>
 File: img/example_fcnn.png Graphic file (type png)
 
 <use img/example_fcnn.png>
-Package pdftex.def Info: img/example_fcnn.png used on input line 86.
+Package pdftex.def Info: img/example_fcnn.png used on input line 88.
 (pdftex.def)             Requested size: 56.91393pt x 72.85011pt.
 
 <img/example_bfcn.png, id=14, 143.03438pt x 175.40532pt>
 File: img/example_bfcn.png Graphic file (type png)
 
 <use img/example_bfcn.png>
-Package pdftex.def Info: img/example_bfcn.png used on input line 91.
+Package pdftex.def Info: img/example_bfcn.png used on input line 93.
 (pdftex.def)             Requested size: 54.54025pt x 66.8822pt.
 
 <img/example_deepart.jpg, id=16, 448.67625pt x 561.09625pt>
 File: img/example_deepart.jpg Graphic file (type jpg)
 
 <use img/example_deepart.jpg>
-Package pdftex.def Info: img/example_deepart.jpg used on input line 96.
+Package pdftex.def Info: img/example_deepart.jpg used on input line 98.
 (pdftex.def)             Requested size: 56.91393pt x 71.1728pt.
 
 <img/example_ours.png, id=18, 200.75pt x 250.9375pt>
 File: img/example_ours.png Graphic file (type png)
 
 <use img/example_ours.png>
-Package pdftex.def Info: img/example_ours.png used on input line 101.
+Package pdftex.def Info: img/example_ours.png used on input line 103.
 (pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
 
 <img/hairpin_photo_patch.png, id=19, 37.13875pt x 38.1425pt>
 File: img/hairpin_photo_patch.png Graphic file (type png)
 
 <use img/hairpin_photo_patch.png>
-Package pdftex.def Info: img/hairpin_photo_patch.png used on input line 106.
+Package pdftex.def Info: img/hairpin_photo_patch.png used on input line 108.
 (pdftex.def)             Requested size: 26.08508pt x 26.79092pt.
 
 <img/hairpin_mrf_patch.png, id=20, 29.35968pt x 30.1125pt>
 File: img/hairpin_mrf_patch.png Graphic file (type png)
 
 <use img/hairpin_mrf_patch.png>
-Package pdftex.def Info: img/hairpin_mrf_patch.png used on input line 107.
+Package pdftex.def Info: img/hairpin_mrf_patch.png used on input line 109.
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
 <img/hairpin_wmrf_patch.png, id=21, 38.1425pt x 39.14626pt>
 File: img/hairpin_wmrf_patch.png Graphic file (type png)
 
 <use img/hairpin_wmrf_patch.png>
-Package pdftex.def Info: img/hairpin_wmrf_patch.png used on input line 108.
+Package pdftex.def Info: img/hairpin_wmrf_patch.png used on input line 110.
 (pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
 
 <img/hairpin_ssd_patch.png, id=22, 39.14626pt x 40.15pt>
 File: img/hairpin_ssd_patch.png Graphic file (type png)
 
 <use img/hairpin_ssd_patch.png>
-Package pdftex.def Info: img/hairpin_ssd_patch.png used on input line 109.
+Package pdftex.def Info: img/hairpin_ssd_patch.png used on input line 111.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
 <img/hairpin_fcnn_patch.png, id=23, 39.14626pt x 40.15pt>
 File: img/hairpin_fcnn_patch.png Graphic file (type png)
 
 <use img/hairpin_fcnn_patch.png>
-Package pdftex.def Info: img/hairpin_fcnn_patch.png used on input line 110.
+Package pdftex.def Info: img/hairpin_fcnn_patch.png used on input line 112.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
 <img/hairpin_bfcn_patch.png, id=24, 28.60687pt x 30.1125pt>
 File: img/hairpin_bfcn_patch.png Graphic file (type png)
 
 <use img/hairpin_bfcn_patch.png>
-Package pdftex.def Info: img/hairpin_bfcn_patch.png used on input line 111.
+Package pdftex.def Info: img/hairpin_bfcn_patch.png used on input line 113.
 (pdftex.def)             Requested size: 26.08508pt x 27.45891pt.
 
 <img/hairpin_deepart_patch.jpg, id=25, 82.3075pt x 90.3375pt>
 File: img/hairpin_deepart_patch.jpg Graphic file (type jpg)
 
 <use img/hairpin_deepart_patch.jpg>
-Package pdftex.def Info: img/hairpin_deepart_patch.jpg used on input line 112.
+Package pdftex.def Info: img/hairpin_deepart_patch.jpg used on input line 114.
 (pdftex.def)             Requested size: 26.08508pt x 28.63013pt.
 
 <img/hairpin_ours_patch.png, id=26, 38.1425pt x 40.15pt>
 File: img/hairpin_ours_patch.png Graphic file (type png)
 
 <use img/hairpin_ours_patch.png>
-Package pdftex.def Info: img/hairpin_ours_patch.png used on input line 113.
+Package pdftex.def Info: img/hairpin_ours_patch.png used on input line 115.
 (pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
 
 <img/eye_photo.png, id=27, 38.1425pt x 39.14626pt>
 File: img/eye_photo.png Graphic file (type png)
  <use img/eye_photo.png>
-Package pdftex.def Info: img/eye_photo.png used on input line 117.
+Package pdftex.def Info: img/eye_photo.png used on input line 119.
 (pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
 
 <img/eye_mrf.png, id=28, 29.35968pt x 30.1125pt>
 File: img/eye_mrf.png Graphic file (type png)
  <use img/eye_mrf.png>
-Package pdftex.def Info: img/eye_mrf.png used on input line 118.
+Package pdftex.def Info: img/eye_mrf.png used on input line 120.
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
 <img/eye_wmrf.png, id=29, 39.14626pt x 40.15pt>
 File: img/eye_wmrf.png Graphic file (type png)
  <use img/eye_wmrf.png>
-Package pdftex.def Info: img/eye_wmrf.png used on input line 119.
+Package pdftex.def Info: img/eye_wmrf.png used on input line 121.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
 <img/eye_ssd.png, id=30, 39.14626pt x 39.14626pt>
 File: img/eye_ssd.png Graphic file (type png)
  <use img/eye_ssd.png>
-Package pdftex.def Info: img/eye_ssd.png used on input line 120.
+Package pdftex.def Info: img/eye_ssd.png used on input line 122.
 (pdftex.def)             Requested size: 26.08508pt x 26.08568pt.
 
 <img/eye_fcnn.png, id=31, 39.14626pt x 40.15pt>
 File: img/eye_fcnn.png Graphic file (type png)
  <use img/eye_fcnn.png>
-Package pdftex.def Info: img/eye_fcnn.png used on input line 121.
+Package pdftex.def Info: img/eye_fcnn.png used on input line 123.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
 <img/eye_bfcn.png, id=32, 29.35968pt x 30.1125pt>
 File: img/eye_bfcn.png Graphic file (type png)
  <use img/eye_bfcn.png>
-Package pdftex.def Info: img/eye_bfcn.png used on input line 122.
+Package pdftex.def Info: img/eye_bfcn.png used on input line 124.
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
 <img/eye_deepart.jpg, id=33, 85.31876pt x 89.33376pt>
 File: img/eye_deepart.jpg Graphic file (type jpg)
 
 <use img/eye_deepart.jpg>
-Package pdftex.def Info: img/eye_deepart.jpg used on input line 123.
+Package pdftex.def Info: img/eye_deepart.jpg used on input line 125.
 (pdftex.def)             Requested size: 26.08508pt x 27.3115pt.
  <img/eye_ours.png, id=34, 38.1425pt x 40.15pt>
 File: img/eye_ours.png Graphic file (type png)
 
 <use img/eye_ours.png>
-Package pdftex.def Info: img/eye_ours.png used on input line 124.
+Package pdftex.def Info: img/eye_ours.png used on input line 126.
 (pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 129.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 131.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 131.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 133.
 
 
-LaTeX Warning: Reference `key' on page 1 undefined on input line 131.
+LaTeX Warning: Reference `key' on page 1 undefined on input line 133.
 
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 132.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 134.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
@@ -562,70 +582,116 @@ hairpin_deepart_patch.jpg> <./img/hairpin_ours_patch.png> <./img/eye_photo.png>
  <./img/eye_mrf.png> <./img/eye_wmrf.png> <./img/eye_ssd.png> <./img/eye_fcnn.p
 ng> <./img/eye_bfcn.png> <./img/eye_deepart.jpg> <./img/eye_ours.png>]
 
-LaTeX Warning: Reference `key' on page 2 undefined on input line 133.
+LaTeX Warning: Reference `key' on page 2 undefined on input line 135.
 
 
-LaTeX Warning: Reference `key' on page 2 undefined on input line 133.
+LaTeX Warning: Reference `key' on page 2 undefined on input line 135.
 
 
-LaTeX Warning: Reference `key' on page 2 undefined on input line 133.
+LaTeX Warning: Reference `key' on page 2 undefined on input line 135.
 
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 135.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 137.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 135.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 137.
 
-(./egpaper_for_review.bbl (./egpaper_for_review.brf)
+<img/overview.pdf, id=125, 1154.3125pt x 584.1825pt>
+File: img/overview.pdf Graphic file (type pdf)
+ <use img/overview.pdf>
+Package pdftex.def Info: img/overview.pdf used on input line 160.
+(pdftex.def)             Requested size: 422.33084pt x 213.73738pt.
+
+[2] <img/content_net.pdf, id=151, 1197.47375pt x 422.57875pt>
+File: img/content_net.pdf Graphic file (type pdf)
+
+<use img/content_net.pdf>
+Package pdftex.def Info: img/content_net.pdf used on input line 174.
+(pdftex.def)             Requested size: 322.95352pt x 113.96237pt.
+
+<img/inception.pdf, id=152, 304.13625pt x 250.9375pt>
+File: img/inception.pdf Graphic file (type pdf)
+ <use img/inception.pdf>
+Package pdftex.def Info: img/inception.pdf used on input line 177.
+(pdftex.def)             Requested size: 124.21405pt x 102.48682pt.
+
+[3 <./img/overview.pdf>]
+<img/pyramidcolumn.pdf, id=270, 639.38875pt x 557.08125pt>
+File: img/pyramidcolumn.pdf Graphic file (type pdf)
+
+<use img/pyramidcolumn.pdf>
+Package pdftex.def Info: img/pyramidcolumn.pdf used on input line 206.
+(pdftex.def)             Requested size: 201.56699pt x 175.61752pt.
+
+Underfull \vbox (badness 1033) has occurred while \output is active []
+
+ [4 <./img/content_net.pdf> <./img/inception.pdf> <./img/pyramidcolumn.pdf>]
+<img/border_example.pdf, id=509, 622.325pt x 189.70876pt>
+File: img/border_example.pdf Graphic file (type pdf)
+
+<use img/border_example.pdf>
+Package pdftex.def Info: img/border_example.pdf used on input line 214.
+(pdftex.def)             Requested size: 491.89041pt x 149.94931pt.
+ (./egpaper_for_review.bbl
+(./egpaper_for_review.brf)
 \tf@brf=\write3
 \openout3 = `egpaper_for_review.brf'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
- [2]
-Underfull \hbox (badness 2922) in paragraph at lines 59--59
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 13.
+ [5]
+Underfull \hbox (badness 2922) in paragraph at lines 64--64
 []\OT1/ptm/m/n/9 C. Szegedy, W. Liu, Y. Jia, P. Ser-manet, S. Reed,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 166.
- [3]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 166.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
+ [6 <./img/border_example.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
  (./egpaper_for_review.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 166.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 166.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `egpaper_for_review.brf' has not changed.
-(rerunfilecheck)             Checksum: D662DE96DEE871D09C9814B4C1B2F1F8;1503.
+(rerunfilecheck)             Checksum: FCE92EF9239C0980CC2517056C89E16A;2032.
 
 
 LaTeX Warning: There were undefined references.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 166.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
- 6786 strings out of 493089
- 99640 string characters out of 6134841
- 192487 words of memory out of 5000000
- 10100 multiletter control sequences out of 15000+600000
- 35085 words of font info for 77 fonts, out of 8000000 for 9000
+ 7005 strings out of 493089
+ 102883 string characters out of 6134841
+ 199463 words of memory out of 5000000
+ 10284 multiletter control sequences out of 15000+600000
+ 37177 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,9n,26p,2106b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,26p,2107b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
-exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/te
-xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texl
-ive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texliv
-e/2015/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-di
-st/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/font
-s/type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/ur
-w/times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
-mri8a.pfb>
-Output written on egpaper_for_review.pdf (3 pages, 546556 bytes).
+exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
+xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
+live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1
+/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/he
+lvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utm
+b8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></
+usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on egpaper_for_review.pdf (6 pages, 2252679 bytes).
 PDF statistics:
- 209 PDF objects out of 1000 (max. 8388607)
- 147 compressed objects within 2 object streams
- 29 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 682 PDF objects out of 1000 (max. 8388607)
+ 473 compressed objects within 5 object streams
+ 52 named destinations out of 1000 (max. 500000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 

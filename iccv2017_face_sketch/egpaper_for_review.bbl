@@ -11,6 +11,11 @@ H.~Chen, Y.-Q. Xu, H.-Y. Shum, S.-C. Zhu, and N.-N. Zheng.
 \newblock In {\em Computer Vision, 2001. ICCV 2001. Proceedings. Eighth IEEE
   International Conference on}, volume~2, pages 433--438. IEEE, 2001.
 
+\bibitem{Chen2016Patch}
+T.~Q. Chen and M.~Schmidt.
+\newblock Fast patch-based style transfer of arbitrary style.
+\newblock {\em CoRR}, abs/1612.04337, 2016.
+
 \bibitem{gatys2015texture}
 L.~Gatys, A.~S. Ecker, and M.~Bethge.
 \newblock Texture synthesis using convolutional neural networks.
