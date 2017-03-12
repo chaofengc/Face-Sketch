@@ -1,0 +1,118 @@
+\begin{thebibliography}{10}\itemsep=-1pt
+
+\bibitem{berger2013style}
+I.~Berger, A.~Shamir, M.~Mahler, E.~Carter, and J.~Hodgins.
+\newblock Style and abstraction in portrait sketching.
+\newblock {\em ACM Transactions on Graphics (TOG)}, 32(4):55, 2013.
+
+\bibitem{chen2001example}
+H.~Chen, Y.-Q. Xu, H.-Y. Shum, S.-C. Zhu, and N.-N. Zheng.
+\newblock Example-based facial sketch generation with non-parametric sampling.
+\newblock In {\em Computer Vision, 2001. ICCV 2001. Proceedings. Eighth IEEE
+  International Conference on}, volume~2, pages 433--438. IEEE, 2001.
+
+\bibitem{Chen2016Patch}
+T.~Q. Chen and M.~Schmidt.
+\newblock Fast patch-based style transfer of arbitrary style.
+\newblock {\em CoRR}, abs/1612.04337, 2016.
+
+\bibitem{gatys2015texture}
+L.~Gatys, A.~S. Ecker, and M.~Bethge.
+\newblock Texture synthesis using convolutional neural networks.
+\newblock In {\em Advances in Neural Information Processing Systems}, pages
+  262--270, 2015.
+
+\bibitem{gatys2015neural}
+L.~A. Gatys, A.~S. Ecker, and M.~Bethge.
+\newblock A neural algorithm of artistic style.
+\newblock {\em arXiv preprint arXiv:1508.06576}, 2015.
+
+\bibitem{Sergey2015batch}
+S.~Ioffe and C.~Szegedy.
+\newblock Batch normalization: Accelerating deep network training by reducing
+  internal covariate shift.
+\newblock {\em CoRR}, abs/1502.03167, 2015.
+
+\bibitem{feifei2016}
+J.~Justin, A.~Alexandre, and F.-F. Li.
+\newblock Perceptual losses for real-time style transfer and super-resolution.
+\newblock In {\em European Conference on Computer Vision}, pages 694--711,
+  2016.
+
+\bibitem{Li2017Demistify}
+Y.~Li, N.~Wang, J.~Liu, and X.~Hou.
+\newblock Demystifying neural style transfer.
+\newblock {\em CoRR}, abs/1701.01036, 2017.
+
+\bibitem{liu2005nonlinear}
+Q.~Liu, X.~Tang, H.~Jin, H.~Lu, and S.~Ma.
+\newblock A nonlinear approach for face sketch synthesis and recognition.
+\newblock In {\em IEEE Computer Society Conference on Computer Vision and
+  Pattern Recognition}, volume~1, pages 1005--1010. IEEE, 2005.
+
+\bibitem{martinez1998r}
+A.~Martinez.
+\newblock R. benavente. the {AR} face database.
+\newblock Technical report, CVC Tech. Report, 1998.
+
+\bibitem{simonyan2014very}
+K.~Simonyan and A.~Zisserman.
+\newblock Very deep convolutional networks for large-scale image recognition.
+\newblock {\em arXiv preprint arXiv:1409.1556}, 2014.
+
+\bibitem{song2014real}
+Y.~Song, L.~Bao, Q.~Yang, and M.-H. Yang.
+\newblock Real-time exemplar-based face sketch synthesis.
+\newblock In {\em ECCV}, pages 800--813, 2014.
+
+\bibitem{szegedy2015going}
+C.~Szegedy, W.~Liu, Y.~Jia, P.~Sermanet, S.~Reed, D.~Anguelov, D.~Erhan,
+  V.~Vanhoucke, and A.~Rabinovich.
+\newblock Going deeper with convolutions.
+\newblock In {\em Proceedings of the IEEE Conference on Computer Vision and
+  Pattern Recognition}, pages 1--9, 2015.
+
+\bibitem{tang2003face}
+X.~Tang and X.~Wang.
+\newblock Face sketch synthesis and recognition.
+\newblock In {\em IEEE International Conference on Computer Vision}, pages
+  687--694. IEEE, 2003.
+
+\bibitem{wang2009face}
+X.~Wang and X.~Tang.
+\newblock Face photo-sketch synthesis and recognition.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  31(11):1955--1967, 2009.
+
+\bibitem{xu2008hierarchical}
+Z.~Xu, H.~Chen, S.-C. Zhu, and J.~Luo.
+\newblock A hierarchical compositional model for face representation and
+  sketching.
+\newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
+  30(6):955--969, 2008.
+
+\bibitem{zhang2017content}
+D.~Zhang, L.~Lin, T.~Chen, X.~Wu, W.~Tan, and E.~Izquierdo.
+\newblock Content-adaptive sketch portrait generation by decompositional
+  representation learning.
+\newblock {\em IEEE Transactions on Image Processing}, 26(1):328--339, 2017.
+
+\bibitem{zhang2015end}
+L.~Zhang, L.~Lin, X.~Wu, S.~Ding, and L.~Zhang.
+\newblock End-to-end photo-sketch generation via fully convolutional
+  representation learning.
+\newblock In {\em Proceedings of the 5th ACM on International Conference on
+  Multimedia Retrieval}, pages 627--634. ACM, 2015.
+
+\bibitem{zhang2010lighting}
+W.~Zhang, X.~Wang, and X.~Tang.
+\newblock Lighting and pose robust face sketch synthesis.
+\newblock In {\em Computer Vision--ECCV 2010}, pages 420--433. Springer, 2010.
+
+\bibitem{zhou2012markov}
+H.~Zhou, Z.~Kuang, and K.-Y.~K. Wong.
+\newblock Markov weight fields for face sketch synthesis.
+\newblock In {\em IEEE Conference on Computer Vision and Pattern Recognition},
+  pages 1091--1097. IEEE, 2012.
+
+\end{thebibliography}

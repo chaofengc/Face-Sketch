@@ -114,6 +114,7 @@
 \@writefile{brf}{\backcite{wang2009face}{{3}{4.1}{figure.3}}}
 \citation{wang2009face}
 \citation{zhou2012markov}
+\citation{gatys2015texture}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Illustration of the content network for generating a content image. The numbers above the building block denote the number of CNN filters. (a) The architecture of content network. (b) The inception module in (a) contains three groups of filters with different sizes.}}{4}{figure.3}}
 \newlabel{fig:content_NN}{{3}{4}{Illustration of the content network for generating a content image. The numbers above the building block denote the number of CNN filters. (a) The architecture of content network. (b) The inception module in (a) contains three groups of filters with different sizes}{figure.3}{}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{4}{figure.3}}
@@ -124,20 +125,21 @@
 \@writefile{brf}{\backcite{wang2009face,zhou2012markov}{{4}{4.2}{section*.1}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of pyramid feature column. Feature maps of the final sketch $A^{l}$ are divided into a fixed $18\times 18$ grid. A pyramid column $U_{ij}$ consists of feature map patches at different layer having the same grid indexes $(i, j)$.}}{4}{figure.4}}
 \newlabel{fig:pyramidcolumn}{{4}{4}{Illustration of pyramid feature column. Feature maps of the final sketch $A^{l}$ are divided into a fixed $18\times 18$ grid. A pyramid column $U_{ij}$ consists of feature map patches at different layer having the same grid indexes $(i, j)$}{figure.4}{}}
-\citation{gatys2015texture}
+\@writefile{toc}{\contentsline {paragraph}{Estimate Pyramid Column}{4}{section*.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Loss Function}{4}{subsection.4.3}}
+\@writefile{brf}{\backcite{gatys2015texture}{{4}{4.2}{subsection.4.3}}}
+\bibstyle{ieee}
+\bibdata{egbib}
+\bibcite{berger2013style}{1}
 \@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Find a matching patch for boarder cells. (a) The center $C_{ij}$ of a boarder cell is denoted as the red dot in the photo. (b) The region associated with $U_{ij}$ is the intersection of the blue square with the sketch. The distances between $C_{ij}$ to the intersection boarders are denoted by green lines. (c) $\mathaccentV {tilde}07E{C}_{ij}$ denoted as a yellow dot is located by examining photo similarity. (d) The distances of $\mathaccentV {tilde}07E{C}_{ij}$ to boarders of $S_{ij}$ equal to the distances of $C_{ij}$ to boarders of intersection region in (b) such that the location of $\mathaccentV {tilde}07E{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$.}}{5}{figure.5}}
 \newlabel{fig:boarder_example}{{5}{5}{Find a matching patch for boarder cells. (a) The center $C_{ij}$ of a boarder cell is denoted as the red dot in the photo. (b) The region associated with $U_{ij}$ is the intersection of the blue square with the sketch. The distances between $C_{ij}$ to the intersection boarders are denoted by green lines. (c) $\tilde {C}_{ij}$ denoted as a yellow dot is located by examining photo similarity. (d) The distances of $\tilde {C}_{ij}$ to boarders of $S_{ij}$ equal to the distances of $C_{ij}$ to boarders of intersection region in (b) such that the location of $\tilde {C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$}{figure.5}{}}
-\@writefile{toc}{\contentsline {paragraph}{Estimate Pyramid Column}{5}{section*.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Loss Function}{5}{subsection.4.3}}
-\@writefile{brf}{\backcite{gatys2015texture}{{5}{4.2}{subsection.4.3}}}
 \newlabel{eq:Gram_loss}{{2}{5}{Estimate Pyramid Column}{equation.4.2}{}}
 \newlabel{eq:Style_loss}{{3}{5}{Estimate Pyramid Column}{equation.4.3}{}}
 \newlabel{eq:component_loss}{{4}{5}{Estimate Pyramid Column}{equation.4.4}{}}
 \newlabel{eq:Total_loss}{{5}{5}{Estimate Pyramid Column}{equation.4.5}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Implementation Details}{5}{subsection.4.4}}
-\bibstyle{ieee}
-\bibdata{egbib}
-\bibcite{berger2013style}{1}
+\newlabel{eq:VGG_weights}{{6}{5}{\hskip -1em.~Implementation Details}{equation.4.6}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Final copy}{5}{section.5}}
 \bibcite{chen2001example}{2}
 \bibcite{Chen2016Patch}{3}
 \bibcite{gatys2015texture}{4}
@@ -156,5 +158,3 @@
 \bibcite{zhang2015end}{17}
 \bibcite{zhang2010lighting}{18}
 \bibcite{zhou2012markov}{19}
-\newlabel{eq:VGG_weights}{{6}{6}{\hskip -1em.~Implementation Details}{equation.4.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Final copy}{6}{section.5}}

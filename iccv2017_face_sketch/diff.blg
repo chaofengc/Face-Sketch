@@ -1,6 +1,6 @@
 This is BibTeX, Version 0.99d (TeX Live 2015)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
-The top-level auxiliary file: egpaper_for_review.aux
+The top-level auxiliary file: diff.aux
 The style file: ieee.bst
 Database file #1: egbib.bib
 Repeated entry---line 93 of file egbib.bib
@@ -15,45 +15,45 @@ Repeated entry---line 141 of file egbib.bib
  : @inproceedings{zhang2015end
  :                            ,
 I'm skipping whatever remains of this entry
-You've used 19 entries,
+You've used 20 entries,
             2120 wiz_defined-function locations,
-            612 strings with 7297 characters,
-and the built_in function-call counts, 8204 in all, are:
-= -- 821
-> -- 417
+            617 strings with 7349 characters,
+and the built_in function-call counts, 8400 in all, are:
+= -- 842
+> -- 424
 < -- 12
-+ -- 166
-- -- 144
-* -- 568
-:= -- 1290
-add.period$ -- 63
-call.type$ -- 19
-change.case$ -- 129
++ -- 169
+- -- 146
+* -- 575
+:= -- 1330
+add.period$ -- 66
+call.type$ -- 20
+change.case$ -- 134
 chr.to.int$ -- 0
-cite$ -- 19
-duplicate$ -- 325
-empty$ -- 601
-format.name$ -- 144
-if$ -- 1772
+cite$ -- 20
+duplicate$ -- 333
+empty$ -- 616
+format.name$ -- 146
+if$ -- 1811
 int.to.chr$ -- 0
-int.to.str$ -- 19
+int.to.str$ -- 20
 missing$ -- 19
-newline$ -- 98
-num.names$ -- 38
-pop$ -- 143
+newline$ -- 103
+num.names$ -- 40
+pop$ -- 146
 preamble$ -- 1
-purify$ -- 110
+purify$ -- 113
 quote$ -- 0
-skip$ -- 260
+skip$ -- 265
 stack$ -- 0
-substring$ -- 505
+substring$ -- 510
 swap$ -- 120
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 76
+type$ -- 80
 warning$ -- 0
-while$ -- 75
-width$ -- 21
-write$ -- 217
+while$ -- 77
+width$ -- 22
+write$ -- 228
 (There were 3 error messages)

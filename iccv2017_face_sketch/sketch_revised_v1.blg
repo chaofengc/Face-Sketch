@@ -1,0 +1,59 @@
+This is BibTeX, Version 0.99d (TeX Live 2015)
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: sketch_revised_v1.aux
+The style file: ieee.bst
+Database file #1: egbib.bib
+Repeated entry---line 93 of file egbib.bib
+ : @inproceedings{tang2003face
+ :                            ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 125 of file egbib.bib
+ : @article{simonyan2014very
+ :                          ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 141 of file egbib.bib
+ : @inproceedings{zhang2015end
+ :                            ,
+I'm skipping whatever remains of this entry
+You've used 19 entries,
+            2120 wiz_defined-function locations,
+            612 strings with 7295 characters,
+and the built_in function-call counts, 8204 in all, are:
+= -- 821
+> -- 417
+< -- 12
++ -- 166
+- -- 144
+* -- 568
+:= -- 1290
+add.period$ -- 63
+call.type$ -- 19
+change.case$ -- 129
+chr.to.int$ -- 0
+cite$ -- 19
+duplicate$ -- 325
+empty$ -- 601
+format.name$ -- 144
+if$ -- 1772
+int.to.chr$ -- 0
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 38
+pop$ -- 143
+preamble$ -- 1
+purify$ -- 110
+quote$ -- 0
+skip$ -- 260
+stack$ -- 0
+substring$ -- 505
+swap$ -- 120
+text.length$ -- 12
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 76
+warning$ -- 0
+while$ -- 75
+width$ -- 21
+write$ -- 217
+(There were 3 error messages)

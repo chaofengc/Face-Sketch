@@ -18,6 +18,7 @@
 
 \def\comm[#1]{{\small \textcolor{red}{\emph{#1}}}}
 \def\red[#1]{\textcolor{red}{\textbf{#1}}}
+\def\redn[#1]{\textcolor{red}{#1}}
 \def\blue[#1]{\textcolor{blue}{#1}}
 \def\green[#1]{\textcolor{green}{#1}}
 \def\revise[#1]{{\small \textcolor{blue}{\emph{}}}}
@@ -199,7 +200,7 @@ Our content network architecture is shown in Fig.~\ref{fig:content_NN}. In addit
 \subsection{Pyramid Feature Column}
 %------------------------------------------------------------------------
 
-Fig. \ref{fig:pyramidcolumn} shows an example of the pyramid feature column. Denote the feature maps (of the $l$th layer) used to estimate the style of the final sketch by $A^{l}$. In our feature patch based method, we divide $A^{l}$ into a fixed size of grid $18\times18$. Due to the different feature map size, the sizes of the feature patches at layer $conv1\_1$, $conv2\_1$, $conv3\_1$, $conv4\_1$ and $conv5\_1$ are $16\times16$, $8\times8$, $4\times4$, $2\times2$ and $1\times1$. Grouping feature map patches having the same grid indexes $(i, j)$ at different layer together as a pyramid column, we get a pyramid feature column $U_{ij}$. The photos and sketches are resized to $288\times288$ so that both the number of rows and columns are dividable by $16$. $A^{l}$ can then be represented as a hyper-grid $U$ with the cells being $U_{ij}$. Similarly, we divide the test photo and the final sketch, respectively, into a grid with the same dimension as $U$. To estimate $U_{ij}$, a sketch patch in the training set is fed to the VGG-Network and a pyramid column is composed of the resulting feature maps. This process consists of two steps: (1) find a matching sketch patch $S_{ij}$ from the training set for $U_{ij}$ and (2) feed $S_{ij}$ to VGG-Network and extract $U_{ij}$ from the resulting feature maps.
+Fig. \ref{fig:pyramidcolumn} shows an example of the pyramid feature column. Denote the feature maps (of the $l$th layer) used to estimate the style of the final sketch by $A^{l}$. In our feature patch based method, we divide $A^{l}$ into a fixed size of grid. Due to the different feature map size, the sizes of the feature patches at layer $conv1\_1$, $conv2\_1$, $conv3\_1$, $conv4\_1$ and $conv5\_1$ are $16\times16$, $8\times8$, $4\times4$, $2\times2$ and $1\times1$. The photos and sketches are resized to $288\times288$， thus the size of grid is $18\times18$. Grouping feature map patches having the same grid indexes $(i, j)$ at different layers together, we get a pyramid feature column $U_{ij}$. To estimate $U_{ij}$, a sketch patch in the training set is fed to the VGG-Network and a pyramid column is composed of the resulting feature maps. This process consists of two steps: (1) find a matching sketch patch $S_{ij}$ from the training set for $U_{ij}$ and (2) feed $S_{ij}$ to VGG-Network and extract $U_{ij}$ from the resulting feature maps.
 
 \begin{figure}[htbp]
 \centering
@@ -216,31 +217,35 @@ Fig. \ref{fig:pyramidcolumn} shows an example of the pyramid feature column. Den
 \label{fig:boarder_example}
 \end{figure*}
 
-\paragraph{Find Matching Sketch Patch} Inspired by previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity in appearance of photo patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Denote a patch centered at $C_{ij}$ in the test photo as $\Psi_{ij}$. If a patch centered at $\tilde{C}_{ij}$ in the $k$th photo in the training set has the smallest Euclidean distance from $\Psi_{ij}$ in term of color channels, a sketch patch, $S_{ij}$, centered at $\tilde{C}_{ij}$ is extracted from the sketch paired with the $k$th photo in the training set. The size and position of $S_{ij}$ are determined by the region associated with $U_{ij}$ which is calculated according to the architecture of the VGG-Network and location of $C_{ij}$. For non-boarder cells, $S_{ij}$ is a sketch patch of size $144\times144$ centered at $\tilde{C}_{ij}$. For cells near boarders, the region associated with $U_{ij}$ is the intersection of a sketch patch of size $144\times144$ centered at $C_{ij}$ with the whole sketch. Therefore, $S_{ij}$ is a patch from the $k$th sketch containing $\tilde{C}_{ij}$ such that the location of $\tilde{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$ (see Fig.~\ref{fig:boarder_example}).\\
+\paragraph{Find Matching Sketch Patch} 
+\redn[Unlike previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity of content patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Compared with photo patches, the content patches are more easier to match. Given a test photo patch $\mathcal{I}_{ij}$, ]
+
+% Inspired by previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity in appearance of photo patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Denote a patch centered at $C_{ij}$ in the test photo as $\Psi_{ij}$. If a patch centered at $\tilde{C}_{ij}$ in the $k$th photo in the training set has the smallest Euclidean distance from $\Psi_{ij}$ in term of color channels, a sketch patch, $S_{ij}$, centered at $\tilde{C}_{ij}$ is extracted from the sketch paired with the $k$th photo in the training set. The size and position of $S_{ij}$ are determined by the region associated with $U_{ij}$ which is calculated according to the architecture of the VGG-Network and location of $C_{ij}$. For non-boarder cells, $S_{ij}$ is a sketch patch of size $144\times144$ centered at $\tilde{C}_{ij}$. For cells near boarders, the region associated with $U_{ij}$ is the intersection of a sketch patch of size $144\times144$ centered at $C_{ij}$ with the whole sketch. Therefore, $S_{ij}$ is a patch from the $k$th sketch containing $\tilde{C}_{ij}$ such that the location of $\tilde{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$ (see Fig.~\ref{fig:boarder_example}).\\
+
 \paragraph{Estimate Pyramid Column} We compose an estimate for $U_{ij}$ from the resulting feature maps obtained by feeding $S_{ij}$ to the VGG-Network. Specifically, after feeding $S_{ij}$ to the VGG-Network, we form a hyper-grid $\tilde{U}$ on the resulting feature maps. The pyramid column corresponding to $\tilde{C}_{ij}$ is selected as an estimation to $U_{ij}$. This pyramid column is the cell that contains $\tilde{C}_{ij}$ when projecting $S_{ij}$ onto $\tilde{U}$.\par
-After $A^{l}$ are estimated, we calculate the target gram matrices by: \{$G_{t}^l =A^{l} \cdot {\left( {{A^{l}}} \right)^T}$\} where $l\in L_s$.
+After $A^{l}$ are estimated, we calculate the target gram matrices by: \{$G_{t}^l =A^{l} \cdot {autoref( {{A^{l}}} )^T}$\} where $l\in L_s$.
 
 {
 \subsection{Loss Function}
 }
 To generate a sketch that combines the content image with the estimated style, we adopt the methodology described in~\cite{gatys2015texture}. Specifically, we minimize a loss function consisting of a style loss, a content loss and a component loss. The style loss is defined as the difference between the gram matrix of the final sketch and the target gram matrix i.e.,
 \begin{equation}
-\mathcal{L}_{s} \left( \mathcal{X} \right) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2N_l^2}}\left\| {{G^l}\left( \mathcal{X} \right) - G_t^l} \right\|_2^2} 
+\mathcal{L}_{s} autoref( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2N_l^2}}autoref\| {{G^l}autoref( \mathcal{X} ) - G_t^l} \|_2^2} 
 \label{eq:Gram_loss}
 \end{equation}
 where $N_l$ denotes the number pixels in the feature map at layer $l$. The content loss is defined based on the difference between the feature map of the sketch and that of the content image at layer conv1\_1:
 \begin{equation}
-\mathcal{L}_{c}\left( \mathcal{X} \right) = \left\| {{F^{\rm{conv1\_1}}}\left( \mathcal{X} \right) - {F^{\rm{conv1\_1}}}\left( \mathcal{C} \right)} \right\|_2^2.
+\mathcal{L}_{c}autoref( \mathcal{X} ) = autoref\| {{F^{\rm{conv1\_1}}}autoref( \mathcal{X} ) - {F^{\rm{conv1\_1}}}autoref( \mathcal{C} )} \|_2^2.
 \label{eq:Style_loss}
 \end{equation}
-Human is able to distinguish different people from key components such as eyes, nose and mouth, which indicates that these features are the most discriminative parts of a face. Specific styles or textures are usually used to emphasize these components, for example, sharp edges with shadings at the two sides of the nose are used to convey 3D information. To better transfer styles of these components, we employ a component loss to encourage the key component style of the final sketch being the same as the target key component style. Since two eyes are placed at fixed positions, the key components lie roughly within a rectangular region taking the positions of two eyes as vertices. Key component style is given by gram matrices calculated within feature map regions $\mathcal R$ corresponding to the key components. These regions are specified by hyper-grid cells $U_{ij}$ whose $C_{ij}$ are inside the rectangular region. More specifically, a target style for the key component is calculated: \{${\hat G}_{t}^l ={A}_{c}^l \cdot {\left( {{{A}_{c}^l}} \right)^T}$\} where ${A}_{c}^l$ is the composed feature map patch in $A^{l}$ corresponding to the key components, $l\in L_s$. The style of the key components in final sketch ${\hat G}^l\left( \mathcal{X} \right) $ is calculated in exactly the same manner. The component loss is hence defined as:
+Human is able to distinguish different people from key components such as eyes, nose and mouth, which indicates that these features are the most discriminative parts of a face. Specific styles or textures are usually used to emphasize these components, for example, sharp edges with shadings at the two sides of the nose are used to convey 3D information. To better transfer styles of these components, we employ a component loss to encourage the key component style of the final sketch being the same as the target key component style. Since two eyes are placed at fixed positions, the key components lie roughly within a rectangular region taking the positions of two eyes as vertices. Key component style is given by gram matrices calculated within feature map regions $\mathcal R$ corresponding to the key components. These regions are specified by hyper-grid cells $U_{ij}$ whose $C_{ij}$ are inside the rectangular region. More specifically, a target style for the key component is calculated: \{${\hat G}_{t}^l ={A}_{c}^l \cdot {autoref( {{{A}_{c}^l}} )^T}$\} where ${A}_{c}^l$ is the composed feature map patch in $A^{l}$ corresponding to the key components, $l\in L_s$. The style of the key components in final sketch ${\hat G}^lautoref( \mathcal{X} ) $ is calculated in exactly the same manner. The component loss is hence defined as:
 \begin{equation}
-\mathcal{L}_{k} \left( \mathcal{X} \right) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2{\hat N}_l^2}}\left\| {{{\hat G}^l}\left( \mathcal{X} \right) - {\hat G}_t^l} \right\|_2^2} 
+\mathcal{L}_{k} autoref( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2{\hat N}_l^2}}autoref\| {{{\hat G}^l}autoref( \mathcal{X} ) - {\hat G}_t^l} \|_2^2} 
 \label{eq:component_loss}
 \end{equation}
 where ${\hat N}_l$ denotes the number of pixels in the feature map region $\mathcal R$ at layer $l$. The total loss we minimize is 
 \begin{equation}
-\mathcal{L}_{t}\left( \mathcal{X} \right) = \alpha \mathcal{L}_{c} + \beta_1 \mathcal{L}_{s} + \beta_2 \mathcal{L}_{k}
+\mathcal{L}_{t}autoref( \mathcal{X} ) = \alpha \mathcal{L}_{c} + \beta_1 \mathcal{L}_{s} + \beta_2 \mathcal{L}_{k}
 \label{eq:Total_loss}
 \end{equation}
 where $\alpha$, $\beta_1$ and $\beta_2$ are the weighting factors for content, style and component losses respectively. The minimization is carried out using L-BFGS. Instead of using random noises, we use the content image as a starting point, which will make the optimization process converge much faster. 
