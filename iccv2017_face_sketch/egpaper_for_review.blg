@@ -15,45 +15,45 @@ Repeated entry---line 141 of file egbib.bib
  : @inproceedings{zhang2015end
  :                            ,
 I'm skipping whatever remains of this entry
-You've used 18 entries,
+You've used 19 entries,
             2120 wiz_defined-function locations,
-            607 strings with 7162 characters,
-and the built_in function-call counts, 7898 in all, are:
-= -- 793
-> -- 394
+            612 strings with 7297 characters,
+and the built_in function-call counts, 8204 in all, are:
+= -- 821
+> -- 417
 < -- 12
-+ -- 157
-- -- 136
-* -- 546
-:= -- 1232
-add.period$ -- 60
-call.type$ -- 18
-change.case$ -- 122
++ -- 166
+- -- 144
+* -- 568
+:= -- 1290
+add.period$ -- 63
+call.type$ -- 19
+change.case$ -- 129
 chr.to.int$ -- 0
-cite$ -- 18
-duplicate$ -- 315
-empty$ -- 584
-format.name$ -- 136
-if$ -- 1713
+cite$ -- 19
+duplicate$ -- 325
+empty$ -- 601
+format.name$ -- 144
+if$ -- 1772
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 18
-newline$ -- 93
-num.names$ -- 36
-pop$ -- 138
+int.to.str$ -- 19
+missing$ -- 19
+newline$ -- 98
+num.names$ -- 38
+pop$ -- 143
 preamble$ -- 1
-purify$ -- 104
+purify$ -- 110
 quote$ -- 0
-skip$ -- 252
+skip$ -- 260
 stack$ -- 0
-substring$ -- 500
-swap$ -- 119
+substring$ -- 505
+swap$ -- 120
 text.length$ -- 12
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 76
 warning$ -- 0
-while$ -- 73
-width$ -- 20
-write$ -- 206
+while$ -- 75
+width$ -- 21
+write$ -- 217
 (There were 3 error messages)

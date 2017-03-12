@@ -39,6 +39,11 @@ J.~Justin, A.~Alexandre, and F.-F. Li.
 \newblock In {\em European Conference on Computer Vision}, pages 694--711,
   2016.
 
+\bibitem{Li2017Demistify}
+Y.~Li, N.~Wang, J.~Liu, and X.~Hou.
+\newblock Demystifying neural style transfer.
+\newblock {\em CoRR}, abs/1701.01036, 2017.
+
 \bibitem{liu2005nonlinear}
 Q.~Liu, X.~Tang, H.~Jin, H.~Lu, and S.~Ma.
 \newblock A nonlinear approach for face sketch synthesis and recognition.
