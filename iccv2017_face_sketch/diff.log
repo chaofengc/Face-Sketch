@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  12 MAR 2017 13:44
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  12 MAR 2017 13:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -184,17 +184,6 @@ Package: subfigure 2002/03/15 v2.1.5 subfigure package
 \subfig@top=\skip52
 \subfig@bottom=\skip53
 )
-(/usr/local/texlive/2015/texmf-dist/tex/latex/multirow/multirow.sty
-\bigstrutjot=\dimen121
-)
-(/usr/local/texlive/2015/texmf-dist/tex/latex/tools/array.sty
-Package: array 2014/10/28 v2.4c Tabular extension package (FMi)
-\col@sep=\dimen122
-\extrarowheight=\dimen123
-\NC@list=\toks22
-\extratabsurround=\skip54
-\backup@length=\skip55
-)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hyperref.sty
 Package: hyperref 2012/11/06 v6.83m Hypertext links for LaTeX
 
@@ -252,7 +241,7 @@ Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/kvoptions.sty
 Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
 )
-\@linkdim=\dimen124
+\@linkdim=\dimen121
 \Hy@linkcounter=\count110
 \Hy@pagecounter=\count111
 
@@ -293,10 +282,10 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
-\XeTeXLinkMargin=\dimen125
+\XeTeXLinkMargin=\dimen122
 \Fld@menulength=\count114
-\Field@Width=\dimen126
-\Fld@charsize=\dimen127
+\Field@Width=\dimen123
+\Fld@charsize=\dimen124
 Package hyperref Info: Hyper figures OFF on input line 6295.
 Package hyperref Info: Link nesting OFF on input line 6300.
 Package hyperref Info: Hyper index ON on input line 6303.
@@ -317,19 +306,19 @@ Package hyperref Message: Driver (autodetected): hpdftex.
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 \Fld@listcount=\count118
 \c@bookmark@seq@number=\count119
-\Hy@SectionHShift=\skip56
+\Hy@SectionHShift=\skip54
 )
 (/usr/local/texlive/2015/texmf-dist/tex/generic/ulem/ulem.sty
 \UL@box=\box32
 \UL@hyphenbox=\box33
-\UL@skip=\skip57
-\UL@hook=\toks23
-\UL@height=\dimen128
+\UL@skip=\skip55
+\UL@hook=\toks22
+\UL@height=\dimen125
 \UL@pe=\count120
-\UL@pixel=\dimen129
+\UL@pixel=\dimen126
 \ULC@box=\box34
 Package: ulem 2012/05/18
-\ULdepth=\dimen130
+\ULdepth=\dimen127
 )
 (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2014/10/28 v1.1a Standard LaTeX Color (DPC)
@@ -371,16 +360,16 @@ ABD: EveryShipout initializing macros
 (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count121
-\scratchdimen=\dimen131
+\scratchdimen=\dimen128
 \scratchbox=\box35
 \nofMPsegments=\count122
 \nofMParguments=\count123
-\everyMPshowfont=\toks24
+\everyMPshowfont=\toks23
 \MPscratchCnt=\count124
-\MPscratchDim=\dimen132
+\MPscratchDim=\dimen129
 \MPnumerator=\count125
 \makeMPintoPDFobject=\count126
-\everyMPtoPDFconversion=\toks25
+\everyMPtoPDFconversion=\toks24
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
 
@@ -424,468 +413,507 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 93.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 95.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 96.
+LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 98.
 
-Underfull \hbox (badness 1194) in paragraph at lines 97--102
-|   []   |   []   |   []   |   []   |   []   |   []   []\OT1/ptm/m/it/10 In thi
-s pa-
+<img/example_photo.png, id=4, 200.75pt x 250.9375pt>
+File: img/example_photo.png Graphic file (type png)
+
+<use img/example_photo.png>
+Package pdftex.def Info: img/example_photo.png used on input line 121.
+(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+
+<img/example_mrf.png, id=6, 150.5625pt x 188.20313pt>
+File: img/example_mrf.png Graphic file (type png)
+
+<use img/example_mrf.png>
+Package pdftex.def Info: img/example_mrf.png used on input line 126.
+(pdftex.def)             Requested size: 56.91393pt x 71.14172pt.
+ <img/example_wmrf.png, id=8, 200.75pt x 250.9375pt>
+File: img/example_wmrf.png Graphic file (type png)
+
+<use img/example_wmrf.png>
+Package pdftex.def Info: img/example_wmrf.png used on input line 133.
+(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+ <img/example_ssd.png, id=10, 200.75pt x 250.9375pt>
+File: img/example_ssd.png Graphic file (type png)
+
+<use img/example_ssd.png>
+Package pdftex.def Info: img/example_ssd.png used on input line 140.
+(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+ <img/example_fcnn.png, id=12, 200.75pt x 256.96pt>
+File: img/example_fcnn.png Graphic file (type png)
+
+<use img/example_fcnn.png>
+Package pdftex.def Info: img/example_fcnn.png used on input line 147.
+(pdftex.def)             Requested size: 56.91393pt x 72.85011pt.
+
+<img/example_bfcn.png, id=14, 143.03438pt x 175.40532pt>
+File: img/example_bfcn.png Graphic file (type png)
+
+<use img/example_bfcn.png>
+Package pdftex.def Info: img/example_bfcn.png used on input line 154.
+(pdftex.def)             Requested size: 54.54025pt x 66.8822pt.
+
+<img/example_deepart.jpg, id=16, 448.67625pt x 561.09625pt>
+File: img/example_deepart.jpg Graphic file (type jpg)
+
+<use img/example_deepart.jpg>
+Package pdftex.def Info: img/example_deepart.jpg used on input line 161.
+(pdftex.def)             Requested size: 56.91393pt x 71.1728pt.
+
+<img/example_ours.png, id=18, 200.75pt x 250.9375pt>
+File: img/example_ours.png Graphic file (type png)
+
+<use img/example_ours.png>
+Package pdftex.def Info: img/example_ours.png used on input line 168.
+(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+
+<img/hairpin_photo_patch.png, id=19, 37.13875pt x 38.1425pt>
+File: img/hairpin_photo_patch.png Graphic file (type png)
+
+<use img/hairpin_photo_patch.png>
+Package pdftex.def Info: img/hairpin_photo_patch.png used on input line 173.
+(pdftex.def)             Requested size: 26.08508pt x 26.79092pt.
+
+<img/hairpin_mrf_patch.png, id=20, 29.35968pt x 30.1125pt>
+File: img/hairpin_mrf_patch.png Graphic file (type png)
+
+<use img/hairpin_mrf_patch.png>
+Package pdftex.def Info: img/hairpin_mrf_patch.png used on input line 174.
+(pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
+
+<img/hairpin_wmrf_patch.png, id=21, 38.1425pt x 39.14626pt>
+File: img/hairpin_wmrf_patch.png Graphic file (type png)
+
+<use img/hairpin_wmrf_patch.png>
+Package pdftex.def Info: img/hairpin_wmrf_patch.png used on input line 175.
+(pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
+
+<img/hairpin_ssd_patch.png, id=22, 39.14626pt x 40.15pt>
+File: img/hairpin_ssd_patch.png Graphic file (type png)
+
+<use img/hairpin_ssd_patch.png>
+Package pdftex.def Info: img/hairpin_ssd_patch.png used on input line 176.
+(pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
+
+<img/hairpin_fcnn_patch.png, id=23, 39.14626pt x 40.15pt>
+File: img/hairpin_fcnn_patch.png Graphic file (type png)
+
+<use img/hairpin_fcnn_patch.png>
+Package pdftex.def Info: img/hairpin_fcnn_patch.png used on input line 177.
+(pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
+
+<img/hairpin_bfcn_patch.png, id=24, 28.60687pt x 30.1125pt>
+File: img/hairpin_bfcn_patch.png Graphic file (type png)
+
+<use img/hairpin_bfcn_patch.png>
+Package pdftex.def Info: img/hairpin_bfcn_patch.png used on input line 178.
+(pdftex.def)             Requested size: 26.08508pt x 27.45891pt.
+
+<img/hairpin_deepart_patch.jpg, id=25, 82.3075pt x 90.3375pt>
+File: img/hairpin_deepart_patch.jpg Graphic file (type jpg)
+
+<use img/hairpin_deepart_patch.jpg>
+Package pdftex.def Info: img/hairpin_deepart_patch.jpg used on input line 179.
+(pdftex.def)             Requested size: 26.08508pt x 28.63013pt.
+
+<img/hairpin_ours_patch.png, id=26, 38.1425pt x 40.15pt>
+File: img/hairpin_ours_patch.png Graphic file (type png)
+
+<use img/hairpin_ours_patch.png>
+Package pdftex.def Info: img/hairpin_ours_patch.png used on input line 180.
+(pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
+
+<img/eye_photo.png, id=27, 38.1425pt x 39.14626pt>
+File: img/eye_photo.png Graphic file (type png)
+ <use img/eye_photo.png>
+Package pdftex.def Info: img/eye_photo.png used on input line 184.
+(pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
+
+<img/eye_mrf.png, id=28, 29.35968pt x 30.1125pt>
+File: img/eye_mrf.png Graphic file (type png)
+ <use img/eye_mrf.png>
+Package pdftex.def Info: img/eye_mrf.png used on input line 185.
+(pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
+
+<img/eye_wmrf.png, id=29, 39.14626pt x 40.15pt>
+File: img/eye_wmrf.png Graphic file (type png)
+ <use img/eye_wmrf.png>
+Package pdftex.def Info: img/eye_wmrf.png used on input line 186.
+(pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
+
+<img/eye_ssd.png, id=30, 39.14626pt x 39.14626pt>
+File: img/eye_ssd.png Graphic file (type png)
+ <use img/eye_ssd.png>
+Package pdftex.def Info: img/eye_ssd.png used on input line 187.
+(pdftex.def)             Requested size: 26.08508pt x 26.08568pt.
+
+<img/eye_fcnn.png, id=31, 39.14626pt x 40.15pt>
+File: img/eye_fcnn.png Graphic file (type png)
+ <use img/eye_fcnn.png>
+Package pdftex.def Info: img/eye_fcnn.png used on input line 188.
+(pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
+
+<img/eye_bfcn.png, id=32, 29.35968pt x 30.1125pt>
+File: img/eye_bfcn.png Graphic file (type png)
+ <use img/eye_bfcn.png>
+Package pdftex.def Info: img/eye_bfcn.png used on input line 189.
+(pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
+
+<img/eye_deepart.jpg, id=33, 85.31876pt x 89.33376pt>
+File: img/eye_deepart.jpg Graphic file (type jpg)
+
+<use img/eye_deepart.jpg>
+Package pdftex.def Info: img/eye_deepart.jpg used on input line 190.
+(pdftex.def)             Requested size: 26.08508pt x 27.3115pt.
+ <img/eye_ours.png, id=34, 38.1425pt x 40.15pt>
+File: img/eye_ours.png Graphic file (type png)
+
+<use img/eye_ours.png>
+Package pdftex.def Info: img/eye_ours.png used on input line 191.
+(pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 196.
+
+
+(/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
+File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
+)
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 240.
+
+Underfull \hbox (badness 1097) in paragraph at lines 198--242
+\OT1/ptm/m/n/10 sis-tency be-tween neigh-bor-ing patches. []|   []   |   []   |
+   []
  []
 
-
-Package hyperref Warning: Ignoring empty anchor on input line 211.
-
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 223.
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-23.
-
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-24.
-
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-31.
-
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-33.
-
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-34.
-
-
-LaTeX Warning: Reference `fig:example_comp' on page 1 undefined on input line 2
-34.
-
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 236.
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 242.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
 File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
+ <./img/example_photo.png> <./img/example_mrf.png> <./img/example_wmrf.png> <./
+img/example_ssd.png> <./img/example_fcnn.png> <./img/example_bfcn.png> <./img/e
+xample_deepart.jpg> <./img/example_ours.png> <./img/hairpin_photo_patch.png> <.
+/img/hairpin_mrf_patch.png> <./img/hairpin_wmrf_patch.png> <./img/hairpin_ssd_p
+atch.png> <./img/hairpin_fcnn_patch.png> <./img/hairpin_bfcn_patch.png> <./img/
+hairpin_deepart_patch.jpg> <./img/hairpin_ours_patch.png> <./img/eye_photo.png>
+ <./img/eye_mrf.png> <./img/eye_wmrf.png> <./img/eye_ssd.png> <./img/eye_fcnn.p
+ng> <./img/eye_bfcn.png> <./img/eye_deepart.jpg> <./img/eye_ours.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-LaTeX Warning: Reference `fig:example_comp' on page 2 undefined on input line 2
-38.
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 255.
 
-
-Underfull \vbox (badness 5050) has occurred while \output is active []
-
-
-Underfull \hbox (badness 1028) in paragraph at lines 314--316
-|   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-Underfull \hbox (badness 2512) in paragraph at lines 316--316
-[] \elvbf . []|   []   |   []   |   []   |   []   |   []
- []
-
-[2pdfTeX warning (ext4): destination with the same identifier (name{subsection.
-2.2}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.330 
-      ]
-
-LaTeX Warning: Reference `fig:overview' on page 3 undefined on input line 386.
-
-
-Underfull \hbox (badness 1019) in paragraph at lines 409--414
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-LaTeX Warning: Reference `fig:content_NN' on page 3 undefined on input line 416
-.
-
-[3pdfTeX warning (ext4): destination with the same identifier (name{section.3})
- has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
-                                                  
-l.418 \section{\DIFadd{Content Image Generation}}
-                                                 ]
-
-LaTeX Warning: Reference `fig:content_NN' on page 4 undefined on input line 420
-.
-
-
-LaTeX Warning: Reference `fig:content_NN' on page 4 undefined on input line 420
-.
-
-
-LaTeX Warning: Reference `fig:pyramidcolumn' on page 4 undefined on input line 
-449.
-
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 452.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 452.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 255.
+ [2]
+Underfull \hbox (badness 2512) in paragraph at lines 277--277
+[] \elvbf . []|   []   |   []   |   []   |   []   |   []
+ []
 
-Underfull \hbox (badness 1565) in paragraph at lines 449--452
+
+Underfull \hbox (badness 1028) in paragraph at lines 293--302
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+<img/overview.pdf, id=158, 1154.3125pt x 584.1825pt>
+File: img/overview.pdf Graphic file (type pdf)
+ <use img/overview.pdf>
+Package pdftex.def Info: img/overview.pdf used on input line 309.
+(pdftex.def)             Requested size: 422.33084pt x 213.73738pt.
+
+[3pdfTeX warning (ext4): destination with the same identifier (name{subsection.
+2.2}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.348 \section{\DIFdel{Content Image Generation}}
+                                                 ]
+<img/content_net.pdf, id=183, 1197.47375pt x 422.57875pt>
+File: img/content_net.pdf Graphic file (type pdf)
+
+<use img/content_net.pdf>
+Package pdftex.def Info: img/content_net.pdf used on input line 364.
+(pdftex.def)             Requested size: 322.95352pt x 113.96237pt.
+
+<img/inception.pdf, id=184, 304.13625pt x 250.9375pt>
+File: img/inception.pdf Graphic file (type pdf)
+ <use img/inception.pdf>
+Package pdftex.def Info: img/inception.pdf used on input line 367.
+(pdftex.def)             Requested size: 124.21405pt x 102.48682pt.
+
+[4pdfTeX warning (ext4): destination with the same identifier (name{section.5})
+ has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.404 
+      pdfTeX warning (ext4): destination with the same identifier (name{subsect
+ion.4.1}) has been already used, duplicate ignored
+
+\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+                                                  
+l.404 
+       <./img/overview.pdf>]
+Underfull \hbox (badness 3009) in paragraph at lines 408--408
+[]|   []   |   []   |   []   |   []   |   []   |   []
+ []
+
+
+Underfull \hbox (badness 1565) in paragraph at lines 408--408
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 1527) in paragraph at lines 449--452
+Underfull \hbox (badness 1527) in paragraph at lines 408--408
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
   |   []
  []
 
 
-Overfull \hbox (12.65654pt too wide) detected at line 462
+Overfull \hbox (12.65654pt too wide) detected at line 419
 [][][][][][][][][]
  []
 
 
-Underfull \hbox (badness 1009) in paragraph at lines 462--465
+Underfull \hbox (badness 1009) in paragraph at lines 419--424
 []|   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 3780) in paragraph at lines 462--465
+Underfull \hbox (badness 3780) in paragraph at lines 419--424
 |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 1028) in paragraph at lines 462--465
+Underfull \hbox (badness 1028) in paragraph at lines 419--424
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Œ in font ptmr7t!
+[5 <./img/content_net.pdf> <./img/inception.pdf>]
+<img/pyramidcolumn.pdf, id=448, 639.38875pt x 557.08125pt>
+File: img/pyramidcolumn.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:pyramidcolumn' on page 4 undefined on input line 
-474.
+<use img/pyramidcolumn.pdf>
+Package pdftex.def Info: img/pyramidcolumn.pdf used on input line 458.
+(pdftex.def)             Requested size: 201.56699pt x 175.61752pt.
 
-[4]
-
-LaTeX Warning: Reference `fig:boarder_example' on page 5 undefined on input lin
-e 525.
-
-
-Underfull \hbox (badness 2600) in paragraph at lines 522--527
- [][]|   []   |   []   |   [][][] []|   []   |   []   |   []
+Underfull \hbox (badness 6268) in paragraph at lines 448--463
+[]|   []   |   []   |   []   |   [][][]|   []   |   []   |   []
  []
 
+<img/border_example.pdf, id=449, 622.325pt x 189.70876pt>
+File: img/border_example.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 1454) in paragraph at lines 522--527
-[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-Overfull \hbox (24.05336pt too wide) detected at line 540
+<use img/border_example.pdf>
+Package pdftex.def Info: img/border_example.pdf used on input line 466.
+(pdftex.def)             Requested size: 491.89041pt x 149.94931pt.
+pdfTeX warning (ext4): destination with the same identifier (name{section.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.480 ...tion{\DIFdel{Combine Style with Content}}
+                                                  pdfTeX warning (ext4): destin
+ation with the same identifier (name{subsection.4.1}) has been already used, du
+plicate ignored
+<to be read again> 
+                   \relax 
+l.483 ...begin \subsection{\DIFadd{Loss Function}}
+                                                  
+Overfull \hbox (24.05336pt too wide) detected at line 489
 []\OMS/cmsy/m/n/10 L[]\OML/cmm/m/it/10 autoref\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
  X\OT1/cmr/m/n/10 ) = [] []
  []
 
 
-Overfull \hbox (72.0902pt too wide) detected at line 545
+Overfull \hbox (72.0902pt too wide) detected at line 494
 []\OMS/cmsy/m/n/10 L[]\OML/cmm/m/it/10 autoref\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
  X\OT1/cmr/m/n/10 ) = \OML/cmm/m/it/10 autoref\OMS/cmsy/m/n/10 k[]k[]\OML/cmm/m
 /it/10 :
  []
 
-[5]
-Overfull \hbox (24.6992pt too wide) detected at line 550
+
+Overfull \hbox (24.6992pt too wide) detected at line 499
 []\OMS/cmsy/m/n/10 L[]\OML/cmm/m/it/10 autoref\OT1/cmr/m/n/10 (\OMS/cmsy/m/n/10
  X\OT1/cmr/m/n/10 ) = [] []
  []
 
-
-Underfull \hbox (badness 10000) in paragraph at lines 628--629
+[6 <./img/pyramidcolumn.pdf>]pdfTeX warning (ext4): destination with the same i
+dentifier (name{section.5}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.508 \section{\DIFdel{Experiments}}
+                                    
+Underfull \hbox (badness 10000) in paragraph at lines 586--588
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 1194) in paragraph at lines 632--651
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [] 
-  |   []
+Underfull \hbox (badness 2932) in paragraph at lines 586--588
+|   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.4.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.588 \subsection{\DIFdel{Sketch Recognition}}
+                                              
 
-Underfull \hbox (badness 1533) in paragraph at lines 632--651
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
+LaTeX Warning: Reference `tab:reg_percentage' on page 7 undefined on input line
+ 602.
 
 
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 667--667
- []||   [] 
- []
-
-
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 667--667
- []||   [] 
- []
-
-
-Overfull \hbox (5.0443pt too wide) in paragraph at lines 667--667
- []||   [] 
- []
-
-
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 667--667
- []||   [] 
- []
-
-
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 667--667
- []||   [] 
- []
-
-
-Overfull \hbox (5.0443pt too wide) in paragraph at lines 667--668
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 669--669
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 669--669
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 669--670
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 670--670
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 670--670
- []||   [] 
- []
-
-
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 670--670
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 670--670
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 670--670
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 670--671
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 671--671
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 671--671
- []||   [] 
- []
-
-
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 671--671
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 671--671
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 671--671
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 671--672
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 672--672
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 672--672
- []||   [] 
- []
-
-
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 672--672
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 672--672
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 672--672
- []||   [] 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 672--673
- []||   [] 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 673--673
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 673--673
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 673--673
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 673--673
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 673--673
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 673--674
- []||   [][][]|   [][]| 
- []
-
-
-Overfull \hbox (12.74272pt too wide) in paragraph at lines 664--676
-[][] 
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 662--680
+Underfull \hbox (badness 10000) in paragraph at lines 602--667
 []|   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 662--680
+Underfull \hbox (badness 10000) in paragraph at lines 602--667
 |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 1097) in paragraph at lines 662--680
+Underfull \hbox (badness 1688) in paragraph at lines 602--667
 |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 1769) in paragraph at lines 662--680
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+Underfull \hbox (badness 10000) in paragraph at lines 675--755
+[]|   []   [][]|   []   [][]|   []   [][]|   []   [][]|   []
  []
 
 
-Underfull \hbox (badness 1571) in paragraph at lines 662--680
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
+Underfull \hbox (badness 1708) in paragraph at lines 675--755
+[][]|   []   [][]|   []   [][]|   []   [][]|   []   [][]|   []   [][]|   []   [
+][]|   []   [][]|   []   [][]|   []   [][]|   []
  []
 
 
-Underfull \hbox (badness 1292) in paragraph at lines 662--680
+Underfull \hbox (badness 10000) in paragraph at lines 675--755
+[][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   []   [][]|   []   [][
+]|   [][][]|   [][][]|   []
+ []
+
+
+Underfull \hbox (badness 1616) in paragraph at lines 675--755
+[][]|   [][][]|   [][][]|   [][][]|   []   [][]|   []   [][]|   []   [][]|   []
+   [][]|   [][][]|   [][][]|   []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 675--755
+[][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   []   [][]|   []   [][
+]|   [][][]|   [][][]|   []
+ []
+
+
+Overfull \hbox (116.95583pt too wide) in paragraph at lines 675--755
+[][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [
+][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   [][][]|   
+[]
+ []
+
+
+Underfull \vbox (badness 3758) has occurred while \output is active []
+
+ [7 <./img/border_example.pdf>]pdfTeX warning (ext4): destination with the same
+ identifier (name{subsection.4.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.755 \subsection{\DIFdel{Style Transfer}}
+                                          
+Underfull \hbox (badness 1097) in paragraph at lines 821--828
+[]|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   [
+]   |   []
+ []
+
+
+Underfull \hbox (badness 3000) in paragraph at lines 821--828
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
-
-Underfull \hbox (badness 1348) in paragraph at lines 662--680
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
-
-
-LaTeX Warning: Reference `fig:q_eval_1' on page 6 undefined on input line 789.
-
-
-LaTeX Warning: Reference `fig:q_eval_2' on page 6 undefined on input line 789.
-
-[6pdfTeX warning (ext4): destination with the same identifier (name{subsection.
-7.1}) has been already used, duplicate ignored
-
-\@EveryShipout@Output ...@Org@Shipout \box \@cclv 
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.4.
+1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.828 ...bsection{\DIFadd{Implementation Details}}
                                                   
-l.790 ...tion{\DIFadd{Effectiveness of the model}}
-                                                  ]
 
-LaTeX Warning: Reference `fig:region_effect' on page 7 undefined on input line 
-793.
+LaTeX Warning: Reference `fig:q_eval_1' on page 8 undefined on input line 846.
 
 
-LaTeX Warning: Reference `fig:alphg_effect' on page 7 undefined on input line 7
-93.
+LaTeX Warning: Reference `fig:q_eval_2' on page 8 undefined on input line 846.
 
 
-Underfull \hbox (badness 1320) in paragraph at lines 793--794
-|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
- []
+LaTeX Warning: Reference `tab:NGMD' on page 8 undefined on input line 846.
 
-pdfTeX warning (ext4): destination with the same identifier (name{section.8}) h
+pdfTeX warning (ext4): destination with the same identifier (name{subsection.4.
+2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.848 ...tion{\DIFdel{Effectiveness of the model}}
+                                                  
+
+LaTeX Warning: Reference `fig:region_effect' on page 8 undefined on input line 
+854.
+
+
+LaTeX Warning: Reference `fig:alphg_effect' on page 8 undefined on input line 8
+55.
+
+pdfTeX warning (ext4): destination with the same identifier (name{section.5}) h
 as been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.794 ...tion{\DIFadd{Conclusion and Future Work}}
+l.857 ...tion{\DIFdel{Conclusion and Future Work}}
                                                   
-Underfull \hbox (badness 1509) in paragraph at lines 796--797
+Underfull \hbox (badness 1509) in paragraph at lines 862--864
 []|   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 796--797
+Underfull \hbox (badness 2418) in paragraph at lines 862--864
 |   []   |   []   |   []   |   []   |   []   |   []   |   []   |   []
  []
 
-(./diff.bbl (./diff.brf)
+pdfTeX warning (ext4): destination with the same identifier (name{section.5}) h
+as been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.866 \section{\DIFadd{Final copy}}
+                                    (./diff.bbl (./diff.brf)
 \tf@brf=\write3
 \openout3 = `diff.brf'.
 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
- [7]
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 29.
+ [8]
 Underfull \hbox (badness 2922) in paragraph at lines 74--74
 []\OT1/ptm/m/n/9 C. Szegedy, W. Liu, Y. Jia, P. Ser-manet, S. Reed,
  []
 
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 804.
- [8
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 882.
+ [9
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 804.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 882.
  (./diff.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 804.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 804.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 882.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 882.
 Package rerunfilecheck Info: File `diff.brf' has not changed.
-(rerunfilecheck)             Checksum: 67353043598B805F8A3B6B9E54BA08BB;3623.
+(rerunfilecheck)             Checksum: E3974947C294DBE8D16F6FF7AB434AFD;3489.
 
 
 LaTeX Warning: There were undefined references.
@@ -893,37 +921,41 @@ LaTeX Warning: There were undefined references.
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 804.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 882.
  ) 
 Here is how much of TeX's memory you used:
- 6998 strings out of 493089
- 100848 string characters out of 6134841
- 308040 words of memory out of 5000000
- 10299 multiletter control sequences out of 15000+600000
- 35690 words of font info for 78 fonts, out of 8000000 for 9000
+ 7129 strings out of 493089
+ 103995 string characters out of 6134841
+ 298588 words of memory out of 5000000
+ 10396 multiletter control sequences out of 15000+600000
+ 38912 words of font info for 83 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,13n,30p,2053b,468s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,30p,2542b,466s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
 live/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texli
-ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive
-/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2
-015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/201
-5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf
--dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist
-/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
-type1/urw/times/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/
-times/utmr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr
-i8a.pfb>
-Output written on diff.pdf (8 pages, 264306 bytes).
+ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
+/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
+015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
+5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
+ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fo
+nts/type1/public/amsfonts/latxfont/lasy6.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/
+type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/helvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/time
+s/utmb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.
+pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
+local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on diff.pdf (9 pages, 2364397 bytes).
 PDF statistics:
- 307 PDF objects out of 1000 (max. 8388607)
- 278 compressed objects within 3 object streams
+ 771 PDF objects out of 1000 (max. 8388607)
+ 556 compressed objects within 6 object streams
  57 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 146 words of extra memory for PDF output out of 10000 (max. 10000000)
 
