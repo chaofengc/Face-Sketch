@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex sketch_draft"] 1489297423 "sketch_draft.aux" "sketch_draft.bbl" "sketch_draft" 1489297424
+["bibtex sketch_draft"] 1489297423 "sketch_draft.aux" "sketch_draft.bbl" "sketch_draft" 1489316922
   "./ieee.bst" 1489216117 19623 f9cd22458ca68af2567100f1aed905e8 ""
   "egbib.bib" 1489246798 7286 213b1a501086c6935a5b17b86f8ad647 ""
   "sketch_draft.aux" 1489297424 9118 eaeb5d2b8e4d665ad1d5c6ddba12c7ac ""
   "sketch_draft.bcf" 0 -1 0 ""
   (generated)
-  "sketch_draft.bbl"
   "sketch_draft.blg"
-["pdflatex"] 1489297423 "sketch_draft.tex" "sketch_draft.pdf" "sketch_draft" 1489297424
+  "sketch_draft.bbl"
+["pdflatex"] 1489297423 "sketch_draft.tex" "sketch_draft.pdf" "sketch_draft" 1489316922
   "./sketch_draft.brf" 1489297424 2668 d6222617e8f35352a43f438911b5cde1 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
@@ -127,7 +127,7 @@
   "sketch_draft.brf" 1489297424 2668 d6222617e8f35352a43f438911b5cde1 ""
   "sketch_draft.tex" 1489297423 39120 f9bf3f48811c21859a9ff7f4303998d2 ""
   (generated)
+  "sketch_draft.log"
+  "sketch_draft.brf"
   "sketch_draft.pdf"
   "sketch_draft.aux"
-  "sketch_draft.brf"
-  "sketch_draft.log"

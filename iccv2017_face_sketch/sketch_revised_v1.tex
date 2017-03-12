@@ -8,6 +8,8 @@
 \usepackage{amssymb}
 \usepackage{float}
 \usepackage{subfigure}
+\usepackage{array}
+\usepackage{multirow}
 
 % Include other packages here, before hyperref.
 
@@ -15,6 +17,10 @@
 % egpaper.aux before re-running latex.  (Or just hit 'q' on the first latex
 % run, let it finish, and you should be clear).
 \usepackage[pagebackref=true,breaklinks=true,letterpaper=true,colorlinks,bookmarks=false]{hyperref}
+
+\newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
+\newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
+
 
 \def\comm[#1]{{\small \textcolor{red}{\emph{#1}}}}
 \def\red[#1]{\textcolor{red}{\textbf{#1}}}
@@ -83,7 +89,7 @@ Face sketch synthesis has drawn a great attention from the community in recent y
 \begin{minipage}[t]{0.24\linewidth}
 \centering
 \includegraphics[width=1\linewidth]{img/example_wmrf.png}
-(c) WMRF\cite{zhou2012markov}
+(c)WMRF\cite{zhou2012markov}
 \end{minipage}
 \begin{minipage}[t]{0.24\linewidth}
 \centering
@@ -98,7 +104,7 @@ Face sketch synthesis has drawn a great attention from the community in recent y
 \begin{minipage}[t]{0.23\linewidth}
 \centering
 \includegraphics[width=1\linewidth]{img/example_bfcn.png}
-(f) BFCN \cite{zhang2017content}
+(f)BFCN\cite{zhang2017content}
 \end{minipage}
 \begin{minipage}[t]{0.24\linewidth}
 \centering
@@ -210,66 +216,325 @@ Fig. \ref{fig:pyramidcolumn} shows an example of the pyramid feature column. Den
 \label{fig:pyramidcolumn}
 \end{figure}
 
-\begin{figure*}[htbp]
-\centering
-\includegraphics[width=0.99\linewidth]{img/border_example.pdf}
-\caption{Find a matching patch for boarder cells. (a) The center $C_{ij}$ of a boarder cell is denoted as the red dot in the photo. (b) The region associated with $U_{ij}$ is the intersection of the blue square with the sketch. The distances between $C_{ij}$ to the intersection boarders are denoted by green lines. (c) $\tilde{C}_{ij}$ denoted as a yellow dot is located by examining photo similarity. (d) The distances of $\tilde{C}_{ij}$ to boarders of $S_{ij}$ equal to the distances of  $C_{ij}$ to boarders of intersection region in (b) such that the location of $\tilde{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$.}
-\label{fig:boarder_example}
-\end{figure*}
-
-\paragraph{Find Matching Sketch Patch} 
-\redn[Unlike previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity of content patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Compared with photo patches, the content patches are more easier to match. Given a test photo patch $\mathcal{I}_{ij}$, ]
+\paragraph*{Find Matching Sketch Patch} 
+\redn[Unlike previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity of content patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Compared with photo patches, the content patches are more easier to match. Denote the content patch set as $P$, given a test content patch $\tilde{\mathcal{C}_{ij}}$, the target sketch patch $\tilde{S_{ij}}$ is found by
+\begin{gather}
+\tilde{S_{ij}} = \phi(\min_{\mathcal{C}^k_{mn} \in P} f(\mathcal{C}^k_{mn}, \tilde{\mathcal{C}_{ij}})) \\
+m = i + \Delta x, n = j + \Delta y
+\end{gather}
+where $\mathcal{C}^k_{mn}$ is the content patch of the $k$th image at $(m, n)$ in training set, $\phi$ is a one-to-one mapping between content patch and sketch patch, $\Delta x$ and $\Delta y$ is the shift of $(m, n)$ around $(i, j)$. The function $f$ measures the discrepancy between $\mathcal{C}^k_{mn}$ and $\tilde{\mathcal{C}_{ij}}$, and we use SSIM here.
+]
 
 % Inspired by previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity in appearance of photo patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Denote a patch centered at $C_{ij}$ in the test photo as $\Psi_{ij}$. If a patch centered at $\tilde{C}_{ij}$ in the $k$th photo in the training set has the smallest Euclidean distance from $\Psi_{ij}$ in term of color channels, a sketch patch, $S_{ij}$, centered at $\tilde{C}_{ij}$ is extracted from the sketch paired with the $k$th photo in the training set. The size and position of $S_{ij}$ are determined by the region associated with $U_{ij}$ which is calculated according to the architecture of the VGG-Network and location of $C_{ij}$. For non-boarder cells, $S_{ij}$ is a sketch patch of size $144\times144$ centered at $\tilde{C}_{ij}$. For cells near boarders, the region associated with $U_{ij}$ is the intersection of a sketch patch of size $144\times144$ centered at $C_{ij}$ with the whole sketch. Therefore, $S_{ij}$ is a patch from the $k$th sketch containing $\tilde{C}_{ij}$ such that the location of $\tilde{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$ (see Fig.~\ref{fig:boarder_example}).\\
 
-\paragraph{Estimate Pyramid Column} We compose an estimate for $U_{ij}$ from the resulting feature maps obtained by feeding $S_{ij}$ to the VGG-Network. Specifically, after feeding $S_{ij}$ to the VGG-Network, we form a hyper-grid $\tilde{U}$ on the resulting feature maps. The pyramid column corresponding to $\tilde{C}_{ij}$ is selected as an estimation to $U_{ij}$. This pyramid column is the cell that contains $\tilde{C}_{ij}$ when projecting $S_{ij}$ onto $\tilde{U}$.\par
-After $A^{l}$ are estimated, we calculate the target gram matrices by: \{$G_{t}^l =A^{l} \cdot {autoref( {{A^{l}}} )^T}$\} where $l\in L_s$.
+\paragraph*{Estimate Pyramid Feature Column}
+After we get $\tilde{S_{ij}}$, we can compute the corresponding pyramid feature column $U_{ij}$. Although the feature column can be generated by a $16\times16$ patch, padding zeros is not a good idea. Therefore, we will make use of the surrounding area of $\tilde{S_{ij}}$ to compute $U_{ij}$. According to the architecture of VGG-19, the receptive field of $conv5\_1$ is 132 without padding. To get $16\times16$ patches, we will need a $144\times144$ region $\mathcal{R}$ containing 81 patches in total. $\tilde{S_{ij}}$ should be at the center of $\mathcal{R}$, \ie $\tilde{S_{55}}$ with respect to the grids of $\mathcal{R}$. For those border part where we can't find a region centered at $\tilde{S_{ij}}$, we just find another region $\mathcal{R}'$ which has the biggest intersection with the should be region $\mathcal{R}$ (the blue box in Fig. \ref{fig:border_example}(b)). The $\tilde{S_{55}}$ in $\mathcal{R}$  should be $\tilde{S_{pq}}$ in $\mathcal{R}'$ ($(p, q)$ is calculated according to different conditions). The feature column $U_{55}$ in $\mathcal{R}$ or $U_{pq}$ in $\mathcal{R'}$ is the estimated pyramid feature column. 
 
-{
+Allocating all these feature columns to its original patch location $(i, j)$, we can get the final feature maps $\tilde{U}$ and use it to compute gram matrix.  
+
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=0.99\linewidth]{img/border_PFC.eps}
+\caption{Find a region $\mathcal{R}$ centered at $\tilde{S_{ij}}$. If $\mathcal{R}$ is inside the image, $\tilde{S_{ij}}$ should be the center patch of $\mathcal{R}$, see the left region. Otherwise, we need to find $\mathcal{R}'$ inside the image which has the biggest intersection with $\mathcal{R}$, see the right part. Suppose the indexes of $\tilde{S_{ij}}$ inside $\mathcal{R}'$ is $(p, q)$, then $U_{pq}$ is the corresponding feature column.}
+\label{fig:border_example}
+\end{figure}
+
 \subsection{Loss Function}
-}
-To generate a sketch that combines the content image with the estimated style, we adopt the methodology described in~\cite{gatys2015texture}. Specifically, we minimize a loss function consisting of a style loss, a content loss and a component loss. The style loss is defined as the difference between the gram matrix of the final sketch and the target gram matrix i.e.,
+
+The same as \cite{gatys2015neural}, our loss function has a style loss and content loss. In addition we add a component loss to enhance the key facial components. The total loss is
+
 \begin{equation}
-\mathcal{L}_{s} autoref( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2N_l^2}}autoref\| {{G^l}autoref( \mathcal{X} ) - G_t^l} \|_2^2} 
-\label{eq:Gram_loss}
-\end{equation}
-where $N_l$ denotes the number pixels in the feature map at layer $l$. The content loss is defined based on the difference between the feature map of the sketch and that of the content image at layer conv1\_1:
-\begin{equation}
-\mathcal{L}_{c}autoref( \mathcal{X} ) = autoref\| {{F^{\rm{conv1\_1}}}autoref( \mathcal{X} ) - {F^{\rm{conv1\_1}}}autoref( \mathcal{C} )} \|_2^2.
-\label{eq:Style_loss}
-\end{equation}
-Human is able to distinguish different people from key components such as eyes, nose and mouth, which indicates that these features are the most discriminative parts of a face. Specific styles or textures are usually used to emphasize these components, for example, sharp edges with shadings at the two sides of the nose are used to convey 3D information. To better transfer styles of these components, we employ a component loss to encourage the key component style of the final sketch being the same as the target key component style. Since two eyes are placed at fixed positions, the key components lie roughly within a rectangular region taking the positions of two eyes as vertices. Key component style is given by gram matrices calculated within feature map regions $\mathcal R$ corresponding to the key components. These regions are specified by hyper-grid cells $U_{ij}$ whose $C_{ij}$ are inside the rectangular region. More specifically, a target style for the key component is calculated: \{${\hat G}_{t}^l ={A}_{c}^l \cdot {autoref( {{{A}_{c}^l}} )^T}$\} where ${A}_{c}^l$ is the composed feature map patch in $A^{l}$ corresponding to the key components, $l\in L_s$. The style of the key components in final sketch ${\hat G}^lautoref( \mathcal{X} ) $ is calculated in exactly the same manner. The component loss is hence defined as:
-\begin{equation}
-\mathcal{L}_{k} autoref( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2{\hat N}_l^2}}autoref\| {{{\hat G}^l}autoref( \mathcal{X} ) - {\hat G}_t^l} \|_2^2} 
-\label{eq:component_loss}
-\end{equation}
-where ${\hat N}_l$ denotes the number of pixels in the feature map region $\mathcal R$ at layer $l$. The total loss we minimize is 
-\begin{equation}
-\mathcal{L}_{t}autoref( \mathcal{X} ) = \alpha \mathcal{L}_{c} + \beta_1 \mathcal{L}_{s} + \beta_2 \mathcal{L}_{k}
+\mathcal{L}_{t}( \mathcal{X} ) = \alpha \mathcal{L}_{c} + \beta_1 \mathcal{L}_{s} + \beta_2 \mathcal{L}_{k}
 \label{eq:Total_loss}
 \end{equation}
-where $\alpha$, $\beta_1$ and $\beta_2$ are the weighting factors for content, style and component losses respectively. The minimization is carried out using L-BFGS. Instead of using random noises, we use the content image as a starting point, which will make the optimization process converge much faster. 
+We minimize the loss function by updating the target sketch $\mathcal{X}$ without changing the VGG parameters.
+
+The content loss is defined based on the difference between the feature map of the sketch and the content image at layer conv1\_1:
+\begin{equation}
+\mathcal{L}_{c}( \mathcal{X} ) = \| {{F^{\rm{conv1\_1}}}( \mathcal{X} ) - {F^{\rm{conv1\_1}}}( \mathcal{C} )} \|_2^2.
+\label{eq:content_loss}
+\end{equation}
+And the style loss is the difference between the gram matrix of the final sketch and the target gram matrix 
+\begin{equation}
+\mathcal{L}_{s} ( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{M_l^2N_l^2}}\| {{G^l}( \mathcal{X} ) - G^l(\tilde{U})} \|_2^2} 
+\label{eq:Gram_loss}
+\end{equation}
+where $N_l$ denotes the number feature maps at layer $l$, and $M_l$ is the feature map width times height.  
+
+To better transfer styles of the key facial components, we employ a component loss to encourage the key component style of the final sketch being the same as the target key component style. Since two eyes are placed at fixed positions, the key components lie roughly within a rectangular region taking the positions of two eyes as vertices. Key component style is given by gram matrices calculated within feature map regions $\mathcal K$ corresponding to the key components. These regions are specified by pyramid feature columns $U_{ij}$ whose $\mathcal{C}_{ij}$ are inside $\mathcal K$. We take out $\mathcal K$ and calculate the corresponding gram matrix loss as the component loss
+\begin{equation}
+\mathcal{L}_{k} ( \mathcal{X} ) = \sum\limits_{l \in {L_s}} {\frac{1}{{\hat{M}_l^2{N}_l^2}}\| {{{\hat G}^l}( \mathcal{K} ) - {\hat G}^l(\tilde{U}_k)} \|_2^2} 
+\label{eq:component_loss}
+\end{equation}
+where $\hat{M}_l$ denotes height times width of $\mathcal K$. 
 
 %------------------------------------------------------------------------
 \subsection{Implementation Details}
 
-Since the VGG-Network is originally designed for color images, while sketches are gray scale images, we modify the first layer of VGG-Network for gray scale images by setting the filter weights to
+\paragraph*{VGG-19 Parameters} Since the VGG-Network is originally designed for color images, while sketches are gray scale images, we modify the first layer of VGG-Network for gray scale images by setting the filter weights to
 \begin{equation}
 W^{k} = W^{k}_r+W^{k}_g+W^{k}_b
 \label{eq:VGG_weights}
 \end{equation}
 where $W^{k}_r$, $W^{k}_g$, and $W^{k}_b$ are weights of the $k$th filter in the first convolutional layer for the R, G and B channels respectively, and $W^{k}$ is the weight of the $k$th filter in the first convolutional layer of our modified network.
+\paragraph*{Training Process} The minimization is carried out using L-BFGS. Instead of using random noises, we use the content image as a starting point, which will make the optimization process converge much faster. 
+
+%==========================================================================
+
+\section{Experiments}
+
+% \begin{figure*}[htbp]
+% \centering
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example1_gro.pdf}
+% \includegraphics[width=0.99\linewidth]{example2_gro.pdf}
+% (a) Sketches by artist
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example1_FCNN.pdf}
+% \includegraphics[width=0.99\linewidth]{example2_FCNN.pdf}
+% (b) FCNN
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example1_MRF.pdf}
+% \includegraphics[width=0.99\linewidth]{example2_MRF.pdf}
+% (c) MRF
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example1_ours.pdf}
+% \includegraphics[width=0.99\linewidth]{example2_ours.pdf}
+% (d) Ours
+% \end{minipage}
+% \caption{Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method~\cite{zhang2015end}. (c) Results from MRF based method~\cite{wang2009face}. (d) Our results.}
+% \label{fig:q_eval_1}
+% \end{figure*}
+% \begin{figure*}[htbp]
+% \centering
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example3_gro.pdf}
+% \includegraphics[width=0.99\linewidth]{example4_gro.pdf}
+% (a) Sketches by artist
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example3_WMRF.pdf}
+% \includegraphics[width=0.99\linewidth]{example4_WMRF.pdf}
+% (b) WMRF
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example3_Filter.pdf}
+% \includegraphics[width=0.99\linewidth]{example4_Filter.pdf}
+% (c) SSD
+% \end{minipage}
+% \begin{minipage}[t]{0.245\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{example3_ours.pdf}
+% \includegraphics[width=0.99\linewidth]{example4_ours.pdf}
+% (d) Ours
+% \end{minipage}
+% \caption{Examples of qualitative evaluation on AR benchmark datasets. (a) The sketches drawn by artists. (b) Results from the WMRF method~\cite{zhou2012markov}. (c) Results from the SSD method~\cite{song2014real}. (d) Our results.}
+% \label{fig:q_eval_2}
+% \end{figure*}
+In all experiments, we resize test photos and photo-sketch pairs in the training set to a fixed size of $288\times288$. The final sketch is obtained by resizing the resulting sketch back to the original size. The size of $\Psi$ is $48\times48$, $\alpha=0.004$, $\beta_1=1$ and $\beta_2=0.1$. Since generating the final sketch involves an iterative optimization process, the gradient of the final sketch with respect to the content image is not easy to calculate, which prohibits training the content network in an end-to-end manner.  The training is therefore carried out by minimizing the squared loss between generated content images and sketches drawn by artists. We evaluate the performance of the proposed method against other state-of-the-art methods on the CUHK student dataset~\cite{wang2009face} and the AR dataset~\cite{martinez1998r}. For AR dataset, we use the leave-one-out strategy as conducted in previous studies~\cite{song2014real,wang2009face}. We compare the results of our method against those of the MRF method~\cite{wang2009face}, weighted MRF (WMRF) method~\cite{zhou2012markov}, feed-forward CNN (FCNN) method~\cite{zhang2015end} and Filtering based method (SSD)~\cite{song2014real}.
 
 %------------------------------------------------------------------------
-\section{Final copy}
+\subsection{Style Transfer Evaluation}
 
-You must include your signed IEEE copyright release form when you submit
-your finished paper. We MUST have this form before your paper can be
-published in the proceedings.
+%------------------------------------------------------------------------
+\subsection{Sketch Generation}
 
-Please direct any questions to the production editor in charge of these
-proceedings at the IEEE Computer Society Press: Phone (714) 821-8380, or
-Fax (714) 761-1784.
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
+(a) Test Photo
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
+(a) MRF
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
+(a) WMRF
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_FCNN.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_FCNN.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_WMRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_WMRF.pdf}
+(b) SSD
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_MRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_MRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_Filter.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_Filter.pdf}
+(c) FCNN
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_MRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_MRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_Filter.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_Filter.pdf}
+(c) BFCN
+\end{minipage}
+\begin{minipage}[t]{0.138\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/example1_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/example2_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/example3_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/example4_ours.pdf}
+(d) Ours
+\end{minipage}
+\caption{Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method~\cite{zhang2015end}. (c) Results from MRF based method~\cite{wang2009face}. (d) Our results.}
+\label{fig:q_eval_1}
+\end{figure*}
+
+%------------------------------------------------------------------------
+\subsection{Generalization Test}
+
+%------------------------------------------------------------------------
+\subsection{Quantitative Results}
+
+\paragraph*{Sketch Recognition} Sketch synthesis methods are usually evaluated quantitatively  via the face sketch recognition task~\cite{song2014real,wang2009face,zhang2015end,zhou2012markov}. If an algorithm achieves higher sketch recognition rates, it suggests that this method is more effective in synthesizing sketches. We adopt the widely used PCA based recognition method with ``rank-1 (R1)'', ``rank-5 (R5)'' and ``rank-10 (R10)'' criteria ~\cite{wang2009face} where ``rank $n$'' measures the rate of the correct answer in the top $n$ best matches. The results of different methods are shown in Table~\ref{tab:reg_percentage}. Our method achieves the best performance against all other methods in the ``R1'' and ``R5'' tests. There may be two reasons behind this. First, since the test photos are different from those in the training set, we do not expect to find suitable patches from the training set for the target patches. The remedy of linearly combining the patches as in~\cite{zhou2012markov} will introduce over smoothing and blurring artifacts, which are also observed in the filtering like approach~\cite{song2014real}. Being a generative model, the content network learns the modality transformation locally between photos and sketches, such as transferring edges in photos to strokes in sketches. This helps generating sketches for structures not existing in the training set. Second, our model explicitly minimizes the difference by the 
+
+\begin{table}
+\small
+\begin{tabular}{C{0.2cm}C{0.2cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}}
+\hline
+\multicolumn{2}{c|}{\multirow {2}{*}{Methods}} & \multicolumn{5}{c}{AR} & & \multicolumn{5}{c}{CUHK} \\
+\cline{3-7} \cline{9-13} \multicolumn{2}{c|}{} & R1 & & R5 & & R10 & & R1 & & R5 & & R10   \\
+\hline
+\multicolumn{2}{c|}{FCNN} & - & & - & & - & & 81\% & & 96\% & & 97\%   \\
+\multicolumn{2}{c|}{MRF}  & 97.5\% & & 97.5\% & & \textcolor{red}{100\%} & & 83\% & & 96\% & & 96\% \\
+\multicolumn{2}{c|}{WMRF} & 97.5\% & & 97.5\% & & \textcolor{red}{100\%} & & 83\% & & 97\% & & 98\%  \\
+\multicolumn{2}{c|}{SSD}  & 96.7\% & & 97.5\% & & \textcolor{red}{100\%} & & \textcolor{red}{87\%} & & 97\% & & 98\%   \\
+\multicolumn{2}{c|}{Ours} & \textcolor{red} {98.4\%} & & \textcolor{red} {98.4\%} & & \textcolor{red} {100\%} & & \textcolor{red} {87\%} & & \textcolor{red} {98\%} & & \textcolor{red} {99\%}   \\
+\hline
+\end{tabular}
+\caption{Recognition rate on benchmark datasets. The best performance is colored in red.}
+\label{tab:reg_percentage}
+\end{table}
+\paragraph*{Normalized Gram Matrix Difference (NGMD)} Human can often be able to tell whether a sketch is generated by algorithms or drawn by artists just from a quick glance without examining details. This indicates that there exists a big gap between the style of algorithm-generated sketches and that of those drawn by artists. To quantitatively evaluate the style similarity between a generated sketch and the sketch drawn by a real artist, we employ the normalized gram matrix difference (NGMD) between the generated sketch $\mathcal{X}$ and the drawn sketch ${\tilde {\mathcal{X}}}$:
+\begin{equation}
+{D^l_s}\left( {\mathcal{X},\tilde {\mathcal{X}}} \right) = \frac{{\left\| {{G^l}\left( \mathcal{X} \right) - {G^l}\left( {\tilde {\mathcal{X}}} \right)} \right\|_2^2}}{{\left\| {{G^l}\left( {\tilde {\mathcal{X}}} \right)} \right\|_2^2}}
+\label{eq:style_exp}
+\end{equation}
+where $l\in L_s$. The smaller the NGMD value is, the more similar $\mathcal{X}$ and ${\tilde {\mathcal{X}}}$ are. Thanks to our style transfer, our results have the smallest NGMD value among all methods under test (see Table 2). It is therefore obvious that our results are the closest to the sketches drawn by artists. 
+Qualitative evaluation results are shown in Fig.~\ref{fig:q_eval_1} and Fig.~\ref{fig:q_eval_2}, where we find that our method provides much clear boundaries and better texture in regions containing hairs and shadings. The results of~\cite{zhang2015end} can roughly outline the sketches, but they do not look like sketches in style. This is also indicated by a high NGMD in Table~\ref{tab:NGMD}. The results of MRF~\cite{wang2009face} and WMRF~\cite{zhou2012markov} are more similar to hand drawn sketches in style since these exemplar based approaches use patches of hand drawn sketches to make up the target sketch. That is why they have a smaller NGMD value. Inheriting the ability of denoising, the filtering based approach~\cite{song2014real} is good at suppressing noises in the results. However, it is also likely for this method to over-smooth the results, which will deteriorate the texture and even introduce blurring artifacts. 
+
+
+\begin{table*}[htbp]
+\begin{center}
+{\small
+\begin{tabular}{ccccccccccccc}
+\hline
+\multicolumn{2}{c|}{\multirow {2}{*}{Methods}} &\multicolumn{5}{c}{AR} & & \multicolumn{5}{c}{CUHK} \\
+\cline{3-7} \cline{9-13} \multicolumn{2}{c|}{} & conv1\_1 & conv2\_1 & conv3\_1 & conv4\_1 & conv5\_1 & &
+ conv1\_1 & conv2\_1 & conv3\_1 & conv4\_1 & conv5\_1  \\
+\hline
+\multicolumn{2}{c|}{FCNN} & - & - & - & - & - & & { $0.009$} &{ $0.110$} & {$0.080$} & {$9.43$} & {$1.49$}  \\
+\multicolumn{2}{c|}{MRF} & 0.0043 & 0.009 & {$0.033$}  & {$0.12$} & 0.28 & & { $0.010$} &{ $0.014$} & {$0.047$} & $0.13$ & $0.18$  \\
+\multicolumn{2}{c|}{WMRF} & 0.0053 & 0.027 & {$0.085$}  & {$0.19$} & 0.29 & & { $0.010$} &{ $0.052$} & {$0.052$} & {$0.27$} & {$0.19$}  \\
+\multicolumn{2}{c|}{SSD} & 0.0056 & 0.036 & {$0.110$} & {$1.90$} & 0.28 & & { $0.009$} &{ $0.102$} & {$0.070$} & {$3.32$} & {$0.24$}  \\
+\multicolumn{2}{c|}{Ours} & {\color{red} 0.0035} & {\color{red} 0.008} & {\color{red} $0.029$} & {\color{red} $0.08$} & {\color{red} $0.17$} & & {\color{red}$0.007$} &{\color{red} $0.012$} & {\color{red} $0.033$} & {\color{red} $0.07$} & {\color{red} $0.12$}  \\
+\hline
+\end{tabular}
+}
+\end{center}
+\caption{Averaged NGMD value of different methods at different level on AR and CUHK datasets.}
+\label{tab:NGMD}
+\end{table*}
+
+% \begin{figure}[htbp]
+% \centering
+% \begin{minipage}[t]{0.49\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{wo_region.pdf}
+% (a) $\beta_2=0$
+% \end{minipage}
+% \begin{minipage}[t]{0.49\linewidth}
+% \includegraphics[width=0.99\linewidth]{w_region.pdf}
+% \centering
+% (b) $\beta_2=0.1$
+% \end{minipage}
+% \caption{Comparison between results with and without the $\mathcal{L}_{k} $ regulation. (a) When turning off the component loss, the nose suffers from the distortion. (b) Thanks to the component loss, a more favorable result is obtained.}
+% \label{fig:region_effect}
+% \end{figure}
+
+% \begin{figure*}[htbp]
+% \centering
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{inf_alpha.pdf}
+% $\beta_1  = 0 $\\
+% $\beta_2  = 0 $
+% \end{minipage}
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{4_alpha.pdf}
+% $\beta_1  = 10^{-3} $\\
+% $\beta_2  = 10^{-4} $
+% \end{minipage}
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{3_alpha.pdf}
+% $\beta_1  = 10^{-2} $\\
+% $\beta_2  = 10^{-3} $
+% \end{minipage}
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{2_alpha.pdf}
+% $\beta_1  = 0.1 $\\
+% $\beta_2  = 0.01 $
+% \end{minipage}
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{1_alpha.pdf}
+% $\beta_1  = 1 $\\
+% $\beta_2  = 0.1 $
+% \end{minipage}
+% \begin{minipage}[t]{0.16\linewidth}
+% \centering
+% \includegraphics[width=0.99\linewidth]{0_alpha.pdf}
+% $\beta_1  = 10^{3} $\\
+% $\beta_2  = 10^{2} $
+% \end{minipage}
+% \caption{Final results for sketch synthesis with fixed $\alpha=0.004$ and different $\beta_1$, $\beta_2$ values.}
+% \label{fig:alphg_effect}
+% \end{figure*}
+
+%------------------------------------------------------------------------
+\subsection{Effectiveness of the model}
+
+The loss function we minimize during the generation of sketches contains three terms for content, style and key components respectively. The term $\mathcal{L}_{k} $ regularizes the results by encouraging the style extracted from the key component regions in the training set to be placed into the key components region of the results, which helps generate better results around these components (see Fig.~\ref{fig:region_effect}). To better understand how style influences the final sketch, we smoothly change the emphasis on style by adjusting $\beta_1$ and $\beta_2$ while keeping $\alpha$  fixed. Fig.~\ref{fig:alphg_effect} indicates that the sketch with style transfered contains more texture and is more like a drawn sketch. The Theano implementation of the proposed method takes approximately $100$ seconds to generate a sketch on a GeForce GTX TITAN X platform. The bottle neck lies in the style transfer which requires feeding $\mathcal{X}$ to the VGG-Network to estimate targeting feature maps and to calculate the gradient of Eq.~(\ref{eq:Total_loss}), which is computationally intensive. 
+
+%==========================================================================
+\section{Conclusion}
+
+This paper proposed a novel face sketch synthesis method inspired by the procedure of artists drawing sketches. In our method, the outline of the face is delineated by a content network and the style extracted from sketches drawn by artists are transferred to generate a final sketch. Quantitative evaluations on face sketch recognition and style similarity measure demonstrate the effectiveness of the proposed algorithm for face sketch synthesis and style transferring. Our future work will investigate accelerating technique to reduce the running time and achieve real time face sketch synthesis with style transfer.
+
 
 {\small
 \bibliographystyle{ieee}

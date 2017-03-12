@@ -50,6 +50,11 @@ Q.~Liu, X.~Tang, H.~Jin, H.~Lu, and S.~Ma.
 \newblock In {\em IEEE Computer Society Conference on Computer Vision and
   Pattern Recognition}, volume~1, pages 1005--1010. IEEE, 2005.
 
+\bibitem{martinez1998r}
+A.~Martinez.
+\newblock R. benavente. the {AR} face database.
+\newblock Technical report, CVC Tech. Report, 1998.
+
 \bibitem{simonyan2014very}
 K.~Simonyan and A.~Zisserman.
 \newblock Very deep convolutional networks for large-scale image recognition.

@@ -112,34 +112,79 @@
 \@writefile{brf}{\backcite{gatys2015neural}{{3}{4}{section.4}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}\hskip -1em.\nobreakspace  {}Content Image Generation}{3}{subsection.4.1}}
 \@writefile{brf}{\backcite{wang2009face}{{3}{4.1}{figure.3}}}
+\@writefile{brf}{\backcite{szegedy2015going}{{3}{4.1}{figure.3}}}
 \citation{wang2009face}
 \citation{zhou2012markov}
-\citation{gatys2015texture}
 \@writefile{lof}{\contentsline {figure}{\numberline {3}{\ignorespaces Illustration of the content network for generating a content image. The numbers above the building block denote the number of CNN filters. (a) The architecture of content network. (b) The inception module in (a) contains three groups of filters with different sizes.}}{4}{figure.3}}
 \newlabel{fig:content_NN}{{3}{4}{Illustration of the content network for generating a content image. The numbers above the building block denote the number of CNN filters. (a) The architecture of content network. (b) The inception module in (a) contains three groups of filters with different sizes}{figure.3}{}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(a)}{\ignorespaces {}}}{4}{figure.3}}
 \@writefile{lof}{\contentsline {subfigure}{\numberline{(b)}{\ignorespaces {}}}{4}{figure.3}}
-\@writefile{brf}{\backcite{szegedy2015going}{{4}{4.1}{figure.3}}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.2}\hskip -1em.\nobreakspace  {}Pyramid Feature Column}{4}{subsection.4.2}}
-\@writefile{toc}{\contentsline {paragraph}{Find Matching Sketch Patch}{4}{section*.1}}
 \@writefile{brf}{\backcite{wang2009face,zhou2012markov}{{4}{4.2}{section*.1}}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4}{\ignorespaces Illustration of pyramid feature column. Feature maps of the final sketch $A^{l}$ are divided into a fixed $18\times 18$ grid. A pyramid column $U_{ij}$ consists of feature map patches at different layer having the same grid indexes $(i, j)$.}}{4}{figure.4}}
 \newlabel{fig:pyramidcolumn}{{4}{4}{Illustration of pyramid feature column. Feature maps of the final sketch $A^{l}$ are divided into a fixed $18\times 18$ grid. A pyramid column $U_{ij}$ consists of feature map patches at different layer having the same grid indexes $(i, j)$}{figure.4}{}}
-\@writefile{toc}{\contentsline {paragraph}{Estimate Pyramid Column}{4}{section*.2}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Loss Function}{4}{subsection.4.3}}
-\@writefile{brf}{\backcite{gatys2015texture}{{4}{4.2}{subsection.4.3}}}
+\citation{gatys2015neural}
+\citation{wang2009face}
+\citation{martinez1998r}
+\citation{song2014real}
+\citation{wang2009face}
+\citation{wang2009face}
+\citation{zhou2012markov}
+\citation{zhang2015end}
+\citation{song2014real}
+\citation{zhang2015end}
+\citation{wang2009face}
+\citation{zhang2015end}
+\citation{wang2009face}
+\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Find a region $\mathcal  {R}$ centered at $\mathaccentV {tilde}07E{S_{ij}}$. If $\mathcal  {R}$ is inside the image, $\mathaccentV {tilde}07E{S_{ij}}$ should be the center patch of $\mathcal  {R}$, see the left region. Otherwise, we need to find $\mathcal  {R}'$ inside the image which has the biggest intersection with $\mathcal  {R}$, see the right part. Suppose the indexes of $\mathaccentV {tilde}07E{S_{ij}}$ inside $\mathcal  {R}'$ is $(p, q)$, then $U_{pq}$ is the corresponding feature column.}}{5}{figure.5}}
+\newlabel{fig:border_example}{{5}{5}{Find a region $\mathcal {R}$ centered at $\tilde {S_{ij}}$. If $\mathcal {R}$ is inside the image, $\tilde {S_{ij}}$ should be the center patch of $\mathcal {R}$, see the left region. Otherwise, we need to find $\mathcal {R}'$ inside the image which has the biggest intersection with $\mathcal {R}$, see the right part. Suppose the indexes of $\tilde {S_{ij}}$ inside $\mathcal {R}'$ is $(p, q)$, then $U_{pq}$ is the corresponding feature column}{figure.5}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.3}\hskip -1em.\nobreakspace  {}Loss Function}{5}{subsection.4.3}}
+\@writefile{brf}{\backcite{gatys2015neural}{{5}{4.3}{subsection.4.3}}}
+\newlabel{eq:Total_loss}{{4}{5}{\hskip -1em.~Loss Function}{equation.4.4}{}}
+\newlabel{eq:content_loss}{{5}{5}{\hskip -1em.~Loss Function}{equation.4.5}{}}
+\newlabel{eq:Gram_loss}{{6}{5}{\hskip -1em.~Loss Function}{equation.4.6}{}}
+\newlabel{eq:component_loss}{{7}{5}{\hskip -1em.~Loss Function}{equation.4.7}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Implementation Details}{5}{subsection.4.4}}
+\newlabel{eq:VGG_weights}{{8}{5}{VGG-19 Parameters}{equation.4.8}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Experiments}{5}{section.5}}
+\@writefile{brf}{\backcite{wang2009face}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{martinez1998r}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{song2014real,wang2009face}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{wang2009face}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{zhou2012markov}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{zhang2015end}{{5}{5}{section.5}}}
+\@writefile{brf}{\backcite{song2014real}{{5}{5}{section.5}}}
+\citation{song2014real}
+\citation{wang2009face}
+\citation{zhang2015end}
+\citation{zhou2012markov}
+\citation{wang2009face}
+\citation{zhou2012markov}
+\citation{song2014real}
+\citation{zhang2015end}
+\citation{wang2009face}
+\citation{zhou2012markov}
+\citation{song2014real}
 \bibstyle{ieee}
 \bibdata{egbib}
 \bibcite{berger2013style}{1}
-\@writefile{lof}{\contentsline {figure}{\numberline {5}{\ignorespaces Find a matching patch for boarder cells. (a) The center $C_{ij}$ of a boarder cell is denoted as the red dot in the photo. (b) The region associated with $U_{ij}$ is the intersection of the blue square with the sketch. The distances between $C_{ij}$ to the intersection boarders are denoted by green lines. (c) $\mathaccentV {tilde}07E{C}_{ij}$ denoted as a yellow dot is located by examining photo similarity. (d) The distances of $\mathaccentV {tilde}07E{C}_{ij}$ to boarders of $S_{ij}$ equal to the distances of $C_{ij}$ to boarders of intersection region in (b) such that the location of $\mathaccentV {tilde}07E{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$.}}{5}{figure.5}}
-\newlabel{fig:boarder_example}{{5}{5}{Find a matching patch for boarder cells. (a) The center $C_{ij}$ of a boarder cell is denoted as the red dot in the photo. (b) The region associated with $U_{ij}$ is the intersection of the blue square with the sketch. The distances between $C_{ij}$ to the intersection boarders are denoted by green lines. (c) $\tilde {C}_{ij}$ denoted as a yellow dot is located by examining photo similarity. (d) The distances of $\tilde {C}_{ij}$ to boarders of $S_{ij}$ equal to the distances of $C_{ij}$ to boarders of intersection region in (b) such that the location of $\tilde {C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$}{figure.5}{}}
-\newlabel{eq:Gram_loss}{{2}{5}{Estimate Pyramid Column}{equation.4.2}{}}
-\newlabel{eq:Style_loss}{{3}{5}{Estimate Pyramid Column}{equation.4.3}{}}
-\newlabel{eq:component_loss}{{4}{5}{Estimate Pyramid Column}{equation.4.4}{}}
-\newlabel{eq:Total_loss}{{5}{5}{Estimate Pyramid Column}{equation.4.5}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {4.4}\hskip -1em.\nobreakspace  {}Implementation Details}{5}{subsection.4.4}}
-\newlabel{eq:VGG_weights}{{6}{5}{\hskip -1em.~Implementation Details}{equation.4.6}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {5}\hskip -1em.\nobreakspace  {}Final copy}{5}{section.5}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{\ignorespaces Recognition rate on benchmark datasets. The best performance is colored in red.}}{6}{table.1}}
+\newlabel{tab:reg_percentage}{{1}{6}{Recognition rate on benchmark datasets. The best performance is colored in red}{table.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.1}\hskip -1em.\nobreakspace  {}Style Transfer Evaluation}{6}{subsection.5.1}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.2}\hskip -1em.\nobreakspace  {}Sketch Generation}{6}{subsection.5.2}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.3}\hskip -1em.\nobreakspace  {}Generalization Test}{6}{subsection.5.3}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.4}\hskip -1em.\nobreakspace  {}Quantitative Results}{6}{subsection.5.4}}
+\@writefile{brf}{\backcite{song2014real,wang2009face,zhang2015end,zhou2012markov}{{6}{5.4}{section*.5}}}
+\@writefile{brf}{\backcite{wang2009face}{{6}{5.4}{section*.5}}}
+\@writefile{brf}{\backcite{zhou2012markov}{{6}{5.4}{section*.5}}}
+\@writefile{brf}{\backcite{song2014real}{{6}{5.4}{section*.5}}}
+\newlabel{eq:style_exp}{{9}{6}{Normalized Gram Matrix Difference (NGMD)}{equation.5.9}{}}
+\@writefile{brf}{\backcite{zhang2015end}{{6}{5.4}{equation.5.9}}}
+\@writefile{brf}{\backcite{wang2009face}{{6}{5.4}{equation.5.9}}}
+\@writefile{brf}{\backcite{zhou2012markov}{{6}{5.4}{equation.5.9}}}
+\@writefile{brf}{\backcite{song2014real}{{6}{5.4}{equation.5.9}}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {5.5}\hskip -1em.\nobreakspace  {}Effectiveness of the model}{6}{subsection.5.5}}
+\@writefile{toc}{\contentsline {section}{\numberline {6}\hskip -1em.\nobreakspace  {}Conclusion}{6}{section.6}}
 \bibcite{chen2001example}{2}
 \bibcite{Chen2016Patch}{3}
 \bibcite{gatys2015texture}{4}
@@ -148,13 +193,20 @@
 \bibcite{feifei2016}{7}
 \bibcite{Li2017Demistify}{8}
 \bibcite{liu2005nonlinear}{9}
-\bibcite{simonyan2014very}{10}
-\bibcite{song2014real}{11}
-\bibcite{szegedy2015going}{12}
-\bibcite{tang2003face}{13}
-\bibcite{wang2009face}{14}
-\bibcite{xu2008hierarchical}{15}
-\bibcite{zhang2017content}{16}
-\bibcite{zhang2015end}{17}
-\bibcite{zhang2010lighting}{18}
-\bibcite{zhou2012markov}{19}
+\bibcite{martinez1998r}{10}
+\bibcite{simonyan2014very}{11}
+\bibcite{song2014real}{12}
+\bibcite{szegedy2015going}{13}
+\@writefile{lof}{\contentsline {figure}{\numberline {6}{\ignorespaces Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method\nobreakspace  {}\cite  {zhang2015end}. (c) Results from MRF based method\nobreakspace  {}\cite  {wang2009face}. (d) Our results.}}{7}{figure.6}}
+\@writefile{brf}{\backcite{zhang2015end}{{7}{6}{figure.6}}}
+\@writefile{brf}{\backcite{wang2009face}{{7}{6}{figure.6}}}
+\newlabel{fig:q_eval_1}{{6}{7}{Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method~\cite {zhang2015end}. (c) Results from MRF based method~\cite {wang2009face}. (d) Our results}{figure.6}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Averaged NGMD value of different methods at different level on AR and CUHK datasets.}}{7}{table.2}}
+\newlabel{tab:NGMD}{{2}{7}{Averaged NGMD value of different methods at different level on AR and CUHK datasets}{table.2}{}}
+\bibcite{tang2003face}{14}
+\bibcite{wang2009face}{15}
+\bibcite{xu2008hierarchical}{16}
+\bibcite{zhang2017content}{17}
+\bibcite{zhang2015end}{18}
+\bibcite{zhang2010lighting}{19}
+\bibcite{zhou2012markov}{20}
