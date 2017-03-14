@@ -91,6 +91,11 @@ Z.~Xu, H.~Chen, S.-C. Zhu, and J.~Luo.
 \newblock {\em IEEE Transactions on Pattern Analysis and Machine Intelligence},
   30(6):955--969, 2008.
 
+\bibitem{matt2012adadelta}
+M.~D. Zeiler.
+\newblock {ADADELTA:} an adaptive learning rate method.
+\newblock {\em CoRR}, abs/1212.5701, 2012.
+
 \bibitem{zhang2017content}
 D.~Zhang, L.~Lin, T.~Chen, X.~Wu, W.~Tan, and E.~Izquierdo.
 \newblock Content-adaptive sketch portrait generation by decompositional

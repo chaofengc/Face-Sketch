@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  12 MAR 2017 21:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  14 MAR 2017 17:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -322,21 +322,21 @@ File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
 (./sketch_revised_v1.aux)
 \openout1 = `sketch_revised_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 39.
-LaTeX Font Info:    ... okay on input line 39.
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 39.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 40.
+LaTeX Font Info:    ... okay on input line 40.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 40.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
@@ -380,7 +380,7 @@ e
 ))
 \AtBeginShipoutBox=\box33
 Package atbegshi Info: Package `everyshi' patched.
-Package hyperref Info: Link coloring ON on input line 39.
+Package hyperref Info: Link coloring ON on input line 40.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
@@ -390,196 +390,225 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count126
 )
-LaTeX Info: Redefining \ref on input line 39.
-LaTeX Info: Redefining \pageref on input line 39.
-LaTeX Info: Redefining \nameref on input line 39.
+LaTeX Info: Redefining \ref on input line 40.
+LaTeX Info: Redefining \pageref on input line 40.
+LaTeX Info: Redefining \nameref on input line 40.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 62.
-LaTeX Font Info:    Try loading font information for U+msa on input line 62.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
+LaTeX Font Info:    Try loading font information for U+msa on input line 63.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 62.
+LaTeX Font Info:    Try loading font information for U+msb on input line 63.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 65.
-LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 67.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 66.
 
-<img/example_photo.png, id=4, 200.75pt x 250.9375pt>
-File: img/example_photo.png Graphic file (type png)
+<img/page1_example/example_photo.png, id=4, 200.75pt x 250.9375pt>
+File: img/page1_example/example_photo.png Graphic file (type png)
 
-<use img/example_photo.png>
-Package pdftex.def Info: img/example_photo.png used on input line 81.
-(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+<use img/page1_example/example_photo.png>
+Package pdftex.def Info: img/page1_example/example_photo.png used on input line
+ 81.
+(pdftex.def)             Requested size: 54.54025pt x 68.17522pt.
 
-<img/example_mrf.png, id=6, 150.5625pt x 188.20313pt>
-File: img/example_mrf.png Graphic file (type png)
+<img/page1_example/example_mrf.png, id=6, 150.5625pt x 188.20313pt>
+File: img/page1_example/example_mrf.png Graphic file (type png)
 
-<use img/example_mrf.png>
-Package pdftex.def Info: img/example_mrf.png used on input line 86.
-(pdftex.def)             Requested size: 56.91393pt x 71.14172pt.
- <img/example_wmrf.png, id=8, 200.75pt x 250.9375pt>
-File: img/example_wmrf.png Graphic file (type png)
+<use img/page1_example/example_mrf.png>
+Package pdftex.def Info: img/page1_example/example_mrf.png used on input line 8
+3.
+(pdftex.def)             Requested size: 54.54025pt x 68.1752pt.
 
-<use img/example_wmrf.png>
-Package pdftex.def Info: img/example_wmrf.png used on input line 91.
-(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+<img/page1_example/example_wmrf.png, id=8, 200.75pt x 250.9375pt>
+File: img/page1_example/example_wmrf.png Graphic file (type png)
 
-Overfull \hbox (1.40553pt too wide) in paragraph at lines 91--93
- \OT1/ptm/m/n/10 (c)WMRF[[]][] 
- []
+<use img/page1_example/example_wmrf.png>
+Package pdftex.def Info: img/page1_example/example_wmrf.png used on input line 
+85.
+(pdftex.def)             Requested size: 54.54025pt x 68.17522pt.
 
-<img/example_ssd.png, id=10, 200.75pt x 250.9375pt>
-File: img/example_ssd.png Graphic file (type png)
- <use img/example_ssd.png>
-Package pdftex.def Info: img/example_ssd.png used on input line 96.
-(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+<img/page1_example/example_ssd.png, id=10, 200.75pt x 250.9375pt>
+File: img/page1_example/example_ssd.png Graphic file (type png)
 
-<img/example_fcnn.png, id=12, 200.75pt x 256.96pt>
-File: img/example_fcnn.png Graphic file (type png)
- <use img/example_fcnn.png>
-Package pdftex.def Info: img/example_fcnn.png used on input line 101.
-(pdftex.def)             Requested size: 56.91393pt x 72.85011pt.
+<use img/page1_example/example_ssd.png>
+Package pdftex.def Info: img/page1_example/example_ssd.png used on input line 8
+7.
+(pdftex.def)             Requested size: 54.54025pt x 68.17522pt.
 
-<img/example_bfcn.png, id=14, 143.03438pt x 175.40532pt>
-File: img/example_bfcn.png Graphic file (type png)
+<img/page1_example/example_fcnn.png, id=12, 200.75pt x 256.96pt>
+File: img/page1_example/example_fcnn.png Graphic file (type png)
 
-<use img/example_bfcn.png>
-Package pdftex.def Info: img/example_bfcn.png used on input line 106.
+<use img/page1_example/example_fcnn.png>
+Package pdftex.def Info: img/page1_example/example_fcnn.png used on input line 
+89.
+(pdftex.def)             Requested size: 54.54025pt x 69.81142pt.
+
+<img/page1_example/example_bfcn.png, id=14, 143.03438pt x 175.40532pt>
+File: img/page1_example/example_bfcn.png Graphic file (type png)
+
+<use img/page1_example/example_bfcn.png>
+Package pdftex.def Info: img/page1_example/example_bfcn.png used on input line 
+91.
 (pdftex.def)             Requested size: 54.54025pt x 66.8822pt.
 
-<img/example_deepart.jpg, id=16, 448.67625pt x 561.09625pt>
-File: img/example_deepart.jpg Graphic file (type jpg)
+<img/page1_example/example_deepart.jpg, id=16, 448.67625pt x 561.09625pt>
+File: img/page1_example/example_deepart.jpg Graphic file (type jpg)
 
-<use img/example_deepart.jpg>
-Package pdftex.def Info: img/example_deepart.jpg used on input line 111.
-(pdftex.def)             Requested size: 56.91393pt x 71.1728pt.
+<use img/page1_example/example_deepart.jpg>
+Package pdftex.def Info: img/page1_example/example_deepart.jpg used on input li
+ne 93.
+(pdftex.def)             Requested size: 54.54025pt x 68.20192pt.
 
-<img/example_ours.png, id=18, 200.75pt x 250.9375pt>
-File: img/example_ours.png Graphic file (type png)
+<img/page1_example/example_ours.png, id=18, 200.75pt x 250.9375pt>
+File: img/page1_example/example_ours.png Graphic file (type png)
 
-<use img/example_ours.png>
-Package pdftex.def Info: img/example_ours.png used on input line 116.
-(pdftex.def)             Requested size: 56.91393pt x 71.14268pt.
+<use img/page1_example/example_ours.png>
+Package pdftex.def Info: img/page1_example/example_ours.png used on input line 
+95.
+(pdftex.def)             Requested size: 54.54025pt x 68.17522pt.
 
-<img/hairpin_photo_patch.png, id=19, 37.13875pt x 38.1425pt>
-File: img/hairpin_photo_patch.png Graphic file (type png)
+<img/page1_example/hairpin_photo_patch.png, id=19, 37.13875pt x 38.1425pt>
+File: img/page1_example/hairpin_photo_patch.png Graphic file (type png)
 
-<use img/hairpin_photo_patch.png>
-Package pdftex.def Info: img/hairpin_photo_patch.png used on input line 121.
+<use img/page1_example/hairpin_photo_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_photo_patch.png used on inpu
+t line 99.
 (pdftex.def)             Requested size: 26.08508pt x 26.79092pt.
 
-<img/hairpin_mrf_patch.png, id=20, 29.35968pt x 30.1125pt>
-File: img/hairpin_mrf_patch.png Graphic file (type png)
+<img/page1_example/hairpin_mrf_patch.png, id=20, 29.35968pt x 30.1125pt>
+File: img/page1_example/hairpin_mrf_patch.png Graphic file (type png)
 
-<use img/hairpin_mrf_patch.png>
-Package pdftex.def Info: img/hairpin_mrf_patch.png used on input line 122.
+<use img/page1_example/hairpin_mrf_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_mrf_patch.png used on input 
+line 100.
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
-<img/hairpin_wmrf_patch.png, id=21, 38.1425pt x 39.14626pt>
-File: img/hairpin_wmrf_patch.png Graphic file (type png)
+<img/page1_example/hairpin_wmrf_patch.png, id=21, 38.1425pt x 39.14626pt>
+File: img/page1_example/hairpin_wmrf_patch.png Graphic file (type png)
 
-<use img/hairpin_wmrf_patch.png>
-Package pdftex.def Info: img/hairpin_wmrf_patch.png used on input line 123.
+<use img/page1_example/hairpin_wmrf_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_wmrf_patch.png used on input
+ line 101.
 (pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
 
-<img/hairpin_ssd_patch.png, id=22, 39.14626pt x 40.15pt>
-File: img/hairpin_ssd_patch.png Graphic file (type png)
+<img/page1_example/hairpin_ssd_patch.png, id=22, 39.14626pt x 40.15pt>
+File: img/page1_example/hairpin_ssd_patch.png Graphic file (type png)
 
-<use img/hairpin_ssd_patch.png>
-Package pdftex.def Info: img/hairpin_ssd_patch.png used on input line 124.
+<use img/page1_example/hairpin_ssd_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_ssd_patch.png used on input 
+line 102.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
-<img/hairpin_fcnn_patch.png, id=23, 39.14626pt x 40.15pt>
-File: img/hairpin_fcnn_patch.png Graphic file (type png)
+<img/page1_example/hairpin_fcnn_patch.png, id=23, 39.14626pt x 40.15pt>
+File: img/page1_example/hairpin_fcnn_patch.png Graphic file (type png)
 
-<use img/hairpin_fcnn_patch.png>
-Package pdftex.def Info: img/hairpin_fcnn_patch.png used on input line 125.
+<use img/page1_example/hairpin_fcnn_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_fcnn_patch.png used on input
+ line 103.
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
-<img/hairpin_bfcn_patch.png, id=24, 28.60687pt x 30.1125pt>
-File: img/hairpin_bfcn_patch.png Graphic file (type png)
+<img/page1_example/hairpin_bfcn_patch.png, id=24, 28.60687pt x 30.1125pt>
+File: img/page1_example/hairpin_bfcn_patch.png Graphic file (type png)
 
-<use img/hairpin_bfcn_patch.png>
-Package pdftex.def Info: img/hairpin_bfcn_patch.png used on input line 126.
+<use img/page1_example/hairpin_bfcn_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_bfcn_patch.png used on input
+ line 104.
 (pdftex.def)             Requested size: 26.08508pt x 27.45891pt.
 
-<img/hairpin_deepart_patch.jpg, id=25, 82.3075pt x 90.3375pt>
-File: img/hairpin_deepart_patch.jpg Graphic file (type jpg)
+<img/page1_example/hairpin_deepart_patch.jpg, id=25, 82.3075pt x 90.3375pt>
+File: img/page1_example/hairpin_deepart_patch.jpg Graphic file (type jpg)
 
-<use img/hairpin_deepart_patch.jpg>
-Package pdftex.def Info: img/hairpin_deepart_patch.jpg used on input line 127.
+<use img/page1_example/hairpin_deepart_patch.jpg>
+Package pdftex.def Info: img/page1_example/hairpin_deepart_patch.jpg used on in
+put line 105.
 (pdftex.def)             Requested size: 26.08508pt x 28.63013pt.
 
-<img/hairpin_ours_patch.png, id=26, 38.1425pt x 40.15pt>
-File: img/hairpin_ours_patch.png Graphic file (type png)
+<img/page1_example/hairpin_ours_patch.png, id=26, 38.1425pt x 40.15pt>
+File: img/page1_example/hairpin_ours_patch.png Graphic file (type png)
 
-<use img/hairpin_ours_patch.png>
-Package pdftex.def Info: img/hairpin_ours_patch.png used on input line 128.
+<use img/page1_example/hairpin_ours_patch.png>
+Package pdftex.def Info: img/page1_example/hairpin_ours_patch.png used on input
+ line 106.
 (pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
 
-<img/eye_photo.png, id=27, 38.1425pt x 39.14626pt>
-File: img/eye_photo.png Graphic file (type png)
- <use img/eye_photo.png>
-Package pdftex.def Info: img/eye_photo.png used on input line 132.
+<img/page1_example/eye_photo.png, id=27, 38.1425pt x 39.14626pt>
+File: img/page1_example/eye_photo.png Graphic file (type png)
+
+<use img/page1_example/eye_photo.png>
+Package pdftex.def Info: img/page1_example/eye_photo.png used on input line 110
+.
 (pdftex.def)             Requested size: 26.08508pt x 26.7726pt.
 
-<img/eye_mrf.png, id=28, 29.35968pt x 30.1125pt>
-File: img/eye_mrf.png Graphic file (type png)
- <use img/eye_mrf.png>
-Package pdftex.def Info: img/eye_mrf.png used on input line 133.
+<img/page1_example/eye_mrf.png, id=28, 29.35968pt x 30.1125pt>
+File: img/page1_example/eye_mrf.png Graphic file (type png)
+
+<use img/page1_example/eye_mrf.png>
+Package pdftex.def Info: img/page1_example/eye_mrf.png used on input line 111.
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
-<img/eye_wmrf.png, id=29, 39.14626pt x 40.15pt>
-File: img/eye_wmrf.png Graphic file (type png)
- <use img/eye_wmrf.png>
-Package pdftex.def Info: img/eye_wmrf.png used on input line 134.
+<img/page1_example/eye_wmrf.png, id=29, 39.14626pt x 40.15pt>
+File: img/page1_example/eye_wmrf.png Graphic file (type png)
+
+<use img/page1_example/eye_wmrf.png>
+Package pdftex.def Info: img/page1_example/eye_wmrf.png used on input line 112.
+
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
-<img/eye_ssd.png, id=30, 39.14626pt x 39.14626pt>
-File: img/eye_ssd.png Graphic file (type png)
- <use img/eye_ssd.png>
-Package pdftex.def Info: img/eye_ssd.png used on input line 135.
+<img/page1_example/eye_ssd.png, id=30, 39.14626pt x 39.14626pt>
+File: img/page1_example/eye_ssd.png Graphic file (type png)
+
+<use img/page1_example/eye_ssd.png>
+Package pdftex.def Info: img/page1_example/eye_ssd.png used on input line 113.
 (pdftex.def)             Requested size: 26.08508pt x 26.08568pt.
 
-<img/eye_fcnn.png, id=31, 39.14626pt x 40.15pt>
-File: img/eye_fcnn.png Graphic file (type png)
- <use img/eye_fcnn.png>
-Package pdftex.def Info: img/eye_fcnn.png used on input line 136.
+<img/page1_example/eye_fcnn.png, id=31, 39.14626pt x 40.15pt>
+File: img/page1_example/eye_fcnn.png Graphic file (type png)
+
+<use img/page1_example/eye_fcnn.png>
+Package pdftex.def Info: img/page1_example/eye_fcnn.png used on input line 114.
+
 (pdftex.def)             Requested size: 26.08508pt x 26.75453pt.
 
-<img/eye_bfcn.png, id=32, 29.35968pt x 30.1125pt>
-File: img/eye_bfcn.png Graphic file (type png)
- <use img/eye_bfcn.png>
-Package pdftex.def Info: img/eye_bfcn.png used on input line 137.
+<img/page1_example/eye_bfcn.png, id=32, 29.35968pt x 30.1125pt>
+File: img/page1_example/eye_bfcn.png Graphic file (type png)
+
+<use img/page1_example/eye_bfcn.png>
+Package pdftex.def Info: img/page1_example/eye_bfcn.png used on input line 115.
+
 (pdftex.def)             Requested size: 26.08508pt x 26.75407pt.
 
-<img/eye_deepart.jpg, id=33, 85.31876pt x 89.33376pt>
-File: img/eye_deepart.jpg Graphic file (type jpg)
+<img/page1_example/eye_deepart.jpg, id=33, 85.31876pt x 89.33376pt>
+File: img/page1_example/eye_deepart.jpg Graphic file (type jpg)
 
-<use img/eye_deepart.jpg>
-Package pdftex.def Info: img/eye_deepart.jpg used on input line 138.
+<use img/page1_example/eye_deepart.jpg>
+Package pdftex.def Info: img/page1_example/eye_deepart.jpg used on input line 1
+16.
 (pdftex.def)             Requested size: 26.08508pt x 27.3115pt.
- <img/eye_ours.png, id=34, 38.1425pt x 40.15pt>
-File: img/eye_ours.png Graphic file (type png)
 
-<use img/eye_ours.png>
-Package pdftex.def Info: img/eye_ours.png used on input line 139.
+<img/page1_example/eye_ours.png, id=34, 38.1425pt x 40.15pt>
+File: img/page1_example/eye_ours.png Graphic file (type png)
+
+<use img/page1_example/eye_ours.png>
+Package pdftex.def Info: img/page1_example/eye_ours.png used on input line 117.
+
 (pdftex.def)             Requested size: 26.08508pt x 27.45908pt.
-LaTeX Font Info:    Try loading font information for OT1+pcr on input line 144.
+LaTeX Font Info:    Try loading font information for OT1+pcr on input line 122.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 146.
-LaTeX Font Info:    Try loading font information for OT1+phv on input line 147.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 124.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+LaTeX Font Info:    Try loading font information for OT1+phv on input line 125.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/ot1phv.fd
@@ -587,55 +616,65 @@ File: ot1phv.fd 2001/06/04 scalable font definitions for OT1/phv.
 ) [1{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./img/example_photo.png> <./img/example_mrf.png> <./img/example_wmrf.png> <./
-img/example_ssd.png> <./img/example_fcnn.png> <./img/example_bfcn.png> <./img/e
-xample_deepart.jpg> <./img/example_ours.png> <./img/hairpin_photo_patch.png> <.
-/img/hairpin_mrf_patch.png> <./img/hairpin_wmrf_patch.png> <./img/hairpin_ssd_p
-atch.png> <./img/hairpin_fcnn_patch.png> <./img/hairpin_bfcn_patch.png> <./img/
-hairpin_deepart_patch.jpg> <./img/hairpin_ours_patch.png> <./img/eye_photo.png>
- <./img/eye_mrf.png> <./img/eye_wmrf.png> <./img/eye_ssd.png> <./img/eye_fcnn.p
-ng> <./img/eye_bfcn.png> <./img/eye_deepart.jpg> <./img/eye_ours.png>]
-LaTeX Font Info:    Try loading font information for OMS+ptm on input line 150.
+ <./img/page1_example/example_photo.png> <./img/page1_example/example_mrf.png> 
+<./img/page1_example/example_wmrf.png> <./img/page1_example/example_ssd.png> <.
+/img/page1_example/example_fcnn.png> <./img/page1_example/example_bfcn.png> <./
+img/page1_example/example_deepart.jpg> <./img/page1_example/example_ours.png> <
+./img/page1_example/hairpin_photo_patch.png> <./img/page1_example/hairpin_mrf_p
+atch.png> <./img/page1_example/hairpin_wmrf_patch.png> <./img/page1_example/hai
+rpin_ssd_patch.png> <./img/page1_example/hairpin_fcnn_patch.png> <./img/page1_e
+xample/hairpin_bfcn_patch.png> <./img/page1_example/hairpin_deepart_patch.jpg> 
+<./img/page1_example/hairpin_ours_patch.png> <./img/page1_example/eye_photo.png
+> <./img/page1_example/eye_mrf.png> <./img/page1_example/eye_wmrf.png> <./img/p
+age1_example/eye_ssd.png> <./img/page1_example/eye_fcnn.png> <./img/page1_examp
+le/eye_bfcn.png> <./img/page1_example/eye_deepart.jpg> <./img/page1_example/eye
+_ours.png>]
+LaTeX Font Info:    Try loading font information for OMS+ptm on input line 128.
 
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/psnfss/omsptm.fd
 File: omsptm.fd 
 )
 LaTeX Font Info:    Font shape `OMS/ptm/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 128.
 
-<img/overview.pdf, id=126, 1154.3125pt x 584.1825pt>
+<img/overview.pdf, id=133, 1154.3125pt x 584.1825pt>
 File: img/overview.pdf Graphic file (type pdf)
  <use img/overview.pdf>
-Package pdftex.def Info: img/overview.pdf used on input line 170.
+Package pdftex.def Info: img/overview.pdf used on input line 146.
 (pdftex.def)             Requested size: 422.33084pt x 213.73738pt.
 
-[2] <img/content_net.pdf, id=156, 1197.47375pt x 422.57875pt>
+[2] <img/content_net.pdf, id=160, 1197.47375pt x 422.57875pt>
 File: img/content_net.pdf Graphic file (type pdf)
 
 <use img/content_net.pdf>
-Package pdftex.def Info: img/content_net.pdf used on input line 196.
+Package pdftex.def Info: img/content_net.pdf used on input line 171.
 (pdftex.def)             Requested size: 322.95352pt x 113.96237pt.
 
-<img/inception.pdf, id=157, 304.13625pt x 250.9375pt>
+<img/inception.pdf, id=161, 304.13625pt x 250.9375pt>
 File: img/inception.pdf Graphic file (type pdf)
  <use img/inception.pdf>
-Package pdftex.def Info: img/inception.pdf used on input line 199.
+Package pdftex.def Info: img/inception.pdf used on input line 173.
 (pdftex.def)             Requested size: 124.21405pt x 102.48682pt.
 
-Underfull \vbox (badness 1168) has occurred while \output is active []
-
- [3 <./img/overview.pdf>]
+[3 <./img/overview.pdf>]
 Missing character: There is no ï in font ptmr7t!
 Missing character: There is no ¼ in font ptmr7t!
 Missing character: There is no Œ in font ptmr7t!
- <img/pyramidcolumn.pdf, id=279, 639.38875pt x 557.08125pt>
+
+<img/pyramidcolumn.pdf, id=288, 639.38875pt x 557.08125pt>
 File: img/pyramidcolumn.pdf Graphic file (type pdf)
 
 <use img/pyramidcolumn.pdf>
-Package pdftex.def Info: img/pyramidcolumn.pdf used on input line 213.
+Package pdftex.def Info: img/pyramidcolumn.pdf used on input line 191.
 (pdftex.def)             Requested size: 201.56699pt x 175.61752pt.
- [4 <./img/content_net.pdf> <./img/inception.pdf> <./img/pyramidcolumn.pdf>]
+
+Underfull \hbox (badness 5756) in paragraph at lines 197--198
+ []\OT1/ptm/b/n/10 Find Match-ing Sketch Patch \OT1/ptm/m/n/10 Sim-i-lar to pre
+-vi-ous
+ []
+
+[4 <./img/content_net.pdf> <./img/inception.pdf> <./img/pyramidcolumn.pdf>]
 Package epstopdf Info: Source file: <img/border_PFC.eps>
 (epstopdf)                    date: 2017-03-12 21:30:31
 (epstopdf)                    size: 1915064 bytes
@@ -644,370 +683,441 @@ Package epstopdf Info: Source file: <img/border_PFC.eps>
 (epstopdf)                    size: 473693 bytes
 (epstopdf)             Command: <repstopdf --outfile=img/border_PFC-eps-convert
 ed-to.pdf img/border_PFC.eps>
-(epstopdf)             \includegraphics on input line 237.
+(epstopdf)             \includegraphics on input line 211.
 Package epstopdf Info: Output file is already uptodate.
 
-<img/border_PFC-eps-converted-to.pdf, id=519, 578.16pt x 361.35pt>
+<img/border_PFC-eps-converted-to.pdf, id=528, 578.16pt x 361.35pt>
 File: img/border_PFC-eps-converted-to.pdf Graphic file (type pdf)
 
 <use img/border_PFC-eps-converted-to.pdf>
 Package pdftex.def Info: img/border_PFC-eps-converted-to.pdf used on input line
- 237.
+ 211.
 (pdftex.def)             Requested size: 234.76587pt x 146.7264pt.
 
-<img/example1_gro.pdf, id=529, 233.87375pt x 211.79124pt>
-File: img/example1_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example1_photo.png, id=531, 200.75pt x 250.9375pt>
+File: img/sketch_result/example1_photo.png Graphic file (type png)
 
-<use img/example1_gro.pdf>
-Package pdftex.def Info: img/example1_gro.pdf used on input line 356.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<use img/sketch_result/example1_photo.png>
+Package pdftex.def Info: img/sketch_result/example1_photo.png used on input lin
+e 274.
+(pdftex.def)             Requested size: 45.21684pt x 56.51976pt.
 
-<img/example2_gro.pdf, id=530, 233.87375pt x 211.79124pt>
-File: img/example2_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example2_photo.png, id=532, 200.75pt x 250.9375pt>
+File: img/sketch_result/example2_photo.png Graphic file (type png)
 
-<use img/example2_gro.pdf>
-Package pdftex.def Info: img/example2_gro.pdf used on input line 357.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<use img/sketch_result/example2_photo.png>
+Package pdftex.def Info: img/sketch_result/example2_photo.png used on input lin
+e 274.
+(pdftex.def)             Requested size: 45.21684pt x 56.51976pt.
 
-<img/example3_gro.pdf, id=531, 226.8475pt x 199.74625pt>
-File: img/example3_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example3_photo.png, id=533, 200.75pt x 250.9375pt>
+File: img/sketch_result/example3_photo.png Graphic file (type png)
 
-<use img/example3_gro.pdf>
-Package pdftex.def Info: img/example3_gro.pdf used on input line 358.
-(pdftex.def)             Requested size: 67.8811pt x 59.77194pt.
+<use img/sketch_result/example3_photo.png>
+Package pdftex.def Info: img/sketch_result/example3_photo.png used on input lin
+e 274.
+(pdftex.def)             Requested size: 45.21684pt x 56.51976pt.
 
-<img/example4_gro.pdf, id=532, 227.85126pt x 198.7425pt>
-File: img/example4_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example4_photo.png, id=534, 200.75pt x 250.9375pt>
+File: img/sketch_result/example4_photo.png Graphic file (type png)
 
-<use img/example4_gro.pdf>
-Package pdftex.def Info: img/example4_gro.pdf used on input line 359.
-(pdftex.def)             Requested size: 67.8811pt x 59.21077pt.
-File: img/example1_gro.pdf Graphic file (type pdf)
- <use img/example1_gro.pdf>
-Package pdftex.def Info: img/example1_gro.pdf used on input line 364.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
-File: img/example2_gro.pdf Graphic file (type pdf)
+<use img/sketch_result/example4_photo.png>
+Package pdftex.def Info: img/sketch_result/example4_photo.png used on input lin
+e 274.
+(pdftex.def)             Requested size: 45.21684pt x 56.51976pt.
 
-<use img/example2_gro.pdf>
-Package pdftex.def Info: img/example2_gro.pdf used on input line 365.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
-File: img/example3_gro.pdf Graphic file (type pdf)
- <use img/example3_gro.pdf>
-Package pdftex.def Info: img/example3_gro.pdf used on input line 366.
-(pdftex.def)             Requested size: 67.8811pt x 59.77194pt.
-File: img/example4_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example1_MRF.pdf, id=535, 233.87375pt x 212.795pt>
+File: img/sketch_result/example1_MRF.pdf Graphic file (type pdf)
 
-<use img/example4_gro.pdf>
-Package pdftex.def Info: img/example4_gro.pdf used on input line 367.
-(pdftex.def)             Requested size: 67.8811pt x 59.21077pt.
-File: img/example1_gro.pdf Graphic file (type pdf)
- <use img/example1_gro.pdf>
-Package pdftex.def Info: img/example1_gro.pdf used on input line 372.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
-File: img/example2_gro.pdf Graphic file (type pdf)
+<use img/sketch_result/example1_MRF.pdf>
+Package pdftex.def Info: img/sketch_result/example1_MRF.pdf used on input line 
+283.
+(pdftex.def)             Requested size: 63.94815pt x 58.18274pt.
 
-<use img/example2_gro.pdf>
-Package pdftex.def Info: img/example2_gro.pdf used on input line 373.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
-File: img/example3_gro.pdf Graphic file (type pdf)
- <use img/example3_gro.pdf>
-Package pdftex.def Info: img/example3_gro.pdf used on input line 374.
-(pdftex.def)             Requested size: 67.8811pt x 59.77194pt.
-File: img/example4_gro.pdf Graphic file (type pdf)
+<img/sketch_result/example2_MRF.pdf, id=536, 233.87375pt x 211.79124pt>
+File: img/sketch_result/example2_MRF.pdf Graphic file (type pdf)
 
-<use img/example4_gro.pdf>
-Package pdftex.def Info: img/example4_gro.pdf used on input line 375.
-(pdftex.def)             Requested size: 67.8811pt x 59.21077pt.
+<use img/sketch_result/example2_MRF.pdf>
+Package pdftex.def Info: img/sketch_result/example2_MRF.pdf used on input line 
+283.
+(pdftex.def)             Requested size: 63.94815pt x 57.9083pt.
 
-<img/example1_FCNN.pdf, id=533, 233.87375pt x 211.79124pt>
-File: img/example1_FCNN.pdf Graphic file (type pdf)
+<img/sketch_result/example3_WMRF.pdf, id=537, 227.85126pt x 199.74625pt>
+File: img/sketch_result/example3_WMRF.pdf Graphic file (type pdf)
 
-<use img/example1_FCNN.pdf>
-Package pdftex.def Info: img/example1_FCNN.pdf used on input line 380.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<use img/sketch_result/example3_WMRF.pdf>
+Package pdftex.def Info: img/sketch_result/example3_WMRF.pdf used on input line
+ 292.
+(pdftex.def)             Requested size: 63.94815pt x 56.05962pt.
 
-<img/example2_FCNN.pdf, id=534, 233.87375pt x 211.79124pt>
-File: img/example2_FCNN.pdf Graphic file (type pdf)
+<img/sketch_result/example4_WMRF.pdf, id=538, 228.855pt x 198.7425pt>
+File: img/sketch_result/example4_WMRF.pdf Graphic file (type pdf)
 
-<use img/example2_FCNN.pdf>
-Package pdftex.def Info: img/example2_FCNN.pdf used on input line 381.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<use img/sketch_result/example4_WMRF.pdf>
+Package pdftex.def Info: img/sketch_result/example4_WMRF.pdf used on input line
+ 292.
+(pdftex.def)             Requested size: 63.94815pt x 55.53227pt.
 
-<img/example3_WMRF.pdf, id=535, 227.85126pt x 199.74625pt>
-File: img/example3_WMRF.pdf Graphic file (type pdf)
+<img/sketch_result/example3_SSD.pdf, id=539, 226.8475pt x 199.74625pt>
+File: img/sketch_result/example3_SSD.pdf Graphic file (type pdf)
 
-<use img/example3_WMRF.pdf>
-Package pdftex.def Info: img/example3_WMRF.pdf used on input line 382.
-(pdftex.def)             Requested size: 67.8811pt x 59.50981pt.
+<use img/sketch_result/example3_SSD.pdf>
+Package pdftex.def Info: img/sketch_result/example3_SSD.pdf used on input line 
+301.
+(pdftex.def)             Requested size: 63.94815pt x 56.3065pt.
 
-<img/example4_WMRF.pdf, id=536, 228.855pt x 198.7425pt>
-File: img/example4_WMRF.pdf Graphic file (type pdf)
+<img/sketch_result/example4_SSD.pdf, id=540, 227.85126pt x 198.7425pt>
+File: img/sketch_result/example4_SSD.pdf Graphic file (type pdf)
 
-<use img/example4_WMRF.pdf>
-Package pdftex.def Info: img/example4_WMRF.pdf used on input line 383.
-(pdftex.def)             Requested size: 67.8811pt x 58.94997pt.
+<use img/sketch_result/example4_SSD.pdf>
+Package pdftex.def Info: img/sketch_result/example4_SSD.pdf used on input line 
+301.
+(pdftex.def)             Requested size: 63.94815pt x 55.77791pt.
 
-<img/example1_MRF.pdf, id=537, 233.87375pt x 212.795pt>
-File: img/example1_MRF.pdf Graphic file (type pdf)
+<img/sketch_result/example1_FCNN.pdf, id=541, 233.87375pt x 211.79124pt>
+File: img/sketch_result/example1_FCNN.pdf Graphic file (type pdf)
 
-<use img/example1_MRF.pdf>
-Package pdftex.def Info: img/example1_MRF.pdf used on input line 388.
-(pdftex.def)             Requested size: 67.8811pt x 61.76416pt.
+<use img/sketch_result/example1_FCNN.pdf>
+Package pdftex.def Info: img/sketch_result/example1_FCNN.pdf used on input line
+ 310.
+(pdftex.def)             Requested size: 63.94815pt x 57.9083pt.
 
-<img/example2_MRF.pdf, id=538, 233.87375pt x 211.79124pt>
-File: img/example2_MRF.pdf Graphic file (type pdf)
+<img/sketch_result/example2_FCNN.pdf, id=542, 233.87375pt x 211.79124pt>
+File: img/sketch_result/example2_FCNN.pdf Graphic file (type pdf)
 
-<use img/example2_MRF.pdf>
-Package pdftex.def Info: img/example2_MRF.pdf used on input line 389.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<use img/sketch_result/example2_FCNN.pdf>
+Package pdftex.def Info: img/sketch_result/example2_FCNN.pdf used on input line
+ 310.
+(pdftex.def)             Requested size: 63.94815pt x 57.9083pt.
 
-<img/example3_Filter.pdf, id=539, 226.8475pt x 199.74625pt>
-File: img/example3_Filter.pdf Graphic file (type pdf)
+Overfull \hbox (2.99191pt too wide) in paragraph at lines 319--319
+[]\OT1/ptm/m/n/8 (f)
+ []
 
-<use img/example3_Filter.pdf>
-Package pdftex.def Info: img/example3_Filter.pdf used on input line 390.
-(pdftex.def)             Requested size: 67.8811pt x 59.77194pt.
 
-<img/example4_Filter.pdf, id=540, 227.85126pt x 198.7425pt>
-File: img/example4_Filter.pdf Graphic file (type pdf)
+Overfull \hbox (15.8958pt too wide) in paragraph at lines 319--319
+\OT1/ptm/m/n/8 BFCN 
+ []
 
-<use img/example4_Filter.pdf>
-Package pdftex.def Info: img/example4_Filter.pdf used on input line 391.
-(pdftex.def)             Requested size: 67.8811pt x 59.21077pt.
-File: img/example1_MRF.pdf Graphic file (type pdf)
- <use img/example1_MRF.pdf>
-Package pdftex.def Info: img/example1_MRF.pdf used on input line 396.
-(pdftex.def)             Requested size: 67.8811pt x 61.76416pt.
-File: img/example2_MRF.pdf Graphic file (type pdf)
+<img/sketch_result/example1_ours.pdf, id=543, 233.87375pt x 211.79124pt>
+File: img/sketch_result/example1_ours.pdf Graphic file (type pdf)
 
-<use img/example2_MRF.pdf>
-Package pdftex.def Info: img/example2_MRF.pdf used on input line 397.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
-File: img/example3_Filter.pdf Graphic file (type pdf)
- <use img/example3_Filter.pdf>
-Package pdftex.def Info: img/example3_Filter.pdf used on input line 398.
-(pdftex.def)             Requested size: 67.8811pt x 59.77194pt.
-File: img/example4_Filter.pdf Graphic file (type pdf)
+<use img/sketch_result/example1_ours.pdf>
+Package pdftex.def Info: img/sketch_result/example1_ours.pdf used on input line
+ 328.
+(pdftex.def)             Requested size: 63.94815pt x 57.9083pt.
 
-<use img/example4_Filter.pdf>
-Package pdftex.def Info: img/example4_Filter.pdf used on input line 399.
-(pdftex.def)             Requested size: 67.8811pt x 59.21077pt.
+<img/sketch_result/example2_ours.pdf, id=544, 233.87375pt x 212.795pt>
+File: img/sketch_result/example2_ours.pdf Graphic file (type pdf)
 
-<img/example1_ours.pdf, id=541, 233.87375pt x 211.79124pt>
-File: img/example1_ours.pdf Graphic file (type pdf)
+<use img/sketch_result/example2_ours.pdf>
+Package pdftex.def Info: img/sketch_result/example2_ours.pdf used on input line
+ 328.
+(pdftex.def)             Requested size: 63.94815pt x 58.18274pt.
 
-<use img/example1_ours.pdf>
-Package pdftex.def Info: img/example1_ours.pdf used on input line 404.
-(pdftex.def)             Requested size: 67.8811pt x 61.47282pt.
+<img/sketch_result/example3_ours.pdf, id=545, 228.855pt x 200.75pt>
+File: img/sketch_result/example3_ours.pdf Graphic file (type pdf)
 
-<img/example2_ours.pdf, id=542, 233.87375pt x 212.795pt>
-File: img/example2_ours.pdf Graphic file (type pdf)
+<use img/sketch_result/example3_ours.pdf>
+Package pdftex.def Info: img/sketch_result/example3_ours.pdf used on input line
+ 328.
+(pdftex.def)             Requested size: 63.94815pt x 56.0932pt.
 
-<use img/example2_ours.pdf>
-Package pdftex.def Info: img/example2_ours.pdf used on input line 405.
-(pdftex.def)             Requested size: 67.8811pt x 61.76416pt.
+<img/sketch_result/example4_ours.pdf, id=546, 228.855pt x 199.74625pt>
+File: img/sketch_result/example4_ours.pdf Graphic file (type pdf)
 
-<img/example3_ours.pdf, id=543, 228.855pt x 200.75pt>
-File: img/example3_ours.pdf Graphic file (type pdf)
+<use img/sketch_result/example4_ours.pdf>
+Package pdftex.def Info: img/sketch_result/example4_ours.pdf used on input line
+ 328.
+(pdftex.def)             Requested size: 63.94815pt x 55.81274pt.
+ [5 <./img/border_PFC-eps-converted-to.pdf>] <img/style_evaluate/content.png, i
+d=590, 200.75pt x 256.96pt>
+File: img/style_evaluate/content.png Graphic file (type png)
 
-<use img/example3_ours.pdf>
-Package pdftex.def Info: img/example3_ours.pdf used on input line 406.
-(pdftex.def)             Requested size: 67.8811pt x 59.54543pt.
+<use img/style_evaluate/content.png>
+Package pdftex.def Info: img/style_evaluate/content.png used on input line 346.
 
-<img/example4_ours.pdf, id=544, 228.855pt x 199.74625pt>
-File: img/example4_ours.pdf Graphic file (type pdf)
+(pdftex.def)             Requested size: 54.54025pt x 69.81142pt.
 
-<use img/example4_ours.pdf>
-Package pdftex.def Info: img/example4_ours.pdf used on input line 407.
-(pdftex.def)             Requested size: 67.8811pt x 59.2477pt.
- [5 <./img/border_PFC-eps-converted-to.pdf>]
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 427--427
+<img/style_evaluate/style_result1.pdf, id=591, 361.35pt x 505.89pt>
+File: img/style_evaluate/style_result1.pdf Graphic file (type pdf)
+
+<use img/style_evaluate/style_result1.pdf>
+Package pdftex.def Info: img/style_evaluate/style_result1.pdf used on input lin
+e 348.
+(pdftex.def)             Requested size: 54.54025pt x 76.35109pt.
+
+<img/style_evaluate/style_result2.pdf, id=592, 361.35pt x 505.89pt>
+File: img/style_evaluate/style_result2.pdf Graphic file (type pdf)
+
+<use img/style_evaluate/style_result2.pdf>
+Package pdftex.def Info: img/style_evaluate/style_result2.pdf used on input lin
+e 350.
+(pdftex.def)             Requested size: 54.54025pt x 76.35109pt.
+
+<img/style_evaluate/style_result3.pdf, id=593, 361.35pt x 505.89pt>
+File: img/style_evaluate/style_result3.pdf Graphic file (type pdf)
+
+<use img/style_evaluate/style_result3.pdf>
+Package pdftex.def Info: img/style_evaluate/style_result3.pdf used on input lin
+e 352.
+(pdftex.def)             Requested size: 54.54025pt x 76.35109pt.
+ [6 <./img/sketch_result/example1_photo.png (PNG copy)> <./img/sketch_result/ex
+ample2_photo.png (PNG copy)> <./img/sketch_result/example3_photo.png (PNG copy)
+> <./img/sketch_result/example4_photo.png (PNG copy)> <./img/sketch_result/exam
+ple1_MRF.pdf> <./img/sketch_result/example2_MRF.pdf> <./img/sketch_result/examp
+le3_WMRF.pdf> <./img/sketch_result/example4_WMRF.pdf> <./img/sketch_result/exam
+ple3_SSD.pdf> <./img/sketch_result/example4_SSD.pdf> <./img/sketch_result/examp
+le1_FCNN.pdf> <./img/sketch_result/example2_FCNN.pdf> <./img/sketch_result/exam
+ple1_ours.pdf> <./img/sketch_result/example2_ours.pdf> <./img/sketch_result/exa
+mple3_ours.pdf> <./img/sketch_result/example4_ours.pdf> <./img/style_evaluate/c
+ontent.png (PNG copy)> <./img/style_evaluate/style_result1.pdf> <./img/style_ev
+aluate/style_result2.pdf> <./img/style_evaluate/style_result3.pdf>]
+Overfull \hbox (0.5443pt too wide) in paragraph at lines 376--376
  []|\OT1/ptm/m/n/9 R1| 
  []
 
 
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 427--427
+Overfull \hbox (0.5443pt too wide) in paragraph at lines 376--376
  []|\OT1/ptm/m/n/9 R5| 
  []
 
 
-Overfull \hbox (5.0443pt too wide) in paragraph at lines 427--427
+Overfull \hbox (5.0443pt too wide) in paragraph at lines 376--376
  []|\OT1/ptm/m/n/9 R10| 
  []
 
 
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 427--427
+Overfull \hbox (0.5443pt too wide) in paragraph at lines 376--376
  []|\OT1/ptm/m/n/9 R1| 
  []
 
 
-Overfull \hbox (0.5443pt too wide) in paragraph at lines 427--427
+Overfull \hbox (0.5443pt too wide) in paragraph at lines 376--376
  []|\OT1/ptm/m/n/9 R5| 
  []
 
 
-Overfull \hbox (5.0443pt too wide) in paragraph at lines 427--428
+Overfull \hbox (5.0443pt too wide) in paragraph at lines 376--377
  []|\OT1/ptm/m/n/9 R10| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 429--429
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 378--378
  []|\OT1/ptm/m/n/9 81%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 429--429
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 378--378
  []|\OT1/ptm/m/n/9 96%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 429--430
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 378--379
  []|\OT1/ptm/m/n/9 97%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 430--430
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 379--379
  []|\OT1/ptm/m/n/9 97.5%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 430--430
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 379--379
  []|\OT1/ptm/m/n/9 97.5%| 
  []
 
 
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 430--430
+Overfull \hbox (11.03833pt too wide) in paragraph at lines 379--379
  []|[]\OT1/ptm/m/n/9 100%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 430--430
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 379--379
  []|\OT1/ptm/m/n/9 83%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 430--430
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 379--379
  []|\OT1/ptm/m/n/9 96%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 430--431
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 379--380
  []|\OT1/ptm/m/n/9 96%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 431--431
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 380--380
  []|\OT1/ptm/m/n/9 97.5%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 431--431
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 380--380
  []|\OT1/ptm/m/n/9 97.5%| 
  []
 
 
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 431--431
+Overfull \hbox (11.03833pt too wide) in paragraph at lines 380--380
  []|[]\OT1/ptm/m/n/9 100%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 431--431
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 380--380
  []|\OT1/ptm/m/n/9 83%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 431--431
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 380--380
  []|\OT1/ptm/m/n/9 97%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 431--432
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 380--381
  []|\OT1/ptm/m/n/9 98%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 432--432
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 381--381
  []|\OT1/ptm/m/n/9 96.7%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 432--432
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 381--381
  []|\OT1/ptm/m/n/9 97.5%| 
  []
 
 
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 432--432
+Overfull \hbox (11.03833pt too wide) in paragraph at lines 381--381
  []|[]\OT1/ptm/m/n/9 100%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 432--432
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 381--381
  []|[]\OT1/ptm/m/n/9 87%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 432--432
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 381--381
  []|\OT1/ptm/m/n/9 97%| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 432--433
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 381--382
  []|\OT1/ptm/m/n/9 98%| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 433--433
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 382--382
  []|[]\OT1/ptm/m/n/9 98.4%[]| 
  []
 
 
-Overfull \hbox (13.28833pt too wide) in paragraph at lines 433--433
+Overfull \hbox (13.28833pt too wide) in paragraph at lines 382--382
  []|[]\OT1/ptm/m/n/9 98.4%[]| 
  []
 
 
-Overfull \hbox (11.03833pt too wide) in paragraph at lines 433--433
+Overfull \hbox (11.03833pt too wide) in paragraph at lines 382--382
  []|[]\OT1/ptm/m/n/9 100%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 433--433
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 382--382
  []|[]\OT1/ptm/m/n/9 87%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 433--433
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 382--382
  []|[]\OT1/ptm/m/n/9 98%[]| 
  []
 
 
-Overfull \hbox (6.53833pt too wide) in paragraph at lines 433--434
+Overfull \hbox (6.53833pt too wide) in paragraph at lines 382--383
  []|[]\OT1/ptm/m/n/9 99%[]| 
  []
 
 
-Overfull \hbox (12.74272pt too wide) in paragraph at lines 424--436
+Overfull \hbox (12.74272pt too wide) in paragraph at lines 373--385
 [][] 
  []
 
 
-LaTeX Warning: Reference `fig:q_eval_2' on page 6 undefined on input line 445.
+Underfull \hbox (badness 3039) in paragraph at lines 394--395
+ []\OT1/ptm/b/n/10 Normalized Gram Ma-trix Dif-fer-ence (NGMD) \OT1/ptm/m/n/10 
+To
+ []
 
+<img/effective_eval/wo_region.pdf, id=1034, 306.14375pt x 376.40625pt>
+File: img/effective_eval/wo_region.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:region_effect' on page 6 undefined on input line 
-531.
+<use img/effective_eval/wo_region.pdf>
+Package pdftex.def Info: img/effective_eval/wo_region.pdf used on input line 44
+2.
+(pdftex.def)             Requested size: 115.03656pt x 141.43916pt.
 
+<img/effective_eval/w_region.pdf, id=1035, 305.14pt x 376.40625pt>
+File: img/effective_eval/w_region.pdf Graphic file (type pdf)
 
-LaTeX Warning: Reference `fig:alphg_effect' on page 6 undefined on input line 5
-31.
+<use img/effective_eval/w_region.pdf>
+Package pdftex.def Info: img/effective_eval/w_region.pdf used on input line 446
+.
+(pdftex.def)             Requested size: 115.03656pt x 141.90439pt.
 
+<img/effective_eval/inf_alpha.pdf, id=1036, 163.61125pt x 196.735pt>
+File: img/effective_eval/inf_alpha.pdf Graphic file (type pdf)
 
-Underfull \hbox (badness 1509) in paragraph at lines 536--537
+<use img/effective_eval/inf_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/inf_alpha.pdf used on input line 45
+8.
+(pdftex.def)             Requested size: 78.70425pt x 94.63884pt.
+
+<img/effective_eval/4_alpha.pdf, id=1037, 162.6075pt x 198.7425pt>
+File: img/effective_eval/4_alpha.pdf Graphic file (type pdf)
+
+<use img/effective_eval/4_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/4_alpha.pdf used on input line 464.
+
+(pdftex.def)             Requested size: 78.70425pt x 96.1959pt.
+
+<img/effective_eval/3_alpha.pdf, id=1038, 163.61125pt x 198.7425pt>
+File: img/effective_eval/3_alpha.pdf Graphic file (type pdf)
+
+<use img/effective_eval/3_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/3_alpha.pdf used on input line 470.
+
+(pdftex.def)             Requested size: 78.70425pt x 95.60455pt.
+
+<img/effective_eval/2_alpha.pdf, id=1039, 162.6075pt x 201.75375pt>
+File: img/effective_eval/2_alpha.pdf Graphic file (type pdf)
+
+<use img/effective_eval/2_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/2_alpha.pdf used on input line 476.
+
+(pdftex.def)             Requested size: 78.70425pt x 97.65341pt.
+
+<img/effective_eval/1_alpha.pdf, id=1040, 163.61125pt x 198.7425pt>
+File: img/effective_eval/1_alpha.pdf Graphic file (type pdf)
+
+<use img/effective_eval/1_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/1_alpha.pdf used on input line 482.
+
+(pdftex.def)             Requested size: 78.70425pt x 95.60455pt.
+
+<img/effective_eval/0_alpha.pdf, id=1041, 163.61125pt x 201.75375pt>
+File: img/effective_eval/0_alpha.pdf Graphic file (type pdf)
+
+<use img/effective_eval/0_alpha.pdf>
+Package pdftex.def Info: img/effective_eval/0_alpha.pdf used on input line 488.
+
+(pdftex.def)             Requested size: 78.70425pt x 97.0531pt.
+ [7]
+Underfull \hbox (badness 1509) in paragraph at lines 504--505
 []\OT1/ptm/m/n/10 This pa-per pro-posed a novel face sketch syn-the-sis
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 536--537
+Underfull \hbox (badness 2418) in paragraph at lines 504--505
 \OT1/ptm/m/n/10 method in-spired by the pro-ce-dure of artists draw-ing
  []
 
@@ -1015,43 +1125,41 @@ Underfull \hbox (badness 2418) in paragraph at lines 536--537
 \tf@brf=\write3
 \openout3 = `sketch_revised_v1.brf'.
 
-LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
- [6]
+
+Underfull \vbox (badness 1888) has occurred while \output is active []
+
+
 Underfull \hbox (badness 2922) in paragraph at lines 74--74
 []\OT1/ptm/m/n/9 C. Szegedy, W. Liu, Y. Jia, P. Ser-manet, S. Reed,
  []
 
-[7 <./img/example1_gro.pdf> <./img/example2_gro.pdf> <./img/example3_gro.pdf> <
-./img/example4_gro.pdf> <./img/example1_FCNN.pdf> <./img/example2_FCNN.pdf> <./
-img/example3_WMRF.pdf> <./img/example4_WMRF.pdf> <./img/example1_MRF.pdf> <./im
-g/example2_MRF.pdf> <./img/example3_Filter.pdf> <./img/example4_Filter.pdf> <./
-img/example1_ours.pdf> <./img/example2_ours.pdf> <./img/example3_ours.pdf> <./i
-mg/example4_ours.pdf>])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 544.
- [8
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 86.
+[8 <./img/effective_eval/wo_region.pdf> <./img/effective_eval/w_region.pdf>])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 512.
 
-]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 544.
- (./sketch_revised_v1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 544.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 544.
+[9
+
+ <./img/effective_eval/inf_alpha.pdf> <./img/effective_eval/4_alpha.pdf> <./img
+/effective_eval/3_alpha.pdf> <./img/effective_eval/2_alpha.pdf> <./img/effectiv
+e_eval/1_alpha.pdf> <./img/effective_eval/0_alpha.pdf>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 512.
+
+(./sketch_revised_v1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 512.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 512.
 Package rerunfilecheck Info: File `sketch_revised_v1.brf' has not changed.
-(rerunfilecheck)             Checksum: 3B29FE2534A7F12A60096C3329BF8F51;2840.
-
-
-LaTeX Warning: There were undefined references.
-
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 544.
+(rerunfilecheck)             Checksum: 22D1A3B3B434AAAF262AE07A05FB6980;2847.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 512.
  ) 
 Here is how much of TeX's memory you used:
- 7190 strings out of 493089
- 106224 string characters out of 6134841
- 213669 words of memory out of 5000000
- 10422 multiletter control sequences out of 15000+600000
- 38806 words of font info for 82 fonts, out of 8000000 for 9000
+ 7314 strings out of 493089
+ 111425 string characters out of 6134841
+ 214983 words of memory out of 5000000
+ 10504 multiletter control sequences out of 15000+600000
+ 37177 words of font info for 80 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,10n,27p,2106b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,10n,28p,2106b,470s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/local/t
 exlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/te
 xlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/tex
@@ -1060,22 +1168,22 @@ ve/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive
 /2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2
 015/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/201
 5/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fo
-nts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type
-1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/h
-elvetic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/ut
-mb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb>
-</usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loca
-l/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sketch_revised_v1.pdf (8 pages, 3012957 bytes).
+texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2015/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2015/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2015/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2015/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2015/texmf-dist/fonts
+/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/u
+rw/helvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helv
+etic/uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8
+a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></us
+r/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on sketch_revised_v1.pdf (9 pages, 3669638 bytes).
 PDF statistics:
- 1195 PDF objects out of 1200 (max. 8388607)
- 829 compressed objects within 9 object streams
- 74 named destinations out of 1000 (max. 500000)
- 226 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1344 PDF objects out of 1440 (max. 8388607)
+ 946 compressed objects within 10 object streams
+ 102 named destinations out of 1000 (max. 500000)
+ 286 words of extra memory for PDF output out of 10000 (max. 10000000)
 

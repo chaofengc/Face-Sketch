@@ -10,6 +10,7 @@
 \usepackage{subfigure}
 \usepackage{array}
 \usepackage{multirow}
+% \usepackage{subcaption}
 
 % Include other packages here, before hyperref.
 
@@ -20,7 +21,7 @@
 
 \newcommand{\PreserveBackslash}[1]{\let\temp=\\#1\let\\=\temp}
 \newcolumntype{C}[1]{>{\PreserveBackslash\centering}p{#1}}
-
+% \renewcommand\thesubfigure{(\alph{subfigure})}
 
 \def\comm[#1]{{\small \textcolor{red}{\emph{#1}}}}
 \def\red[#1]{\textcolor{red}{\textbf{#1}}}
@@ -31,7 +32,7 @@
 
 % \iccvfinalcopy % *** Uncomment this line for the final submission
 
-\def\iccvPaperID{621} % *** Enter the ICCV Paper ID here
+\def\iccvPaperID{612} % *** Enter the ICCV Paper ID here
 \def\httilde{\mbox{\tt\raisebox{-.5ex}{\symbol{126}}}}
 
 % Pages are numbered in submission mode, and unnumbered in camera-ready
@@ -64,7 +65,7 @@ First line of institution2 address\\
 %%%%%%%%% ABSTRACT
 \begin{abstract}
 
-Face sketch synthesis is challenging as it is difficult to generate sharp and detailed textures. In this paper, we propose a new framework based on deep neural networks. Imitating the process of how artists draw sketches, our framework synthesizes face sketches in a cascaded manner in which a content image is first generated that outlines the shape of the face and key facial features, and textures and shadings are then added. We utilize a Fully Convolutional Neural Network (FCNN) to create the content image, and propose a local feature based style transfer to append textures. The local feature, what we call pyramid column feature, is a set of features at different convolutional layers corresponding to the same local sketch image patch. We demonstrate that our pyramid column feature can not only preserve more sketch details than common style transfer method but also surpass traditional patch based approach. Our model is trained on \red[??] training data set and evaluated on other datasets. Quantitative and qualitative evaluations suggest that our framework outperforms other state-of-the-arts methods. In addition, despite of the small training data (\red[??] face-sketch pairs), our model shows great generalization ability across different datasets and can generate reasonable results under practical situations.
+Face sketch synthesis is challenging as it is difficult to generate sharp and detailed textures. In this paper, we propose a new framework based on deep neural networks. Imitating the process of how artists draw sketches, our framework synthesizes face sketches in a cascaded manner in which a content image is first generated that outlines the shape of the face and key facial features, and textures and shadings are then added. We utilize a Fully Convolutional Neural Network (FCNN) to create the content image, and propose a local feature based style transfer to append textures. The local feature, what we call pyramid column feature, is a set of features at different convolutional layers corresponding to the same local sketch image patch. We demonstrate that our pyramid column feature can not only preserve more sketch details than common style transfer method but also surpass traditional patch based approach. Our model is trained and evaluated on CUHK and AR datasets. Quantitative and qualitative evaluations suggest that our framework outperforms other state-of-the-arts methods. In addition, despite of the small training data, our model shows great generalization ability across different datasets and can generate reasonable results under practical situations.
 
 \end{abstract}
 
@@ -76,83 +77,60 @@ Face sketch synthesis has drawn a great attention from the community in recent y
 
 \begin{figure}[t]
 \centering
-\begin{minipage}[t]{0.24\linewidth}
+\subfigure[Photo]{
+\label{fig:example_a}\includegraphics[width=0.23\linewidth]{img/page1_example/example_photo.png}}
+\subfigure[MRF \cite{wang2009face}]{
+\label{fig:example_b}\includegraphics[width=0.23\linewidth]{img/page1_example/example_mrf.png}}
+\subfigure[WMRF \cite{zhou2012markov}]{
+\label{fig:example_c}\includegraphics[width=0.23\linewidth]{img/page1_example/example_wmrf.png}}
+\subfigure[SSD \cite{song2014real}]{
+\label{fig:example_d}\includegraphics[width=0.23\linewidth]{img/page1_example/example_ssd.png}}
+\subfigure[FCNN \cite{zhang2015end}]{
+\label{fig:example_e}\includegraphics[width=0.23\linewidth]{img/page1_example/example_fcnn.png}}
+\subfigure[BFCN \cite{zhang2017content}]{
+\label{fig:example_f}\includegraphics[width=0.23\linewidth]{img/page1_example/example_bfcn.png}}
+\subfigure[\cite{gatys2015neural}$^*$]{
+\label{fig:example_g}\includegraphics[width=0.23\linewidth]{img/page1_example/example_deepart.jpg}}
+\subfigure[Ours]{
+\label{fig:example_h}\includegraphics[width=0.23\linewidth]{img/page1_example/example_ours.png}}
+
+\begin{minipage}[t]{1\linewidth}
 \centering
-\includegraphics[width=1\linewidth]{img/example_photo.png}
-(a) Photo
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_mrf.png}
-(b) MRF\cite{wang2009face}
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_wmrf.png}
-(c)WMRF\cite{zhou2012markov}
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_ssd.png}
-(d) SSD\cite{song2014real}
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_fcnn.png}
-(e) FCNN\cite{zhang2015end}
-\end{minipage}
-\begin{minipage}[t]{0.23\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_bfcn.png}
-(f)BFCN\cite{zhang2017content}
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_deepart.jpg}
-(h) \cite{gatys2015neural}$^*$
-\end{minipage}
-\begin{minipage}[t]{0.24\linewidth}
-\centering
-\includegraphics[width=1\linewidth]{img/example_ours.png}
-(g) Ours
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_photo_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_mrf_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_wmrf_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_ssd_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_fcnn_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_bfcn_patch.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_deepart_patch.jpg}
+\includegraphics[width=0.11\linewidth]{img/page1_example/hairpin_ours_patch.png}
 \end{minipage}
 \begin{minipage}[t]{1\linewidth}
 \centering
-\includegraphics[width=0.11\linewidth]{img/hairpin_photo_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_mrf_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_wmrf_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_ssd_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_fcnn_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_bfcn_patch.png}
-\includegraphics[width=0.11\linewidth]{img/hairpin_deepart_patch.jpg}
-\includegraphics[width=0.11\linewidth]{img/hairpin_ours_patch.png}
-\end{minipage}
-\begin{minipage}[t]{1\linewidth}
-\centering
-\includegraphics[width=0.11\linewidth]{img/eye_photo.png}
-\includegraphics[width=0.11\linewidth]{img/eye_mrf.png}
-\includegraphics[width=0.11\linewidth]{img/eye_wmrf.png}
-\includegraphics[width=0.11\linewidth]{img/eye_ssd.png}
-\includegraphics[width=0.11\linewidth]{img/eye_fcnn.png}
-\includegraphics[width=0.11\linewidth]{img/eye_bfcn.png}
-\includegraphics[width=0.11\linewidth]{img/eye_deepart.jpg}
-\includegraphics[width=0.11\linewidth]{img/eye_ours.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_photo.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_mrf.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_wmrf.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_ssd.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_fcnn.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_bfcn.png}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_deepart.jpg}
+\includegraphics[width=0.11\linewidth]{img/page1_example/eye_ours.png}
 \end{minipage}
 \caption[Caption for LOF]{Face sketches generated by existing methods and the proposed method. Our method can not only preserve both hair and facial content, but also maintain sharp textures. \setcounter{footnote}{0} (h)$^*$ is obtained from deep art website\footnotemark~by using the photo as content and a sketch from training set as style.}
 \label{fig:example_comp}
 \end{figure}
 \footnotetext{\url{https://deepart.io/}} 
 
-Unfortunately, there exists no easy solution to face sketch synthesis due to the big stylistic gap between photos and sketches. In the past two decades, a number of exemplar based methods~\cite{wang2009face,song2014real, zhang2010lighting,zhou2012markov} were proposed. In these methods, an input photo is divided into patches and candidate sketches for each photo patch are selected from a training set. The main drawback of such kind of methods is that if the test image can't find a similar patch in the training set, they may lose some contents in the final result. For example, the sketches in the first row of Fig.\ref{fig:example_comp} fail to keep the hairpins. Besides, some methods \cite{song2014real,zhou2012markov} clear away the textures when they try to eliminate the inconsistency between neighboring patches. Another potential risk is that the result may not look like the original photo, \eg left eye in Fig.~\ref{fig:example_comp} (b). Recently, approaches \cite{zhang2017content,zhang2015end} based on convolutional neural network (CNN) were developed to solve these problems. Since these models directly generates sketches from photo, they can maintain the structures and contents of the photos. However, the loss function of them are usually mean square error (MSE) or variation of it, which is responsible for the blur effect, \eg Fig.~\ref{fig:example_comp} (e) and (f). The reason is that MSE prefers values close to mean, and is not suitable for texture representations. The popular neural style transfer provides a better solution for texture synthesis. But there are two obstacles towards directly applying such kind of method. First, it is easily influenced by illumination of the photo, see the face of Fig. \ref{fig:example_comp} (h). Second, it needs a style image to give the global statistics of textures. If the given style doesn't coincide with target sketch (which we don't have), some side effects will occur, \eg the nose in Fig. \ref{fig:example_comp} (h). Extensive experiment and discussion is given in Section~\red[??]. 
+Unfortunately, there exists no easy solution to face sketch synthesis due to the big stylistic gap between photos and sketches. In the past two decades, a number of exemplar based methods~\cite{wang2009face,song2014real, zhang2010lighting,zhou2012markov} were proposed. In these methods, an input photo is divided into patches and candidate sketches for each photo patch are selected from a training set. The main drawback of such kind of methods is that if the test image can't find a similar patch in the training set, they may lose some contents in the final result. For example, the sketches in the first row of Fig.\ref{fig:example_comp} fail to keep the hairpins. Besides, some methods \cite{song2014real,zhou2012markov} clear away the textures when they try to eliminate the inconsistency between neighboring patches. Another potential risk is that the result may not look like the original photo, \eg left eye in Fig.~\ref{fig:example_b}. Recently, approaches \cite{zhang2017content,zhang2015end} based on convolutional neural network (CNN) were developed to solve these problems. Since these models directly generates sketches from photo, they can maintain the structures and contents of the photos. However, the loss function of them are usually mean square error (MSE) or variation of it, which is responsible for the blur effect, \eg Fig.~\ref{fig:example_e} and ~\ref{fig:example_f}. The reason is that MSE prefers values close to mean, and is not suitable for texture representations. The popular neural style transfer provides a better solution for texture synthesis. But there are two obstacles towards directly applying such kind of method. First, it is easily influenced by illumination of the photo, see the face of Fig. \ref{fig:example_h}. Second, it needs a style image to give the global statistics of textures. If the given style doesn't coincide with target sketch (which we don't have), some side effects will occur, \eg the nose in Fig. \ref{fig:example_h}. Extensive experiment and discussion is given in Section~\red[??]. 
 
-For an artist, the procedure of sketching a face usually starts with outlining the shape of the key facial features like the nose, eyes and mouth. Textures and shadings are then added to regions such as hair lips, and bridge of the nose to give sketches a specific style. Inspired by this and neural style transfer \cite{gatys2015texture}, we propose a new framework for face sketch synthesis that can overcome the aforementioned limitations. In our method, the outline of a face is delineated by a feed-forward neural network, and textures and shadings are then added by a style transfer approach. Specifically, we design a new architecture of Fully Convolutional Neural Network (FCNN) which contains inception layers \cite{szegedy2015going} and convolution layers with batch normalization~\cite{Sergey2015batch} to outline the face (Section ~\red[??]). For the texture part, we first divide the feature maps of the target sketch in each layer into a fixed size grid and combine features from different layers but at the same grid location into a pyramid feature column (Section ~\red[??]). These pyramid feature columns can be generated by local sketch patches from the training set. A target style is then computed by assembling these pyramid columns. These sketch patches are found by matching the test \red[content] patch to the \red[content-sketch] pairs in training set(Section ~\red[??]). Our approach is superior to the current state-of-the-art methods in that 
+For an artist, the procedure of sketching a face usually starts with outlining the shape of the key facial features like the nose, eyes and mouth. Textures and shadings are then added to regions such as hair lips, and bridge of the nose to give sketches a specific style. Inspired by this and neural style transfer \cite{gatys2015texture}, we propose a new framework for face sketch synthesis that can overcome the aforementioned limitations. In our method, the outline of a face is delineated by a feed-forward neural network, and textures and shadings are then added by a style transfer approach. Specifically, we design a new architecture of Fully Convolutional Neural Network (FCNN) which contains inception layers \cite{szegedy2015going} and convolution layers with batch normalization~\cite{Sergey2015batch} to outline the face (Section ~\red[??]). For the texture part, we first divide the feature maps of the target sketch in each layer into a fixed size grid and combine features from different layers but at the same grid location into a pyramid feature column (Section ~\red[??]). These pyramid feature columns can be generated by local sketch patches from the training set. A target style is then computed by assembling these pyramid columns. These sketch patches are found by matching the test image patch to the image-patch pairs in training set(Section ~\red[??]). Our approach is superior to the current state-of-the-art methods in that 
 \begin{itemize}
 \item It is capable of generating more stylistic sketches without introducing over smoothing artifacts 
 \item It can well preserve the content of the test photo.
 \end{itemize}
 
 %==========================================================================
-\section{Related Work}
+\section{Related Work}\label{sec:related_work}
 
 \subsection{Face Sketch Synthesis}
 
@@ -165,14 +143,12 @@ Texture synthesis has long been a challenging task. Traditional method can only 
 
 \begin{figure*}[t]
 \centering
-\subfigure[]{
 \includegraphics[width=0.85\linewidth]{img/overview.pdf}
-}
 \caption{The proposed method contains two branches which take an photo aligned by the eyes as inputs. The content network outputs a content image and the style estimator generates a target style. The final sketch is generated by combing the target style with the content image. \comm[The figure may need to revise, in order to show the optimization process of target sketch.]}
 \label{fig:overview}
 \end{figure*}
 %==========================================================================
-\section{Motivation of Pyramid Feature Column}
+\section{Motivation of Pyramid Feature Column}\label{sec:motivation}
 
 Following the practice of \cite{gatys2015neural}, we use the gram matrix of VGG-19\cite{simonyan2014very} feature maps as our style representation. Denote the vectorized feature map of the final sketch $\mathcal{X}$ in the $l$th layer by $F^{l}(\mathcal{X})$. A gram matrix is the inner product between the feature maps in $l$th layer
 \begin{equation}
@@ -185,23 +161,25 @@ Thus it is important to keep the given style sketch roughly the same with test i
 %==========================================================================
 \section{Methodology}
 
-Our method can be classified as a shading synthesis method. The steps of our method are summarized in Fig.~\ref{fig:overview}. First, a preprocessing step as described in~\cite{wang2009face} is carried out for all photos and sketches in a training set to align the centers of two eyes. A test photo $\mathcal{I}$ is then fed into two branches, namely the content network and the style generator. The content network converts the test photo into a content image $\mathcal{C}$, where the shape of the face are outlined with the key facial features preserved, such as noses, eyes, mouthes and hair. The style estimator takes a $16\times16$ local patch from test photo as input and searches photo-sketch pairs (\comm[Maybe we can find a content-sketch pairs instead, because real photo varies too much]) in the training set to find a target sketch patch $S_{ij}$ ($(i, j)$ denotes the patch location). Each  $S_{ij}$ with its surrounding region can generate a pyramid feature column $U_{ij}$. Combining all $U_{ij}$, we can get the target style features of $\mathcal{I}$, \ie $\tilde{U}$. Given $\mathcal{C}$ and $\tilde{U}$, we can generate a sketch $\mathcal{X}$ that combines the content information in $\mathcal{C}$ with the style representation $\tilde{U}$ following the iterative procedure in \cite{gatys2015neural}. 
+Our method can be classified as a shading synthesis method. The steps of our method are summarized in Fig.~\ref{fig:overview}. First, a preprocessing step as described in~\cite{wang2009face} is carried out for all photos and sketches in a training set to align the centers of two eyes. A test photo $\mathcal{I}$ is then fed into two branches, namely the content network and the style generator. The content network converts the test photo into a content image $\mathcal{C}$, where the shape of the face are outlined with the key facial features preserved, such as noses, eyes, mouthes and hair. The style estimator takes a $16\times16$ local patch from test photo as input and searches photo-sketch pairs in the training set to find a target sketch patch $S_{ij}$ ($(i, j)$ denotes the patch location). Each  $S_{ij}$ with its surrounding region can generate a pyramid feature column $U_{ij}$. Combining all $U_{ij}$, we can get the target style features of $\mathcal{I}$, \ie $\tilde{U}$. Given $\mathcal{C}$ and $\tilde{U}$, we can generate a sketch $\mathcal{X}$ that combines the content information in $\mathcal{C}$ with the style representation $\tilde{U}$ following the iterative procedure in \cite{gatys2015neural}. 
 
 %------------------------------------------------------------------------
 \subsection{Content Image Generation}
 \begin{figure*}[htbp]
 \centering
-\subfigure[]{
-\includegraphics[width=0.65\linewidth]{img/content_net.pdf}
-}
-\subfigure[]{
-\includegraphics[width=0.25\linewidth]{img/inception.pdf}
-}
+\subfigure[The architecture of content network]{
+\label{fig:content_NN_a}\includegraphics[width=0.65\linewidth]{img/content_net.pdf}}
+\subfigure[Inception module]{
+\label{fig:content_NN_b}\includegraphics[width=0.25\linewidth]{img/inception.pdf}}
 \caption{Illustration of the content network for generating a content image. The numbers above the building block denote the number of CNN filters. (a) The architecture of content network. (b) The inception module in (a) contains three groups of filters with different sizes.}
 \label{fig:content_NN}
 \end{figure*}
 
-Our content network architecture is shown in Fig.~\ref{fig:content_NN}. In addition to the test photo, we feed two extra channels containing spatial information (i.e., x and y coordinates) and a difference of Gaussian (DoG) image into the content network. As pointed out in~\cite{wang2009face}, face sketch synthesis algorithms benefit from integrating features from multiple resolutions. We employ an inception module inspired by the GoogLeNet~\cite{szegedy2015going} to extract features. It concatenates feature maps generated from filters with different spatial resolutions. Our inception unit contains 3 different size of filters $(1\times1)$, $(3\times3)$ and $(5\times5)$ (see Fig. \ref{fig:content_NN}(b)). Then, the output features are fed to a three-layer-CNN for feature integration, where the size of all filters are fixed at $1\times1$. Finally, the integrated features are used to reconstruct the content map by a two-layer-CNN with the filter size being $3\times3$. A mirror padding is carried out before the convolution operation when necessary to ensure the output feature map is the same size as the input. The output content image $\mathcal{C}$ is a gray image with size $250\times256$.
+Our content network architecture is shown in Fig.~\ref{fig:content_NN}. In addition to the test photo, we feed two extra channels containing spatial information (i.e., x and y coordinates) and a difference of Gaussian (DoG) image into the content network. As pointed out in~\cite{wang2009face}, face sketch synthesis algorithms benefit from integrating features from multiple resolutions. We employ an inception module inspired by the GoogLeNet~\cite{szegedy2015going} to extract features. It concatenates feature maps generated from filters with different spatial resolutions. Our inception unit contains 3 different size of filters $(1\times1)$, $(3\times3)$ and $(5\times5)$ (see Fig. \ref{fig:content_NN_b}). Then, the output features are fed to a three-layer-CNN for feature integration, where the size of all filters are fixed at $1\times1$. Finally, the integrated features are used to reconstruct the content map by a two-layer-CNN with the filter size being $3\times3$. Because $L_1$-norm is better at preserving details than $L_2$-norm, we use the $L_1$-norm between the generated content image $\mathcal{C}$ and ground truth sketch $S$ as the loss function, see Equ.~\ref{eq:content-net-loss}.
+\begin{equation}
+\mathcal{L}_s = \frac{1}{N} \sum \limits_{i=1}^N \|\mathcal{C}_i - S_i\| \label{eq:content-net-loss}
+\end{equation}
+where $N$ is the number of photos. 
 
 \subsection{Pyramid Feature Column}
 %------------------------------------------------------------------------
@@ -216,30 +194,26 @@ Fig. \ref{fig:pyramidcolumn} shows an example of the pyramid feature column. Den
 \label{fig:pyramidcolumn}
 \end{figure}
 
-\paragraph*{Find Matching Sketch Patch} 
-\redn[Unlike previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity of content patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Compared with photo patches, the content patches are more easier to match. Denote the content patch set as $P$, given a test content patch $\tilde{\mathcal{C}_{ij}}$, the target sketch patch $\tilde{S_{ij}}$ is found by
+\paragraph*{Find Matching Sketch Patch} Similar to previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity of test photo patch and train photo patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Denote the train photo patch set as $P$, given a test photo patch $T'_{ij}$, the target sketch patch $S'_{ij}$ is found by
 \begin{gather}
-\tilde{S_{ij}} = \phi(\min_{\mathcal{C}^k_{mn} \in P} f(\mathcal{C}^k_{mn}, \tilde{\mathcal{C}_{ij}})) \\
+S'_{ij} = \phi(\min_{T^k_{mn} \in P} f(T^k_{mn}, T'_{ij})) \\
 m = i + \Delta x, n = j + \Delta y
 \end{gather}
-where $\mathcal{C}^k_{mn}$ is the content patch of the $k$th image at $(m, n)$ in training set, $\phi$ is a one-to-one mapping between content patch and sketch patch, $\Delta x$ and $\Delta y$ is the shift of $(m, n)$ around $(i, j)$. The function $f$ measures the discrepancy between $\mathcal{C}^k_{mn}$ and $\tilde{\mathcal{C}_{ij}}$, and we use SSIM here.
-]
-
-% Inspired by previous works~\cite{wang2009face,zhou2012markov}, we examine the similarity in appearance of photo patches to find a matching sketch $S_{ij}$ for $U_{ij}$. Denote a patch centered at $C_{ij}$ in the test photo as $\Psi_{ij}$. If a patch centered at $\tilde{C}_{ij}$ in the $k$th photo in the training set has the smallest Euclidean distance from $\Psi_{ij}$ in term of color channels, a sketch patch, $S_{ij}$, centered at $\tilde{C}_{ij}$ is extracted from the sketch paired with the $k$th photo in the training set. The size and position of $S_{ij}$ are determined by the region associated with $U_{ij}$ which is calculated according to the architecture of the VGG-Network and location of $C_{ij}$. For non-boarder cells, $S_{ij}$ is a sketch patch of size $144\times144$ centered at $\tilde{C}_{ij}$. For cells near boarders, the region associated with $U_{ij}$ is the intersection of a sketch patch of size $144\times144$ centered at $C_{ij}$ with the whole sketch. Therefore, $S_{ij}$ is a patch from the $k$th sketch containing $\tilde{C}_{ij}$ such that the location of $\tilde{C}_{ij}$ in $S_{ij}$ is the same as the location of $C_{ij}$ in the region associated with $U_{ij}$ (see Fig.~\ref{fig:boarder_example}).\\
+where $T^k_{mn}$ is the photo patch of the $k$th image at $(m, n)$ in training set, $\phi$ is a one-to-one mapping between photo patch and sketch patch, $\Delta x$ and $\Delta y$ is the shift of $(m, n)$ around $(i, j)$. The function $f$ measures the discrepancy between $T^k_{mn}$ and $T'_{ij}$. Because we only need the test photo patch and train photo patch have a similar appearance, we simply use MSE as $f$ here.
 
 \paragraph*{Estimate Pyramid Feature Column}
-After we get $\tilde{S_{ij}}$, we can compute the corresponding pyramid feature column $U_{ij}$. Although the feature column can be generated by a $16\times16$ patch, padding zeros is not a good idea. Therefore, we will make use of the surrounding area of $\tilde{S_{ij}}$ to compute $U_{ij}$. According to the architecture of VGG-19, the receptive field of $conv5\_1$ is 132 without padding. To get $16\times16$ patches, we will need a $144\times144$ region $\mathcal{R}$ containing 81 patches in total. $\tilde{S_{ij}}$ should be at the center of $\mathcal{R}$, \ie $\tilde{S_{55}}$ with respect to the grids of $\mathcal{R}$. For those border part where we can't find a region centered at $\tilde{S_{ij}}$, we just find another region $\mathcal{R}'$ which has the biggest intersection with the should be region $\mathcal{R}$ (the blue box in Fig. \ref{fig:border_example}(b)). The $\tilde{S_{55}}$ in $\mathcal{R}$  should be $\tilde{S_{pq}}$ in $\mathcal{R}'$ ($(p, q)$ is calculated according to different conditions). The feature column $U_{55}$ in $\mathcal{R}$ or $U_{pq}$ in $\mathcal{R'}$ is the estimated pyramid feature column. 
+After we get $S_{ij}$, we can compute the corresponding pyramid feature column $U_{ij}$. Although the feature column can be generated by a $16\times16$ patch, padding zeros is not a good idea. Therefore, we will make use of the surrounding area of $S_{ij}$ to compute $U_{ij}$. According to the architecture of VGG-19, the receptive field of $conv5\_1$ is 132 without padding. To get $16\times16$ patches, we will need a $144\times144$ region $\mathcal{R}$ containing 81 patches in total. $S_{ij}$ should be at the center of $\mathcal{R}$, \ie $S_{55}$ with respect to the grids of $\mathcal{R}$. For those border part where we can't find a region centered at $S_{ij}$, we just find another region $\mathcal{R}'$ which has the biggest intersection with the should be region $\mathcal{R}$ (the blue box in Fig. \ref{fig:border_example}). The $S_{55}$ in $\mathcal{R}$  should be $S'_{pq}$ in $\mathcal{R}'$ ($(p, q)$ is calculated according to different conditions). The feature column $U_{55}$ in $\mathcal{R}$ or $U_{pq}$ in $\mathcal{R'}$ is the estimated pyramid feature column. 
 
 Allocating all these feature columns to its original patch location $(i, j)$, we can get the final feature maps $\tilde{U}$ and use it to compute gram matrix.  
 
 \begin{figure}[htbp]
 \centering
 \includegraphics[width=0.99\linewidth]{img/border_PFC.eps}
-\caption{Find a region $\mathcal{R}$ centered at $\tilde{S_{ij}}$. If $\mathcal{R}$ is inside the image, $\tilde{S_{ij}}$ should be the center patch of $\mathcal{R}$, see the left region. Otherwise, we need to find $\mathcal{R}'$ inside the image which has the biggest intersection with $\mathcal{R}$, see the right part. Suppose the indexes of $\tilde{S_{ij}}$ inside $\mathcal{R}'$ is $(p, q)$, then $U_{pq}$ is the corresponding feature column.}
+\caption{Find a region $\mathcal{R}$ centered at $S_{ij}$. If $\mathcal{R}$ is inside the image, $S_{ij}$ should be the center patch of $\mathcal{R}$, see the left region. Otherwise, we need to find $\mathcal{R}'$ inside the image which has the biggest intersection with $\mathcal{R}$, see the right part. Suppose the indexes of $\tilde{S_{ij}}$ inside $\mathcal{R}'$ is $(p, q)$, then $U_{pq}$ is the corresponding feature column.}
 \label{fig:border_example}
 \end{figure}
 
-\subsection{Loss Function}
+\subsection{Loss Function of Sketch}
 
 The same as \cite{gatys2015neural}, our loss function has a style loss and content loss. In addition we add a component loss to enhance the key facial components. The total loss is
 
@@ -277,149 +251,124 @@ W^{k} = W^{k}_r+W^{k}_g+W^{k}_b
 \label{eq:VGG_weights}
 \end{equation}
 where $W^{k}_r$, $W^{k}_g$, and $W^{k}_b$ are weights of the $k$th filter in the first convolutional layer for the R, G and B channels respectively, and $W^{k}$ is the weight of the $k$th filter in the first convolutional layer of our modified network.
-\paragraph*{Training Process} The minimization is carried out using L-BFGS. Instead of using random noises, we use the content image as a starting point, which will make the optimization process converge much faster. 
+
+\paragraph{Data Partition} CUHK has 88 training photos and 100 test photos, and AR has 123 photos. Our training set is composed of the 88 training photos of CUHK and 100 photos from AR. When training the content network, 10\% of the training set are taken out as validation set. All the 188 photo-sketch pairs are used to generate target sketch.
+
+\paragraph{Training content network} The input photo-sketch pairs are aligned by the facial landmarks of eyes, and all images are resized to $200\times256$. A mirror padding is carried out before the convolution operation when necessary to ensure the output feature map is the same size as the input. Adadelta \cite{matt2012adadelta} is used as the optimizer because it is stable and much faster than others.  
+
+\paragraph{Sketch Generation} 
+In all experiments, we resize test photos and photo-sketch pairs in the training set to a fixed size of $288\times288$. The final sketch is obtained by resizing the resulting sketch back to the original size. The size of $\mathcal{K}$ is $48\times48$, $\alpha=0.004$, $\beta_1=1$ and $\beta_2=0.1$. The minimization is carried out using L-BFGS. Instead of using random noises, we use the content image as a starting point, which will make the optimization process converge much faster. 
 
 %==========================================================================
 
+\begin{figure*}[htbp]
+\centering
+\subfigure[Photo]{
+\begin{minipage}[b]{0.1\linewidth}
+\centering
+\includegraphics[width=0.91\linewidth]{img/sketch_result/example1_photo.png}
+\includegraphics[width=0.91\linewidth]{img/sketch_result/example2_photo.png}
+\includegraphics[width=0.91\linewidth]{img/sketch_result/example3_photo.png}
+\includegraphics[width=0.91\linewidth]{img/sketch_result/example4_photo.png}
+\end{minipage}
+}
+\subfigure[MRF]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example1_MRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example2_MRF.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example3_MRF.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example4_MRF.pdf}
+\end{minipage}
+}
+\subfigure[WMRF]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example1_WMRF.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example2_WMRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example3_WMRF.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example4_WMRF.pdf}
+\end{minipage}
+}
+\subfigure[SSD]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example1_SSD.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example2_SSD.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example3_SSD.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example4_SSD.pdf}
+\end{minipage}
+}
+\subfigure[FCNN]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example1_FCNN.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example2_FCNN.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example3_FCNN.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example4_FCNN.pdf}
+\end{minipage}
+}
+\subfigure[BFCN]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example1_BFCN.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example2_BFCN.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example3_BFCN.pdf}
+% \includegraphics[width=0.99\linewidth]{img/sketch_result/example4_BFCN.pdf}
+\end{minipage}
+}
+\subfigure[Ours]{
+\begin{minipage}[b]{0.13\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example1_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example2_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example3_ours.pdf}
+\includegraphics[width=0.99\linewidth]{img/sketch_result/example4_ours.pdf}
+\end{minipage}
+}
+\caption{Examples of qualitative evaluation on CUHK (first two rows) and AR (last two rows). (a) The sketches drawn by artists. (b) MRF~\cite{wang2009face} (c) WMRF~\cite{zhou2012markov} (d) SSD~\cite{song2014real} (e) FCNN~\cite{zhang2015end} (f) BFCN~\cite{zhang2017content} (g) Ours. The proposed method preserves more texture details, for example in the hair and nose. It is also best at keeping the origin structures of photos, such as the glasses.}
+\label{fig:qua_eval}
+\end{figure*}
+
 \section{Experiments}
 
-% \begin{figure*}[htbp]
-% \centering
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example1_gro.pdf}
-% \includegraphics[width=0.99\linewidth]{example2_gro.pdf}
-% (a) Sketches by artist
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example1_FCNN.pdf}
-% \includegraphics[width=0.99\linewidth]{example2_FCNN.pdf}
-% (b) FCNN
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example1_MRF.pdf}
-% \includegraphics[width=0.99\linewidth]{example2_MRF.pdf}
-% (c) MRF
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example1_ours.pdf}
-% \includegraphics[width=0.99\linewidth]{example2_ours.pdf}
-% (d) Ours
-% \end{minipage}
-% \caption{Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method~\cite{zhang2015end}. (c) Results from MRF based method~\cite{wang2009face}. (d) Our results.}
-% \label{fig:q_eval_1}
-% \end{figure*}
-% \begin{figure*}[htbp]
-% \centering
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example3_gro.pdf}
-% \includegraphics[width=0.99\linewidth]{example4_gro.pdf}
-% (a) Sketches by artist
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example3_WMRF.pdf}
-% \includegraphics[width=0.99\linewidth]{example4_WMRF.pdf}
-% (b) WMRF
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example3_Filter.pdf}
-% \includegraphics[width=0.99\linewidth]{example4_Filter.pdf}
-% (c) SSD
-% \end{minipage}
-% \begin{minipage}[t]{0.245\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{example3_ours.pdf}
-% \includegraphics[width=0.99\linewidth]{example4_ours.pdf}
-% (d) Ours
-% \end{minipage}
-% \caption{Examples of qualitative evaluation on AR benchmark datasets. (a) The sketches drawn by artists. (b) Results from the WMRF method~\cite{zhou2012markov}. (c) Results from the SSD method~\cite{song2014real}. (d) Our results.}
-% \label{fig:q_eval_2}
-% \end{figure*}
-In all experiments, we resize test photos and photo-sketch pairs in the training set to a fixed size of $288\times288$. The final sketch is obtained by resizing the resulting sketch back to the original size. The size of $\Psi$ is $48\times48$, $\alpha=0.004$, $\beta_1=1$ and $\beta_2=0.1$. Since generating the final sketch involves an iterative optimization process, the gradient of the final sketch with respect to the content image is not easy to calculate, which prohibits training the content network in an end-to-end manner.  The training is therefore carried out by minimizing the squared loss between generated content images and sketches drawn by artists. We evaluate the performance of the proposed method against other state-of-the-art methods on the CUHK student dataset~\cite{wang2009face} and the AR dataset~\cite{martinez1998r}. For AR dataset, we use the leave-one-out strategy as conducted in previous studies~\cite{song2014real,wang2009face}. We compare the results of our method against those of the MRF method~\cite{wang2009face}, weighted MRF (WMRF) method~\cite{zhou2012markov}, feed-forward CNN (FCNN) method~\cite{zhang2015end} and Filtering based method (SSD)~\cite{song2014real}.
+We evaluate the performance of the proposed method against other state-of-the-art methods on the CUHK student dataset~\cite{wang2009face} and the AR dataset~\cite{martinez1998r}. We compare the results of our method against other 6 methods including traditional approaches and recent deep learning models. After discussing the disadvantages of previous quantitative evaluation criteria, we introduce the Normalized Gram Matrix Difference (NGMD) as a new evaluation tool. We believe that NGMD is more effective and will greatly promote the sketch qualities in future work.
+% those of the MRF method~\cite{wang2009face}, weighted MRF (WMRF) method~\cite{zhou2012markov}, feed-forward CNN (FCNN) method~\cite{zhang2017content,zhang2015end} and Filtering based method (SSD)~\cite{song2014real}.
 
 %------------------------------------------------------------------------
 \subsection{Style Transfer Evaluation}
 
+Although style transfer has shown remarkable performance in artistic style, it can't be directly applied to face sketch synthesis, see Fig.~\ref{fig:example_h}. The generated sketch is greatly influenced by illumination of original photo and doesn't look like sketch at all. To prove our assumption in Section~\ref{sec:motivation} that gram matrix captures the density distribution of sketch, we replace the original RGB photo with content image generated by our content network. We selected 3 sketch styles with different amount of hairs and see how it influences the result. Fig.~\ref{fig:style_result} shows a clear relationship between the hair amount of sketch and pixel intensities of sketch result. The facial key parts in Fig.~\ref{fig:style_result2} and \ref{fig:style_result3} are missed. Therefore, even with a content structure, the original style transfer is still not suitable for elaborate task. However, if the style image has a similar structure with test photo, for example Fig.~\ref{fig:style_result1}, the results can be quite good. This inspires our feature patch based method. Image patch method is not considered because it will introduce patch inconsistency as discussed in Section~\ref{sec:related_work}. 
+
+\begin{figure}[htbp]
+\centering
+\subfigure[]{
+\label{fig:style_content} \includegraphics[width=0.23\linewidth]{img/style_evaluate/content.png}}
+\subfigure[]{
+\label{fig:style_result1} \includegraphics[width=0.23\linewidth]{img/style_evaluate/style_result1.pdf}}
+\subfigure[]{
+\label{fig:style_result2} \includegraphics[width=0.23\linewidth]{img/style_evaluate/style_result2.pdf}}
+\subfigure[]{
+\label{fig:style_result3} \includegraphics[width=0.23\linewidth]{img/style_evaluate/style_result3.pdf}}
+\caption{(a) is the content image generated by our content network. (b), (c) and (d) are generated by different styles. It can be seen that when the hair decreases the generated sketch becomes brighter.}
+\label{fig:style_result}
+\end{figure}
+
 %------------------------------------------------------------------------
 \subsection{Sketch Generation}
 
-\begin{figure*}[htbp]
-\centering
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
-(a) Test Photo
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
-(a) MRF
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_gro.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_gro.pdf}
-(a) WMRF
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_FCNN.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_FCNN.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_WMRF.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_WMRF.pdf}
-(b) SSD
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_MRF.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_MRF.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_Filter.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_Filter.pdf}
-(c) FCNN
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_MRF.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_MRF.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_Filter.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_Filter.pdf}
-(c) BFCN
-\end{minipage}
-\begin{minipage}[t]{0.138\linewidth}
-\centering
-\includegraphics[width=0.99\linewidth]{img/example1_ours.pdf}
-\includegraphics[width=0.99\linewidth]{img/example2_ours.pdf}
-\includegraphics[width=0.99\linewidth]{img/example3_ours.pdf}
-\includegraphics[width=0.99\linewidth]{img/example4_ours.pdf}
-(d) Ours
-\end{minipage}
-\caption{Examples of qualitative evaluation on CUHK benchmark datasets. (a) The sketches drawn by artists. (b) Results from feed-forward CNN based method~\cite{zhang2015end}. (c) Results from MRF based method~\cite{wang2009face}. (d) Our results.}
-\label{fig:q_eval_1}
-\end{figure*}
+Fig.~\ref{fig:qua_eval} shows the comparison between our methods and many other approaches. The first two rows are from CUHK test set, and the last two are from AR. We can see that our method can generate more stylistic sketches than others. For example, in the hair part, only MRF, BFCN and the proposed method can generate obvious textures. However, the texture of MRF is not continuous in the border part and introduce many other artifacts, and the texture of BFCN doesn't look like human strokes. Both WMRF and SSD introduce over smoothing effect and FCNN is not able to give clear textures. Our method can not only generate textures for hairs and mustache but also shadings, for example the nose part.
 
-%------------------------------------------------------------------------
-\subsection{Generalization Test}
+On the other hand, only BFCN and the proposed method can handle structures decorated on the face well, for example the glasses of the last two row. MRF, WMRF and SSD are exemplar based method so they can't handle something different from training set, the glass edges of them are not complete. FCNN, BFCN and our method generate the image content by CNN, so they can handle the original photo structures well. But both FCNN and BFCN care nothing about the textures of facial part, so their results are not good considering the face part. In contrast, our method can well maintain the image content and attach textures similar to human paintings. 
 
 %------------------------------------------------------------------------
 \subsection{Quantitative Results}
 
-\paragraph*{Sketch Recognition} Sketch synthesis methods are usually evaluated quantitatively  via the face sketch recognition task~\cite{song2014real,wang2009face,zhang2015end,zhou2012markov}. If an algorithm achieves higher sketch recognition rates, it suggests that this method is more effective in synthesizing sketches. We adopt the widely used PCA based recognition method with ``rank-1 (R1)'', ``rank-5 (R5)'' and ``rank-10 (R10)'' criteria ~\cite{wang2009face} where ``rank $n$'' measures the rate of the correct answer in the top $n$ best matches. The results of different methods are shown in Table~\ref{tab:reg_percentage}. Our method achieves the best performance against all other methods in the ``R1'' and ``R5'' tests. There may be two reasons behind this. First, since the test photos are different from those in the training set, we do not expect to find suitable patches from the training set for the target patches. The remedy of linearly combining the patches as in~\cite{zhou2012markov} will introduce over smoothing and blurring artifacts, which are also observed in the filtering like approach~\cite{song2014real}. Being a generative model, the content network learns the modality transformation locally between photos and sketches, such as transferring edges in photos to strokes in sketches. This helps generating sketches for structures not existing in the training set. Second, our model explicitly minimizes the difference by the 
+\paragraph*{Sketch Recognition} Sketch synthesis methods are usually evaluated quantitatively  via the face sketch recognition task~\cite{song2014real,wang2009face,zhang2015end,zhou2012markov}. If an algorithm achieves higher sketch recognition rates, it suggests that this method is more effective in synthesizing sketches. We adopt the widely used PCA based recognition method with ``rank-1 (R1)'', ``rank-5 (R5)'' and ``rank-10 (R10)'' criteria ~\cite{wang2009face} where ``rank $n$'' measures the rate of the correct answer in the top $n$ best matches. The results of different methods are shown in Table~\ref{tab:reg_percentage}. Our method achieves the best performance against all other methods in the ``R1'' and ``R5'' tests. 
 
-\begin{table}
+% There may be two reasons behind this. First, since the test photos are different from those in the training set, we do not expect to find suitable patches from the training set for the target patches. The remedy of linearly combining the patches as in~\cite{zhou2012markov} will introduce over smoothing and blurring artifacts, which are also observed in the filtering like approach~\cite{song2014real}. Being a generative model, the content network learns the modality transformation locally between photos and sketches, such as transferring edges in photos to strokes in sketches. This helps generating sketches for structures not existing in the training set. Second, our model explicitly minimizes the difference by the 
+
+\begin{table}[htbp]
 \small
 \begin{tabular}{C{0.2cm}C{0.2cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}C{0.1cm}C{0.35cm}}
 \hline
@@ -436,14 +385,23 @@ In all experiments, we resize test photos and photo-sketch pairs in the training
 \caption{Recognition rate on benchmark datasets. The best performance is colored in red.}
 \label{tab:reg_percentage}
 \end{table}
-\paragraph*{Normalized Gram Matrix Difference (NGMD)} Human can often be able to tell whether a sketch is generated by algorithms or drawn by artists just from a quick glance without examining details. This indicates that there exists a big gap between the style of algorithm-generated sketches and that of those drawn by artists. To quantitatively evaluate the style similarity between a generated sketch and the sketch drawn by a real artist, we employ the normalized gram matrix difference (NGMD) between the generated sketch $\mathcal{X}$ and the drawn sketch ${\tilde {\mathcal{X}}}$:
+
+However, such kind of evaluation is not effective since every one is close to 100\%, and more importantly, it can't guide our research effort. Zhang \etal \cite{zhang2015end} proposed a  Multiscale Pixel-wise Reconstruction Loss (MPRL). Although we agree that if MPRL is zero, the generated sketches will be exactly the same with ground truth, there are two reasons why it is not a good criteria. First, experiment results of \cite{zhang2015end, zhang2017content} show that $L_2$-norm would give blurry sketches. Second, the ground truth draw by human usually doesn't correspond exactly with photos, thus difficult for algorithms to reach the ground truth.
+
+Meanwhile, human can often be able to tell whether a sketch is generated by algorithms or drawn by artists just from a quick glance without examining details.
+This indicates that there exists a big gap between the style of algorithm-generated sketches and that of those drawn by artists. And we need a criteria which can quantitatively measure such gap.
+
+\paragraph*{Normalized Gram Matrix Difference (NGMD)} To quantitatively evaluate the style similarity between a generated sketch and the sketch drawn by a real artist, we employ the normalized gram matrix difference (NGMD) between the generated sketch $\mathcal{X}$ and the drawn sketch ${\tilde {\mathcal{X}}}$:
 \begin{equation}
 {D^l_s}\left( {\mathcal{X},\tilde {\mathcal{X}}} \right) = \frac{{\left\| {{G^l}\left( \mathcal{X} \right) - {G^l}\left( {\tilde {\mathcal{X}}} \right)} \right\|_2^2}}{{\left\| {{G^l}\left( {\tilde {\mathcal{X}}} \right)} \right\|_2^2}}
 \label{eq:style_exp}
 \end{equation}
-where $l\in L_s$. The smaller the NGMD value is, the more similar $\mathcal{X}$ and ${\tilde {\mathcal{X}}}$ are. Thanks to our style transfer, our results have the smallest NGMD value among all methods under test (see Table 2). It is therefore obvious that our results are the closest to the sketches drawn by artists. 
-Qualitative evaluation results are shown in Fig.~\ref{fig:q_eval_1} and Fig.~\ref{fig:q_eval_2}, where we find that our method provides much clear boundaries and better texture in regions containing hairs and shadings. The results of~\cite{zhang2015end} can roughly outline the sketches, but they do not look like sketches in style. This is also indicated by a high NGMD in Table~\ref{tab:NGMD}. The results of MRF~\cite{wang2009face} and WMRF~\cite{zhou2012markov} are more similar to hand drawn sketches in style since these exemplar based approaches use patches of hand drawn sketches to make up the target sketch. That is why they have a smaller NGMD value. Inheriting the ability of denoising, the filtering based approach~\cite{song2014real} is good at suppressing noises in the results. However, it is also likely for this method to over-smooth the results, which will deteriorate the texture and even introduce blurring artifacts. 
+where $l\in L_s$. The smaller the NGMD value is, the more similar $\mathcal{X}$ and ${\tilde {\mathcal{X}}}$ are. 
+% Thanks to our style transfer, our results have the smallest NGMD value among all methods under test (see Table 2). It is therefore obvious that our results are the closest to the sketches drawn by artists. 
+% Qualitative evaluation results are shown in Fig.~\ref{fig:qua_eval}, where we find that our method provides much clear boundaries and better texture in regions containing hairs and shadings. 
 
+It is exciting how well NGMD match our intuition, see Fig.~\ref{fig:qua_eval}. 
+The results of~\cite{zhang2015end} can roughly outline the sketches, thus they got a high NGMD in Table~\ref{tab:NGMD}. The results of MRF~\cite{wang2009face} and WMRF~\cite{zhou2012markov} are more similar to hand drawn sketches in style since these exemplar based approaches use patches of hand drawn sketches to make up the target sketch. That is why they have a smaller NGMD value. Inheriting the ability of denoising, the filtering based approach~\cite{song2014real} is good at suppressing noises in the results. However, it is also likely for this method to over-smooth the results, which will deteriorate the texture, thus its NGMD value is higher than WMRF. 
 
 \begin{table*}[htbp]
 \begin{center}
@@ -463,67 +421,77 @@ Qualitative evaluation results are shown in Fig.~\ref{fig:q_eval_1} and Fig.~\re
 \end{tabular}
 }
 \end{center}
-\caption{Averaged NGMD value of different methods at different level on AR and CUHK datasets.}
+\caption{Averaged NGMD value of different methods at different level on AR and CUHK datasets. A smaller NGMD indicates the generated texture is more similar to ground truth.}
 \label{tab:NGMD}
 \end{table*}
 
-% \begin{figure}[htbp]
-% \centering
-% \begin{minipage}[t]{0.49\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{wo_region.pdf}
-% (a) $\beta_2=0$
-% \end{minipage}
-% \begin{minipage}[t]{0.49\linewidth}
-% \includegraphics[width=0.99\linewidth]{w_region.pdf}
-% \centering
-% (b) $\beta_2=0.1$
-% \end{minipage}
-% \caption{Comparison between results with and without the $\mathcal{L}_{k} $ regulation. (a) When turning off the component loss, the nose suffers from the distortion. (b) Thanks to the component loss, a more favorable result is obtained.}
-% \label{fig:region_effect}
-% \end{figure}
+%------------------------------------------------------------------------
+\subsection{Generalization Evaluation}
 
-% \begin{figure*}[htbp]
-% \centering
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{inf_alpha.pdf}
-% $\beta_1  = 0 $\\
-% $\beta_2  = 0 $
-% \end{minipage}
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{4_alpha.pdf}
-% $\beta_1  = 10^{-3} $\\
-% $\beta_2  = 10^{-4} $
-% \end{minipage}
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{3_alpha.pdf}
-% $\beta_1  = 10^{-2} $\\
-% $\beta_2  = 10^{-3} $
-% \end{minipage}
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{2_alpha.pdf}
-% $\beta_1  = 0.1 $\\
-% $\beta_2  = 0.01 $
-% \end{minipage}
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{1_alpha.pdf}
-% $\beta_1  = 1 $\\
-% $\beta_2  = 0.1 $
-% \end{minipage}
-% \begin{minipage}[t]{0.16\linewidth}
-% \centering
-% \includegraphics[width=0.99\linewidth]{0_alpha.pdf}
-% $\beta_1  = 10^{3} $\\
-% $\beta_2  = 10^{2} $
-% \end{minipage}
-% \caption{Final results for sketch synthesis with fixed $\alpha=0.004$ and different $\beta_1$, $\beta_2$ values.}
-% \label{fig:alphg_effect}
-% \end{figure*}
+In this part, we will evaluate the generalization ability of our model. Since the test photo may vary in pose and can't be well aligned, we just turn off the component loss. The parameters we use here are $\alpha=0.1$, $\beta_1=1$, $\beta_2=0$. 
+
+\paragraph{Lightning and Pose Invariance} 
+
+\paragraph{Real World Photos}
+
+
+\begin{figure}[htbp]
+\centering
+\begin{minipage}[t]{0.49\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/wo_region.pdf}
+(a) $\beta_2=0$
+\end{minipage}
+\begin{minipage}[t]{0.49\linewidth}
+\includegraphics[width=0.99\linewidth]{img/effective_eval/w_region.pdf}
+\centering
+(b) $\beta_2=0.1$
+\end{minipage}
+\caption{Comparison between results with and without the $\mathcal{L}_{k} $ regulation. (a) When turning off the component loss, the nose suffers from the distortion. (b) Thanks to the component loss, a more favorable result is obtained.}
+\label{fig:region_effect}
+\end{figure}
+
+\begin{figure*}[htbp]
+\centering
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/inf_alpha.pdf}
+$\beta_1  = 0 $\\
+$\beta_2  = 0 $
+\end{minipage}
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/4_alpha.pdf}
+$\beta_1  = 10^{-3} $\\
+$\beta_2  = 10^{-4} $
+\end{minipage}
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/3_alpha.pdf}
+$\beta_1  = 10^{-2} $\\
+$\beta_2  = 10^{-3} $
+\end{minipage}
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/2_alpha.pdf}
+$\beta_1  = 0.1 $\\
+$\beta_2  = 0.01 $
+\end{minipage}
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/1_alpha.pdf}
+$\beta_1  = 1 $\\
+$\beta_2  = 0.1 $
+\end{minipage}
+\begin{minipage}[t]{0.16\linewidth}
+\centering
+\includegraphics[width=0.99\linewidth]{img/effective_eval/0_alpha.pdf}
+$\beta_1  = 10^{3} $\\
+$\beta_2  = 10^{2} $
+\end{minipage}
+\caption{Final results for sketch synthesis with fixed $\alpha=0.004$ and different $\beta_1$, $\beta_2$ values.}
+\label{fig:alphg_effect}
+\end{figure*}
 
 %------------------------------------------------------------------------
 \subsection{Effectiveness of the model}
