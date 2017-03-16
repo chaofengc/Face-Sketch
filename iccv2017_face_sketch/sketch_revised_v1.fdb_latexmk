@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex sketch_revised_v1"] 1489581455 "sketch_revised_v1.aux" "sketch_revised_v1.bbl" "sketch_revised_v1" 1489583366
+["bibtex sketch_revised_v1"] 1489665391 "sketch_revised_v1.aux" "sketch_revised_v1.bbl" "sketch_revised_v1" 1489667765
   "./ieee.bst" 1489216117 19623 f9cd22458ca68af2567100f1aed905e8 ""
-  "egbib.bib" 1489468178 7730 58437510ae116dee1da13ef342561168 ""
-  "sketch_revised_v1.aux" 1489583366 23823 ce180813cd9ea3f7cd0155db16075194 ""
+  "egbib.bib" 1489665381 6904 ffe983d7251b38bdaf503bdec9f7f247 ""
+  "sketch_revised_v1.aux" 1489666805 23823 ce180813cd9ea3f7cd0155db16075194 ""
   "sketch_revised_v1.bcf" 0 -1 0 ""
   (generated)
   "sketch_revised_v1.blg"
   "sketch_revised_v1.bbl"
-["pdflatex"] 1489583365 "sketch_revised_v1.tex" "sketch_revised_v1.pdf" "sketch_revised_v1" 1489583366
+["pdflatex"] 1489666805 "sketch_revised_v1.tex" "sketch_revised_v1.pdf" "sketch_revised_v1" 1489667765
   "./img/border_PFC-eps-converted-to.pdf" 1489325443 473693 91462f551a59a8d9ee9a545904583e00 ""
   "./img/border_PFC.eps" 1489325431 1915064 a7ecaa990aad38f75196c953f6d8d755 ""
   "./img/content_net.pdf" 1489215572 200675 7fb9e05694ed37c17250319b38e27ee8 ""
@@ -71,7 +71,7 @@
   "./img/real_world_photos/fcnn_r2.png" 1489556450 48309 716aafdc1a70cfb10b81251a1f0fe1f7 ""
   "./img/real_world_photos/fcnn_r3.png" 1489556450 60257 6aab630d70b6a9509b6bb4f2e5663159 ""
   "./img/real_world_photos/fcnn_r4.png" 1489556450 48284 8b8fae8b850b83303325e5e2b9f30cf2 ""
-  "./img/real_world_photos/ours_r1.png" 1489548756 28561 3ab9d4892ae1dad76c1263439c441ac7 ""
+  "./img/real_world_photos/ours_r1.png" 1489662251 28891 933015d477ee9006dc5dd0070dc3e3cc ""
   "./img/real_world_photos/ours_r2.png" 1489529133 27234 e1ea8ffad7e7be871b7479d295c37314 ""
   "./img/real_world_photos/ours_r3.png" 1489529170 29372 efb1e93d03dfb2ac8b5d93247e39e10c ""
   "./img/real_world_photos/ours_r4.png" 1489529207 29333 b5fb290787b76801c25b22aaaa15e974 ""
@@ -111,7 +111,7 @@
   "./img/style_evaluate/style_result1.pdf" 1489371985 102019 20b98eecdb670258fdb886677a213c01 ""
   "./img/style_evaluate/style_result2.pdf" 1489373206 86617 d62cf66acfa104548eb5a3f4d74c25d7 ""
   "./img/style_evaluate/style_result3.pdf" 1489373239 82154 35ccb962300d9d798cb9e934706865e2 ""
-  "./sketch_revised_v1.brf" 1489583366 3113 11b6391972c1344d129052becf7d54eb ""
+  "./sketch_revised_v1.brf" 1489666805 3113 11b6391972c1344d129052becf7d54eb ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -298,7 +298,7 @@
   "img/real_world_photos/fcnn_r2.png" 1489556450 48309 716aafdc1a70cfb10b81251a1f0fe1f7 ""
   "img/real_world_photos/fcnn_r3.png" 1489556450 60257 6aab630d70b6a9509b6bb4f2e5663159 ""
   "img/real_world_photos/fcnn_r4.png" 1489556450 48284 8b8fae8b850b83303325e5e2b9f30cf2 ""
-  "img/real_world_photos/ours_r1.png" 1489548756 28561 3ab9d4892ae1dad76c1263439c441ac7 ""
+  "img/real_world_photos/ours_r1.png" 1489662251 28891 933015d477ee9006dc5dd0070dc3e3cc ""
   "img/real_world_photos/ours_r2.png" 1489529133 27234 e1ea8ffad7e7be871b7479d295c37314 ""
   "img/real_world_photos/ours_r3.png" 1489529170 29372 efb1e93d03dfb2ac8b5d93247e39e10c ""
   "img/real_world_photos/ours_r4.png" 1489529207 29333 b5fb290787b76801c25b22aaaa15e974 ""
@@ -338,12 +338,12 @@
   "img/style_evaluate/style_result1.pdf" 1489371985 102019 20b98eecdb670258fdb886677a213c01 ""
   "img/style_evaluate/style_result2.pdf" 1489373206 86617 d62cf66acfa104548eb5a3f4d74c25d7 ""
   "img/style_evaluate/style_result3.pdf" 1489373239 82154 35ccb962300d9d798cb9e934706865e2 ""
-  "sketch_revised_v1.aux" 1489583366 23823 ce180813cd9ea3f7cd0155db16075194 ""
-  "sketch_revised_v1.bbl" 1489581455 4588 faaf6f473d1f1c4d84077d04d1bac775 "bibtex sketch_revised_v1"
-  "sketch_revised_v1.brf" 1489583366 3113 11b6391972c1344d129052becf7d54eb ""
-  "sketch_revised_v1.tex" 1489583365 50173 eb69fa79af7fdc7b37b4f327b3dc5c44 ""
+  "sketch_revised_v1.aux" 1489666805 23823 ce180813cd9ea3f7cd0155db16075194 ""
+  "sketch_revised_v1.bbl" 1489665391 4588 faaf6f473d1f1c4d84077d04d1bac775 "bibtex sketch_revised_v1"
+  "sketch_revised_v1.brf" 1489666805 3113 11b6391972c1344d129052becf7d54eb ""
+  "sketch_revised_v1.tex" 1489666805 50171 e34f6d2fb5376d12e91cddec287480ac ""
   (generated)
   "sketch_revised_v1.log"
-  "sketch_revised_v1.brf"
-  "sketch_revised_v1.aux"
   "sketch_revised_v1.pdf"
+  "sketch_revised_v1.aux"
+  "sketch_revised_v1.brf"
