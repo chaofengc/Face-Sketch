@@ -1,13 +1,13 @@
 # Fdb version 3
-["bibtex sketch_revised_ken_v4"] 1489758686 "sketch_revised_ken_v4.aux" "sketch_revised_ken_v4.bbl" "sketch_revised_ken_v4" 1489758687
+["bibtex sketch_revised_ken_v4"] 1489758686 "sketch_revised_ken_v4.aux" "sketch_revised_ken_v4.bbl" "sketch_revised_ken_v4" 1494831245
   "./ieee.bst" 1489216117 19623 f9cd22458ca68af2567100f1aed905e8 ""
   "egbib.bib" 1489665381 6904 ffe983d7251b38bdaf503bdec9f7f247 ""
-  "sketch_revised_ken_v4.aux" 1489758687 23326 c4d875f7e807f004f9c826bfe71fe53f ""
+  "sketch_revised_ken_v4.aux" 1489766804 23326 c4d875f7e807f004f9c826bfe71fe53f ""
   "sketch_revised_ken_v4.bcf" 0 -1 0 ""
   (generated)
-  "sketch_revised_ken_v4.blg"
   "sketch_revised_ken_v4.bbl"
-["pdflatex"] 1489758686 "sketch_revised_ken_v4.tex" "sketch_revised_ken_v4.pdf" "sketch_revised_ken_v4" 1489758687
+  "sketch_revised_ken_v4.blg"
+["pdflatex"] 1489766803 "sketch_revised_ken_v4.tex" "sketch_revised_ken_v4.pdf" "sketch_revised_ken_v4" 1494831245
   "./img/content_net.pdf" 1489215572 200675 7fb9e05694ed37c17250319b38e27ee8 ""
   "./img/effective_eval/0_alpha.pdf" 1489215572 49311 05ed6553455ae3ceefcc7e0170de8290 ""
   "./img/effective_eval/1_alpha.pdf" 1489215572 48973 bd89105d88ed2af399765dc759f1bd31 ""
@@ -109,7 +109,7 @@
   "./img/style_evaluate/style_result1.pdf" 1489371985 102019 20b98eecdb670258fdb886677a213c01 ""
   "./img/style_evaluate/style_result2.pdf" 1489373206 86617 d62cf66acfa104548eb5a3f4d74c25d7 ""
   "./img/style_evaluate/style_result3.pdf" 1489373239 82154 35ccb962300d9d798cb9e934706865e2 ""
-  "./sketch_revised_ken_v4.brf" 1489758687 3156 6e734517cc4603afbee7d51666b5858d ""
+  "./sketch_revised_ken_v4.brf" 1489766804 3156 6e734517cc4603afbee7d51666b5858d ""
   "/usr/local/texlive/2015/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/local/texlive/2015/texmf-dist/fonts/map/fontname/texfonts.map" 1272929888 3287 e6b82fe08f5336d4d5ebc73fb1152e87 ""
   "/usr/local/texlive/2015/texmf-dist/fonts/tfm/adobe/courier/pcrr7t.tfm" 1136768653 960 379cc0019370a9e0208a0a3f949f847a ""
@@ -335,12 +335,12 @@
   "img/style_evaluate/style_result1.pdf" 1489371985 102019 20b98eecdb670258fdb886677a213c01 ""
   "img/style_evaluate/style_result2.pdf" 1489373206 86617 d62cf66acfa104548eb5a3f4d74c25d7 ""
   "img/style_evaluate/style_result3.pdf" 1489373239 82154 35ccb962300d9d798cb9e934706865e2 ""
-  "sketch_revised_ken_v4.aux" 1489758687 23326 c4d875f7e807f004f9c826bfe71fe53f ""
+  "sketch_revised_ken_v4.aux" 1489766804 23326 c4d875f7e807f004f9c826bfe71fe53f ""
   "sketch_revised_ken_v4.bbl" 1489758686 4435 e8c704be0dafe1c07649ef877688f0dc "bibtex sketch_revised_ken_v4"
-  "sketch_revised_ken_v4.brf" 1489758687 3156 6e734517cc4603afbee7d51666b5858d ""
-  "sketch_revised_ken_v4.tex" 1489758685 55533 fe07fdaa99459911e5ce87e4748d3c02 ""
+  "sketch_revised_ken_v4.brf" 1489766804 3156 6e734517cc4603afbee7d51666b5858d ""
+  "sketch_revised_ken_v4.tex" 1489766796 55515 7e9d4f9278eae5262212ab97010da1cb ""
   (generated)
   "sketch_revised_ken_v4.pdf"
-  "sketch_revised_ken_v4.aux"
   "sketch_revised_ken_v4.brf"
   "sketch_revised_ken_v4.log"
+  "sketch_revised_ken_v4.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  17 MAR 2017 21:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.10.14)  18 MAR 2017 00:06
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1412,8 +1412,8 @@ Underfull \hbox (badness 1231) in paragraph at lines 594--595
  []
 
 
-Underfull \hbox (badness 1509) in paragraph at lines 601--602
-[]\OT1/ptm/m/n/10 This pa-per pro-posed a novel face sketch syn-the-sis
+Underfull \hbox (badness 1708) in paragraph at lines 601--602
+[]\OT1/ptm/m/n/10 This pa-per pro-poses a novel face sketch syn-the-sis
  []
 
 (./sketch_revised_ken_v4.bbl (./sketch_revised_ken_v4.brf)
@@ -1484,7 +1484,7 @@ lvetic/uhvb8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/helvetic/
 uhvr8a.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmb8a.pfb
 ></usr/local/texlive/2015/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/loc
 al/texlive/2015/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on sketch_revised_ken_v4.pdf (9 pages, 6488056 bytes).
+Output written on sketch_revised_ken_v4.pdf (9 pages, 6488921 bytes).
 PDF statistics:
  1016 PDF objects out of 1200 (max. 8388607)
  708 compressed objects within 8 object streams
