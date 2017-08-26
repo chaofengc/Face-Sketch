@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex draft_v1"] 1503698578 "draft_v1.aux" "draft_v1.bbl" "draft_v1" 1503729854
+["bibtex draft_v1"] 1503698578 "draft_v1.aux" "draft_v1.bbl" "draft_v1" 1503730408
   "./ieee.bst" 1402367842 20752 0f9571d17987db6403f2a9e108ae2a8a ""
-  "draft_v1.aux" 1503698605 23389 08b1628734fa0888fd85eed152ebd524 ""
+  "draft_v1.aux" 1503730407 23389 08b1628734fa0888fd85eed152ebd524 ""
   "draft_v1.bcf" 0 -1 0 ""
   "egbib.bib" 1489665381 6904 ffe983d7251b38bdaf503bdec9f7f247 ""
   (generated)
   "draft_v1.blg"
   "draft_v1.bbl"
-["pdflatex"] 1503698603 "draft_v1.tex" "draft_v1.pdf" "draft_v1" 1503729854
-  "./draft_v1.brf" 1503698605 2954 ed20f0296896f2e77e863cde8e34dddf ""
+["pdflatex"] 1503730406 "draft_v1.tex" "draft_v1.pdf" "draft_v1" 1503730408
+  "./draft_v1.brf" 1503730407 2954 ed20f0296896f2e77e863cde8e34dddf ""
   "./img/border_effect_ours.png" 1503664731 27236 65a2ae08cf715aca651ff230722f3d6d ""
   "./img/border_effect_photo.png" 1503663619 77711 025f0793d50d74d7dfc40ba8142556b7 ""
   "./img/border_effect_result.jpg" 1503584380 62505 89c130e946b0f797ea0abcd8b12613bd ""
@@ -238,9 +238,9 @@
   "/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1432479641 1764542 91654ba72bdb667e84ea24f076ae16d8 ""
   "/usr/local/texlive/2015/texmf-var/web2c/pdftex/pdflatex.fmt" 1444828040 3849860 10bfcd305c0b7e1ccd1bc67b3b8f7a59 ""
   "/usr/local/texlive/2015/texmf.cnf" 1432479636 577 0d611272082f3cdb8e80e09a3c69cf07 ""
-  "draft_v1.aux" 1503698605 23389 08b1628734fa0888fd85eed152ebd524 ""
+  "draft_v1.aux" 1503730407 23389 08b1628734fa0888fd85eed152ebd524 ""
   "draft_v1.bbl" 1503698578 4435 e8c704be0dafe1c07649ef877688f0dc "bibtex draft_v1"
-  "draft_v1.brf" 1503698605 2954 ed20f0296896f2e77e863cde8e34dddf ""
+  "draft_v1.brf" 1503730407 2954 ed20f0296896f2e77e863cde8e34dddf ""
   "draft_v1.tex" 1503698601 47155 d0bb6927dfca0c7bc124301803e4f386 ""
   "eso-pic.sty" 1402367842 9460 679a4d74cc4a9fb535fcff2b40dda61c ""
   "img/border_effect_ours.png" 1503664731 27236 65a2ae08cf715aca651ff230722f3d6d ""
