@@ -67,17 +67,29 @@ def build_feat_function(style_layers, content_layers, component_weights, vgg_wei
 
     
 if __name__ == '__main__':
-    content_weight_path = './Weight/inception.model'
-    vgg_weight_path = './Weight/vgg16_gray.hdf5'
-    photo_path = './Data/photos'
-    sketch_path = './Data/sketches'
-    train_feat_path = './Data/train_sketch_feat.npz'
+    parser = argparse.ArgumentParser(description='Arguments for training the content network')
+    parser.add_argument('-f', '--facepath', type=str, default='Data/photos', help='Path for training face photos')
+    parser.add_argument('-s', '--sketchpath', type=str, default='Data/sketches', help='Path for training sketch images')
+    parser.add_argument('--vggweight', type=str, default='./Weight/vgg16_gray.hdf5')
+    parser.add_argument('--contentweight', type=str, default='./Weight/inception.model')
+    parser.add_argument('--featpath', type=str, default='./Data/train_sketch_feat.npz')
+    parser.add_argument('testpath', type=str)
+    parser.add_argument('savecontent', type=str)
+    parser.add_argument('savesketch', type=str)
+    parser.add_argument('compweights', type=float, nargs=3)
 
-    test_img_path = './test/1.png'
-    save_content_path = './result/content.png'
-    save_sketch_path = './result/sketch.png'
-    
-    component_weights = [1., 0.001, 0.1]    # style weight, content weight, region weight
+    arg = parser.parse_args()
+    content_weight_path = arg.contentweight 
+    vgg_weight_path = arg.vggweight
+    photo_path = arg.facepath
+    sketch_path = arg.sketchpath 
+    train_feat_path = arg.featpath 
+
+    test_img_path = arg.testpath 
+    save_content_path = arg.savecontent 
+    save_sketch_path = arg.savesketch 
+   
+    component_weights = arg.compweights   # style weight, content weight, region weight
     img_width, img_height = 288, 288
     style_layers = ['conv1_1', 'conv2_1', 'conv3_1','conv4_1','conv5_1']
     content_layers = ['conv1_1']

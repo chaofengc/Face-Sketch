@@ -163,9 +163,5 @@ if __name__ == '__main__':
     #  print [x.shape for x in target_gram]
     #  print [x.shape for x in nose_gram]
     
-    old_style_gram = np.load('../Dropbox/face_sketch/Deepsketch/gram_matrix/0data0.npy')
-    old_nose_gram = np.load('../Dropbox/face_sketch/Deepsketch/gram_matrix/0nose0.npy')
-    print [np.linalg.norm(old - new) for (old, new) in zip(old_style_gram, target_gram)]
-    print [np.sum(old - new) for (old, new) in zip(old_nose_gram, nose_gram)]
 
 
