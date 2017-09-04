@@ -128,7 +128,7 @@ if __name__ == '__main__':
     x = content_img.copy()      # Initialization
     base_image.set_value(content_img[np.newaxis, np.newaxis, :, :].astype('float32'))
     start = time()
-    x, min_val, info = fmin_l_bfgs_b(evaluator.loss, x.flatten(), fprime=evaluator.grads, maxfun=200,maxiter=10000)
+    x, min_val, info = fmin_l_bfgs_b(evaluator.loss, x.flatten(), fprime=evaluator.grads, maxfun=200,maxiter=180)
     end = time()
     print 'Sketch optimization time', end - start
     print('Current loss value:', min_val)

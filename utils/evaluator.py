@@ -1,4 +1,5 @@
 import numpy as np
+from time import time
 
 class Evaluator(object):
     def __init__(self, func, img_size):
@@ -9,7 +10,10 @@ class Evaluator(object):
 
     def eval_loss_and_grads(self, x):
         x = x.reshape((1, 1, ) + self.img_size)
+        #  start = time() 
         outs = self.func([x])
+        #  end = time()
+        #  print 'Loss evaluation time', end - start
         loss_value = outs[0]
         if len(outs[1:]) == 1:
             grad_values = outs[1].flatten().astype('float64')
