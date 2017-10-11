@@ -18,8 +18,8 @@ This is a project to do face sketch synthesis. Here is an example
 - CUDA 7.5      
 - CUDNN 5.0
 
-It should be easy to install the python package with Anaconda and `pip install`.
-Please make sure you have all the right version packages, or the code may not run properly.
+It should be easy to install the python package with Anaconda and `pip install`.  
+**Please make sure you have all the right version packages, or the code may not run properly.**
 
 ### Usage
 
