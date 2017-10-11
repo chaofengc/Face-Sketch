@@ -39,10 +39,15 @@ And the following arguments is optional
 
 example usage:
 ```
-THEANO_FLAGS=device=gpu0 python sketch_generate.py ./test/1.png ./result/content.png ./result/sketch.png 1. 0.001 0.1 
+KERAS_BACKEND=theano python sketch_generate.py ./test/1.png ./result/content.png ./result/sketch.png 1. 0.001 0.1 
 ```
 
 NOTE: the gpu number can be set by `THEANO_FLAGS=device=gpu0`
+
+To generate results for all images in `test/`, run the following script
+```
+KERAS_BACKEND=theano python generate_result.py
+```
 
 ### Train the Content Network
 
@@ -55,5 +60,5 @@ Optional arguments
 
 example usage:
 ```
-THEANO_FLAGS=device=gpu0 python train_content_net.py
+KERAS_BACKEND=theano python train_content_net.py
 ```
