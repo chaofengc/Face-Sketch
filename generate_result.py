@@ -11,4 +11,4 @@ for img_path in glob(os.path.join(test_path, '*.png')):
         region_weight = 0.
     else:
         region_weight = 0.1
-    os.system('THEANO_FLAGS=device=gpu3 python sketch_generate.py ./test/%s ./reslt/%s ./result/%s 1. 0.001 %f' % (photo_name, content_name, sketch_name, region_weight) )
+    os.system('THEANO_FLAGS=device=gpu3 python sketch_generate.py ./test/%s ./result/content/%s ./result/sketch/%s 1. 0.001 %f' % (photo_name, content_name, sketch_name, region_weight) )

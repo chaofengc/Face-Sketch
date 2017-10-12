@@ -13,7 +13,7 @@ def total_variation_loss(x, img_height=256, img_width=200):
 
 def abs_loss(y_true, y_pred):
     e_0 = K.abs(y_pred - y_true)
-    return K.mean(e_0,axis=-1) + total_variation_loss(y_pred)
+    return K.mean(e_0,axis=-1) # + total_variation_loss(y_pred)
 
 def gram_matrix(x):
     assert K.ndim(x) == 3

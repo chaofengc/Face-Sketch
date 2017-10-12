@@ -122,10 +122,25 @@ class ContentNet(object):
         return np.array(results)
 
 if __name__== '__main__':
-    content_net = ContentNet(img_size=(256, 256))
-    img_path = '/home/cfchen/Dropbox/face_sketch/Deepsketch/Data/test/1.png'
-    weight_path = '/home/cfchen/Dropbox/face_sketch/Deepsketch/content_gen/inception.model'
-    result = content_net.predict(img_path, weight_path)
-    result = result.squeeze()
-    cv.imshow('test', result)
-    cv.waitKey()
+    img_size = (200, 250)
+    content_net = ContentNet(img_size=img_size)
+    #  img_dir_path = '/home/cfchen/Dropbox/face_sketch/Deepsketch/Data/test/1.png'
+    #  weight_path = '/home/cfchen/Dropbox/face_sketch/Deepsketch/content_gen/inception.model'
+    #  result = content_net.predict(img_path, weight_path)
+    #  result = result.squeeze()
+    #  cv.imshow('test', result)
+    #  cv.waitKey()
+    import os
+    img_dir_path = '/home/cfchen/face_sketch/test'
+    weight_path = '../Weight/inception.model'
+    save_dir = '/home/cfchen/fast-neural-style/test'
+    for root, dirs, files in os.walk(img_dir_path, topdown=False):
+        for name in files:
+            img_path = os.path.join(root, name)
+            save_path = os.path.join(save_dir, 'content_' + name)
+            result = content_net.predict(img_path, weight_path)
+            result = result.squeeze() * 255
+            cv.imwrite(save_path, result.astype('uint8'))
+            cv.imwrite(os.path.join(save_dir, name), cv.imread(img_path))
+            print save_path, 'saved'
+

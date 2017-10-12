@@ -9,7 +9,7 @@ from utils.content_model import ContentNet
 from utils.img_process import generate_train
 from utils.loss import abs_loss
 
-def train(data, save_weight_dir, resume, max_epoch=100, img_size=(200, 250), batch_size=8):
+def train(data, save_weight_dir, resume, max_epoch=300, img_size=(200, 250), batch_size=8):
     inputs, gros, dogs = data[0], data[1], data[2]
 
     cnet = ContentNet(img_size = img_size)
@@ -20,7 +20,7 @@ def train(data, save_weight_dir, resume, max_epoch=100, img_size=(200, 250), bat
         cnet.model.load_weights(os.path.join(save_weight_dir, 'inception-snapshot.hdf5'))
     save_best = callbacks.ModelCheckpoint(os.path.join(save_weight_dir, 'inception-best.hdf5'), monitor='val_loss', verbose=0, save_best_only=True)
     save_snapshot = callbacks.ModelCheckpoint(os.path.join(save_weight_dir, 'inception-snapshot.hdf5'))
-    opt = SGD(lr=0.001, decay=1e-6, momentum=0.9)
+    opt = Adam(lr=1e-4)
     cnet.model.compile(loss=abs_loss, optimizer=opt)
     cnet.model.fit([inputs,inputs,inputs], gros, batch_size, max_epoch, validation_split=0.1, callbacks=[save_best, save_snapshot],verbose=True)
 
