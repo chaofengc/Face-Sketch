@@ -62,3 +62,6 @@ example usage:
 ```
 KERAS_BACKEND=theano python train_content_net.py
 ```
+## References
+1. [Combining Markov Random Fields and Convolutional Neural Networks for Image Synthesis](http://arxiv.org/abs/1601.04589)
+1. [Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Networks](http://arxiv.org/abs/1604.04382)
