@@ -5,8 +5,8 @@
 This is a project to do face sketch synthesis. Here is an example
 <p align="center">
   <img src="./test/1.png">
-  <img src="./result/content.png">
-  <img src="./result/sketch.png">
+  <img src="./result/content/content_1.png">
+  <img src="./result/sketch/sketch_1.png">
 </p>
 
 ## Getting Started
