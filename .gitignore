@@ -1,2 +1,6 @@
 Data/train_sketch_feat.npz
+Data/AR_train
+Data/AR_test
+Data/CUHK_student_test
+Data/CUHK_student_train
 *.pyc
