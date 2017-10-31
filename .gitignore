@@ -1,8 +1,9 @@
 Data/train_sketch_feat.npz
+Data/AR
 Data/AR_train
-Data/AR_test
-Data/CUHK_student_test
+Data/CUHK_student_train
 face_sketch_others/
 other_results/
 FILEINFO.md
+evaluate.py
 *.pyc
