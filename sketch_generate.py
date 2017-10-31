@@ -101,6 +101,8 @@ if __name__ == '__main__':
     end  = time()
     print 'Content generation time', end - start
     content_img = content_img.squeeze() * 255
+    if not os.path.exists(os.path.dirname(save_content_path)):
+        os.mkdir(os.path.dirname(save_content_path))
     cv.imwrite(save_content_path, deprocess_image(content_img))
     
     print '=====> Generating target style'
@@ -128,10 +130,12 @@ if __name__ == '__main__':
     x = content_img.copy()      # Initialization
     base_image.set_value(content_img[np.newaxis, np.newaxis, :, :].astype('float32'))
     start = time()
-    x, min_val, info = fmin_l_bfgs_b(evaluator.loss, x.flatten(), fprime=evaluator.grads, maxfun=200,maxiter=180)
+    x, min_val, info = fmin_l_bfgs_b(evaluator.loss, x.flatten(), fprime=evaluator.grads, maxfun=200,maxiter=1000)
     end = time()
     print 'Sketch optimization time', end - start
     print('Current loss value:', min_val)
     #  save current generated image
     img = deprocess_image(x.reshape((img_width, img_height)))
+    if not os.path.exists(os.path.dirname(save_sketch_path)):
+        os.mkdir(os.path.dirname(save_sketch_path))
     cv.imwrite(save_sketch_path, img)
