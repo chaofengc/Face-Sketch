@@ -5,8 +5,8 @@
 This is a project to do face sketch synthesis. Here is an example
 <p align="center">
   <img src="./test/1.png">
-  <img src="./result/content/content_1.png">
-  <img src="./result/sketch/sketch_1.png">
+  <img src="./result/content/1.png">
+  <img src="./result/sketch/1.png">
 </p>
 
 ## Getting Started
@@ -20,6 +20,9 @@ This is a project to do face sketch synthesis. Here is an example
 
 It should be easy to install the python package with Anaconda and `pip install`.  
 **Please make sure you have all the right version packages, or the code may not run properly.**
+
+### Dataset
+Our training data (`./Data/photos` and `./Data/sketches`) comes from CUHK face sketch dataset [1]. It contains 188 face sketch pairs, of which 100 pairs are randomly selected from `AR dataset`, 88 from `CUHK student dataset`.
 
 ### Usage
 
@@ -63,5 +66,5 @@ example usage:
 KERAS_BACKEND=theano python train_content_net.py
 ```
 ## References
-1. [Combining Markov Random Fields and Convolutional Neural Networks for Image Synthesis](http://arxiv.org/abs/1601.04589)
-1. [Precomputed Real-Time Texture Synthesis with Markovian Generative Adversarial Networks](http://arxiv.org/abs/1604.04382)
+1. [CUHK Face Sketch Dataset](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html)
+1. [Real-Time Exemplar-Based Face Sketch Synthesis](http://www.cs.cityu.edu.hk/~yibisong/eccv14/index.html)
