@@ -6,4 +6,5 @@ face_sketch_others/
 other_results/
 FILEINFO.md
 evaluate.py
+pca_bak/
 *.pyc
