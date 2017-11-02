@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This is a project to do face sketch synthesis. Here is an example
+This is a project to do face sketch synthesis. Details are described in our [paper](). Here is an example
 <p align="center">
   <img src="./test/1.png">
   <img src="./result/content/1.png">
@@ -64,6 +64,16 @@ Optional arguments
 example usage:
 ```
 KERAS_BACKEND=theano python train_content_net.py
+```
+
+## Citation
+```
+@inproceedings{cfchen2018pcf,
+    title = {Face Sketch Synthesis with Style Transfer using Pyramid Column Feature},
+    author = {Chaofeng Chen, Xiao Tan and Kwan-Yee K. Wong},
+    booktitle = {WACV},
+    year = {2018}
+}
 ```
 ## References
 1. [CUHK Face Sketch Dataset](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html)
