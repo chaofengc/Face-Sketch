@@ -68,3 +68,4 @@ KERAS_BACKEND=theano python train_content_net.py
 ## References
 1. [CUHK Face Sketch Dataset](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html)
 1. [Real-Time Exemplar-Based Face Sketch Synthesis](http://www.cs.cityu.edu.hk/~yibisong/eccv14/index.html)
+1. [Lighting and pose robust face sketch synthesis](http://www.statfe.com/face_sketch_synthesis.html)
