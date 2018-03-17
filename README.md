@@ -73,7 +73,7 @@ If you find this code or the provided data useful in your research, please consi
 ```
 @inproceedings{chen2018face,
   title={Face Sketch Synthesis with Style Transfer using Pyramid Column Feature},
-  author={Chen, Chaofeng and Tax, X and Wong, KKY},
+  author={Chen, Chaofeng and Tan, Xiao and Wong, KKY},
   booktitle={IEEE Winter Conference on Applications of Computer Vision},
   year={2018},
 }
