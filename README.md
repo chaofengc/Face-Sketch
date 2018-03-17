@@ -1,8 +1,9 @@
 # Face Sketch Synthesis with Style Transfer using Pyramid Column Feature
+**[Face Sketch Synthesis with Style Transfer using Pyramid Column Feature, WACV2018](https://cfchen.com/papers/face_sketch_pcf(WACV18).pdf)**  
+[Chaofeng Chen\*](cfchen.com), [Xiao Tan\*](http://www.xtan.org/), [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/). (\* equal contribution)   
 
-## Introduction
 
-This is a project to do face sketch synthesis. Here is an example
+This paper addresses the problem of face sketch synthesis. Here is an example
 <p align="center">
   <img src="./test/1.png">
   <img src="./result/content/1.png">
@@ -65,6 +66,19 @@ example usage:
 ```
 KERAS_BACKEND=theano python train_content_net.py
 ```
+
+## Citation
+If you find this code or the provided data useful in your research, please consider cite: 
+
+```
+@inproceedings{chen2018face,
+  title={Face Sketch Synthesis with Style Transfer using Pyramid Column Feature},
+  author={Chen, Chaofeng and Tax, X and Wong, KKY},
+  booktitle={IEEE Winter Conference on Applications of Computer Vision},
+  year={2018},
+}
+```
+
 ## References
 1. [CUHK Face Sketch Dataset](http://mmlab.ie.cuhk.edu.hk/archive/facesketch.html)
 1. [Real-Time Exemplar-Based Face Sketch Synthesis](http://www.cs.cityu.edu.hk/~yibisong/eccv14/index.html)
