@@ -1,5 +1,5 @@
 # Face Sketch Synthesis with Style Transfer using Pyramid Column Feature
-**[Face Sketch Synthesis with Style Transfer using Pyramid Column Feature, WACV2018](https://cfchen.com/papers/face_sketch_pcf(WACV18).pdf)**  
+**[Face Sketch Synthesis with Style Transfer using Pyramid Column Feature, WACV2018](https://cfchen.com/papers/WACV2018_face_sketch_pcf.pdf)**  
 [Chaofeng Chen\*](https://cfchen.com/), [Xiao Tan\*](http://www.xtan.org/), [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/). (\* equal contribution)   
 
 This paper addresses the problem of face sketch synthesis. Here is an example
