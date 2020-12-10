@@ -1,4 +1,7 @@
 # Face Sketch Synthesis with Style Transfer using Pyramid Column Feature
+
+:warning: **Because Theano is no longer supported, this project cannot run on GPU with latest drivers. You may refer to our latest work about face sketch here: https://github.com/chaofengc/Face-Sketch-Wild.** 
+
 **[Face Sketch Synthesis with Style Transfer using Pyramid Column Feature, WACV2018](https://cfchen.com/papers/WACV2018_face_sketch_pcf.pdf)**  
 [Chaofeng Chen\*](https://cfchen.com/), [Xiao Tan\*](http://www.xtan.org/), [Kwan-Yee K. Wong](http://i.cs.hku.hk/~kykwong/). (\* equal contribution)   
 
